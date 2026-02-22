@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Env
+venv/
+backend/venv/
+
+# ML Models
+*.pkl
+*.h5
+*.joblib
+
+# Datasets
+*.csv
+
+# Node
+node_modules/
+
+# Env
+.env
+
+# Build
+dist/
+build/

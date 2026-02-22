@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural ML System Flowchart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 1200px;
+            height: 900px;
+            margin: 0 auto;
+            background: white;
+            border: 2px solid black;
+            position: relative;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 30px;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
+        /* Component base styles */
+        .component {
+            position: absolute;
+            background: white;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 11px;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+        }
+
+        /* Shape variations */
+        .rectangle {
+            border-radius: 0;
+        }
+
+        .rounded {
+            border-radius: 15px;
+        }
+
+        .diamond {
+            transform: rotate(45deg);
+            border-radius: 5px;
+        }
+
+        .diamond-text {
+            transform: rotate(-45deg);
+            font-size: 10px;
+        }
+
+        .oval {
+            border-radius: 50%;
+        }
+
+        .parallelogram {
+            transform: skew(-20deg);
+            border-radius: 5px;
+        }
+
+        .parallelogram-text {
+            transform: skew(20deg);
+        }
+
+        /* Data Sources - Ovals */
+        .soil-data {
+            top: 80px;
+            left: 50px;
+            width: 100px;
+            height: 60px;
+        }
+
+        .weather-data {
+            top: 80px;
+            left: 180px;
+            width: 100px;
+            height: 60px;
+        }
+
+        .market-data {
+            top: 80px;
+            left: 310px;
+            width: 100px;
+            height: 60px;
+        }
+
+        .yield-data {
+            top: 80px;
+            left: 440px;
+            width: 100px;
+            height: 60px;
+        }
+
+        .farmer-feedback {
+            top: 80px;
+            left: 570px;
+            width: 100px;
+            height: 60px;
+        }
+
+        /* Preprocessing - Rectangles */
+        .data-cleaning {
+            top: 200px;
+            left: 100px;
+            width: 120px;
+            height: 50px;
+        }
+
+        .feature-eng {
+            top: 200px;
+            left: 260px;
+            width: 120px;
+            height: 50px;
+        }
+
+        .data-balance {
+            top: 200px;
+            left: 420px;
+            width: 120px;
+            height: 50px;
+        }
+
+        .time-series {
+            top: 200px;
+            left: 580px;
+            width: 120px;
+            height: 50px;
+        }
+
+        /* ML Models - Rounded rectangles */
+        .price-prediction {
+            top: 320px;
+            left: 80px;
+            width: 130px;
+            height: 60px;
+        }
+
+        .crop-recommend {
+            top: 320px;
+            left: 240px;
+            width: 130px;
+            height: 60px;
+        }
+
+        .yield-estimation {
+            top: 320px;
+            left: 400px;
+            width: 130px;
+            height: 60px;
+        }
+
+        .model-training {
+            top: 320px;
+            left: 560px;
+            width: 130px;
+            height: 60px;
+        }
+
+        /* Decision Diamond */
+        .validation {
+            top: 450px;
+            left: 350px;
+            width: 80px;
+            height: 80px;
+        }
+
+        /* NLP Pipeline - Parallelograms */
+        .speech-to-text {
+            top: 580px;
+            left: 80px;
+            width: 120px;
+            height: 50px;
+        }
+
+        .nlp-engine {
+            top: 580px;
+            left: 230px;
+            width: 120px;
+            height: 50px;
+        }
+
+        .intent-recognition {
+            top: 580px;
+            left: 380px;
+            width: 120px;
+            height: 50px;
+        }
+
+        .text-to-speech {
+            top: 580px;
+            left: 530px;
+            width: 120px;
+            height: 50px;
+        }
+
+        /* Deployment - Rectangles */
+        .api-gateway {
+            top: 700px;
+            left: 150px;
+            width: 120px;
+            height: 50px;
+        }
+
+        .web-interface {
+            top: 700px;
+            left: 300px;
+            width: 120px;
+            height: 50px;
+        }
+
+        .voice-interface {
+            top: 700px;
+            left: 450px;
+            width: 120px;
+            height: 50px;
+        }
+
+        /* Output - Ovals */
+        .recommendations {
+            top: 800px;
+            left: 100px;
+            width: 110px;
+            height: 50px;
+        }
+
+        .price-forecasts {
+            top: 800px;
+            left: 240px;
+            width: 110px;
+            height: 50px;
+        }
+
+        .yield-predictions {
+            top: 800px;
+            left: 380px;
+            width: 110px;
+            height: 50px;
+        }
+
+        .feedback-loop {
+            top: 800px;
+            left: 520px;
+            width: 110px;
+            height: 50px;
+        }
+
+        /* Storage - Cylinders (approximated with rectangles) */
+        .database {
+            top: 200px;
+            right: 50px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .cloud-storage {
+            top: 320px;
+            right: 50px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .model-store {
+            top: 440px;
+            right: 50px;
+            width: 80px;
+            height: 80px;
+        }
+
+        /* Cylinder styling */
+        .cylinder {
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .cylinder::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 10%;
+            right: 10%;
+            height: 10px;
+            background: white;
+            border: 2px solid black;
+            border-bottom: none;
+            border-radius: 50%;
+        }
+
+        .cylinder::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 10%;
+            right: 10%;
+            height: 10px;
+            background: white;
+            border: 2px solid black;
+            border-top: none;
+            border-radius: 50%;
+        }
+
+        /* Arrows */
+        .arrow {
+            position: absolute;
+            background: black;
+            z-index: 10;
+        }
+
+        .arrow::after {
+            content: '';
+            position: absolute;
+            background: black;
+        }
+
+        /* Vertical arrows */
+        .v-arrow {
+            width: 2px;
+        }
+
+        .v-arrow::after {
+            bottom: -6px;
+            left: -3px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid black;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+        }
+
+        /* Horizontal arrows */
+        .h-arrow {
+            height: 2px;
+        }
+
+        .h-arrow::after {
+            right: -6px;
+            top: -3px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid black;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        /* Diagonal arrows */
+        .d-arrow-ne {
+            transform: rotate(45deg);
+            width: 30px;
+            height: 2px;
+        }
+
+        .d-arrow-ne::after {
+            right: -6px;
+            top: -3px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid black;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        /* Specific arrow positions */
+        .arrow1 {
+            top: 140px;
+            left: 99px;
+            height: 60px;
+        }
+
+        .arrow2 {
+            top: 140px;
+            left: 229px;
+            height: 60px;
+        }
+
+        .arrow3 {
+            top: 140px;
+            left: 359px;
+            height: 60px;
+        }
+
+        .arrow4 {
+            top: 140px;
+            left: 489px;
+            height: 60px;
+        }
+
+        .arrow5 {
+            top: 140px;
+            left: 619px;
+            height: 60px;
+        }
+
+        .arrow6 {
+            top: 250px;
+            left: 219px;
+            width: 40px;
+        }
+
+        .arrow7 {
+            top: 250px;
+            left: 379px;
+            width: 40px;
+        }
+
+        .arrow8 {
+            top: 250px;
+            left: 539px;
+            width: 40px;
+        }
+
+        .arrow9 {
+            top: 380px;
+            left: 145px;
+            height: 70px;
+        }
+
+        .arrow10 {
+            top: 380px;
+            left: 305px;
+            height: 70px;
+        }
+
+        .arrow11 {
+            top: 380px;
+            left: 465px;
+            height: 70px;
+        }
+
+        .arrow12 {
+            top: 380px;
+            left: 625px;
+            height: 70px;
+        }
+
+        .arrow13 {
+            top: 530px;
+            left: 389px;
+            height: 50px;
+        }
+
+        .arrow14 {
+            top: 630px;
+            left: 199px;
+            width: 30px;
+        }
+
+        .arrow15 {
+            top: 630px;
+            left: 349px;
+            width: 30px;
+        }
+
+        .arrow16 {
+            top: 630px;
+            left: 499px;
+            width: 30px;
+        }
+
+        .arrow17 {
+            top: 750px;
+            left: 199px;
+            height: 50px;
+        }
+
+        .arrow18 {
+            top: 750px;
+            left: 349px;
+            height: 50px;
+        }
+
+        .arrow19 {
+            top: 750px;
+            left: 499px;
+            height: 50px;
+        }
+
+        /* Side arrows to storage */
+        .arrow20 {
+            top: 240px;
+            left: 700px;
+            width: 50px;
+        }
+
+        .arrow21 {
+            top: 360px;
+            left: 700px;
+            width: 50px;
+        }
+
+        .arrow22 {
+            top: 480px;
+            left: 700px;
+            width: 50px;
+        }
+
+        /* Process labels */
+        .process-label {
+            position: absolute;
+            background: white;
+            border: 1px solid black;
+            padding: 2px 5px;
+            font-size: 9px;
+            font-weight: normal;
+        }
+
+        .label1 {
+            top: 160px;
+            left: 20px;
+        }
+
+        .label2 {
+            top: 280px;
+            left: 20px;
+        }
+
+        .label3 {
+            top: 400px;
+            left: 20px;
+        }
+
+        .label4 {
+            top: 560px;
+            left: 20px;
+        }
+
+        .label5 {
+            top: 680px;
+            left: 20px;
+        }
+
+        .label6 {
+            top: 780px;
+            left: 20px;
+        }
+
+        /* Technology annotations */
+        .tech-note {
+            position: absolute;
+            font-size: 8px;
+            color: #666;
+            background: white;
+            padding: 1px 3px;
+            border: 1px solid #999;
+        }
+
+        .tech1 {
+            top: 100px;
+            left: 720px;
+        }
+
+        .tech2 {
+            top: 220px;
+            left: 720px;
+        }
+
+        .tech3 {
+            top: 340px;
+            left: 720px;
+        }
+
+        .tech4 {
+            top: 600px;
+            left: 720px;
+        }
+
+        .tech5 {
+            top: 720px;
+            left: 720px;
+        }
+
+        /* Yes/No labels for decision */
+        .decision-label {
+            position: absolute;
+            font-size: 9px;
+            font-weight: bold;
+            background: white;
+            padding: 2px;
+        }
+
+        .yes-label {
+            top: 470px;
+            left: 480px;
+        }
+
+        .no-label {
+            top: 470px;
+            left: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Agricultural ML Decision-Support System Flowchart</div>
+
+        <!-- Data Sources (Ovals) -->
+        <div class="component oval soil-data">
+            <div>Soil Properties</div>
+            <div style="font-size: 9px; font-weight: normal;">pH, N-P-K</div>
+        </div>
+
+        <div class="component oval weather-data">
+            <div>Weather Data</div>
+            <div style="font-size: 9px; font-weight: normal;">Rainfall, Temp</div>
+        </div>
+
+        <div class="component oval market-data">
+            <div>Market Prices</div>
+            <div style="font-size: 9px; font-weight: normal;">Trends</div>
+        </div>
+
+        <div class="component oval yield-data">
+            <div>Historical</div>
+            <div>Yields</div>
+        </div>
+
+        <div class="component oval farmer-feedback">
+            <div>Farmer</div>
+            <div>Feedback</div>
+        </div>
+
+        <!-- Preprocessing (Rectangles) -->
+        <div class="component rectangle data-cleaning">
+            <div>Data Cleaning</div>
+            <div style="font-size: 9px; font-weight: normal;">Missing values</div>
+        </div>
+
+        <div class="component rectangle feature-eng">
+            <div>Feature</div>
+            <div>Engineering</div>
+        </div>
+
+        <div class="component rectangle data-balance">
+            <div>Data Balancing</div>
+            <div style="font-size: 9px; font-weight: normal;">SMOTE</div>
+        </div>
+
+        <div class="component rectangle time-series">
+            <div>Time-Series</div>
+            <div>Structuring</div>
+        </div>
+
+        <!-- ML Models (Rounded rectangles) -->
+        <div class="component rounded price-prediction">
+            <div>Price Prediction</div>
+            <div style="font-size: 9px; font-weight: normal;">LSTM, Prophet</div>
+        </div>
+
+        <div class="component rounded crop-recommend">
+            <div>Crop</div>
+            <div>Recommendation</div>
+            <div style="font-size: 9px; font-weight: normal;">XGBoost, RF</div>
+        </div>
+
+        <div class="component rounded yield-estimation">
+            <div>Yield</div>
+            <div>Estimation</div>
+            <div style="font-size: 9px; font-weight: normal;">XGBoost, RF</div>
+        </div>
+
+        <div class="component rounded model-training">
+            <div>Model Training</div>
+            <div style="font-size: 9px; font-weight: normal;">Cross-validation</div>
+        </div>
+
+        <!-- Decision Diamond -->
+        <div class="component diamond validation">
+            <div class="diamond-text">Model<br>Valid?</div>
+        </div>
+
+        <!-- NLP Pipeline (Parallelograms) -->
+        <div class="component parallelogram speech-to-text">
+            <div class="parallelogram-text">Speech-to-Text</div>
+        </div>
+
+        <div class="component parallelogram nlp-engine">
+            <div class="parallelogram-text">NLP Engine<br><span style="font-size: 8px;">Transformers</span></div>
+        </div>
+
+        <div class="component parallelogram intent-recognition">
+            <div class="parallelogram-text">Intent<br>Recognition</div>
+        </div>
+
+        <div class="component parallelogram text-to-speech">
+            <div class="parallelogram-text">Text-to-Speech</div>
+        </div>
+
+        <!-- Deployment (Rectangles) -->
+        <div class="component rectangle api-gateway">
+            <div>API Gateway</div>
+            <div style="font-size: 9px; font-weight: normal;">Flask REST</div>
+        </div>
+
+        <div class="component rectangle web-interface">
+            <div>Web Interface</div>
+            <div style="font-size: 9px; font-weight: normal;">Dashboard</div>
+        </div>
+
+        <div class="component rectangle voice-interface">
+            <div>Voice Interface</div>
+            <div style="font-size: 9px; font-weight: normal;">WebSocket</div>
+        </div>
+
+        <!-- Output (Ovals) -->
+        <div class="component oval recommendations">
+            <div>Crop</div>
+            <div>Recommendations</div>
+        </div>
+
+        <div class="component oval price-forecasts">
+            <div>Price</div>
+            <div>Forecasts</div>
+        </div>
+
+        <div class="component oval yield-predictions">
+            <div>Yield</div>
+            <div>Predictions</div>
+        </div>
+
+        <div class="component oval feedback-loop">
+            <div>Feedback</div>
+            <div>Loop</div>
+        </div>
+
+        <!-- Storage (Cylinders) -->
+        <div class="component cylinder database">
+            <div style="margin-top: 15px;">Database</div>
+        </div>
+
+        <div class="component cylinder cloud-storage">
+            <div style="margin-top: 15px;">Cloud<br>Storage</div>
+        </div>
+
+        <div class="component cylinder model-store">
+            <div style="margin-top: 15px;">Model<br>Store</div>
+        </div>
+
+        <!-- Arrows -->
+        <div class="arrow v-arrow arrow1"></div>
+        <div class="arrow v-arrow arrow2"></div>
+        <div class="arrow v-arrow arrow3"></div>
+        <div class="arrow v-arrow arrow4"></div>
+        <div class="arrow v-arrow arrow5"></div>
+
+        <div class="arrow h-arrow arrow6"></div>
+        <div class="arrow h-arrow arrow7"></div>
+        <div class="arrow h-arrow arrow8"></div>
+
+        <div class="arrow v-arrow arrow9"></div>
+        <div class="arrow v-arrow arrow10"></div>
+        <div class="arrow v-arrow arrow11"></div>
+        <div class="arrow v-arrow arrow12"></div>
+
+        <div class="arrow v-arrow arrow13"></div>
+
+        <div class="arrow h-arrow arrow14"></div>
+        <div class="arrow h-arrow arrow15"></div>
+        <div class="arrow h-arrow arrow16"></div>
+
+        <div class="arrow v-arrow arrow17"></div>
+        <div class="arrow v-arrow arrow18"></div>
+        <div class="arrow v-arrow arrow19"></div>
+
+        <div class="arrow h-arrow arrow20"></div>
+        <div class="arrow h-arrow arrow21"></div>
+        <div class="arrow h-arrow arrow22"></div>
+
+        <!-- Process Labels -->
+        <div class="process-label label1">Data Acquisition</div>
+        <div class="process-label label2">Preprocessing</div>
+        <div class="process-label label3">ML Models</div>
+        <div class="process-label label4">NLP Pipeline</div>
+        <div class="process-label label5">Deployment</div>
+        <div class="process-label label6">Output</div>
+
+        <!-- Decision Labels -->
+        <div class="decision-label yes-label">Yes</div>
+        <div class="decision-label no-label">No</div>
+
+        <!-- Technology Annotations -->
+        <div class="tech-note tech1">IoT, APIs</div>
+        <div class="tech-note tech2">Pandas, NumPy</div>
+        <div class="tech-note tech3">TensorFlow, PyTorch</div>
+        <div class="tech-note tech4">BERT, ASR</div>
+        <div class="tech-note tech5">Flask, React</div>
+    </div>
+</body>
+
+</html>

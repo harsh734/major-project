@@ -1,0 +1,2501 @@
+Farmer_ID,Farmer_Name,Location,Crop,Season,Quantity_Produced,Quantity_Sold,Market_Price,Date_of_Sale,Demand_Index,Recommended_Crop
+F0001,Taimur S.,Gujarat,Sugarcane,Rabi,4994,4940,4,2022-05-07,5,Potato
+F0002,Kiara C.,Madhya Pradesh,Onion,Kharif,1424,1233,16,2023-01-28,6,Onion
+F0003,Anika G.,Punjab,Sugarcane,Kharif,2792,2654,4,2024-07-04,6,Bajra
+F0004,Pranay S.,Madhya Pradesh,Potato,Kharif,1538,1438,16,2023-07-03,3,Onion
+F0005,Siya B.,Uttar Pradesh,Onion,Kharif,3769,3626,11,2023-05-02,2,Soybean
+F0006,Anaya T.,Bihar,Rice,Kharif,1241,1237,32,2023-03-10,6,Maize
+F0007,Anvi D.,Maharashtra,Wheat,Rabi,1226,1026,24,2022-08-30,8,Sugarcane
+F0008,Zain S.,Karnataka,Onion,Kharif,4624,4439,14,2024-07-18,10,Tomato
+F0009,Uthkarsh A.,Madhya Pradesh,Wheat,Zaid,4894,4801,23,2022-06-22,8,Cotton
+F0010,Yuvaan T.,Karnataka,Tomato,Kharif,3601,3484,9,2023-02-17,7,Tomato
+F0011,Faiyaz R.,Punjab,Bajra,Rabi,2343,2270,18,2023-12-19,7,Wheat
+F0012,Dhruv L.,Karnataka,Onion,Kharif,2185,2124,15,2022-09-22,8,Sugarcane
+F0013,Jayesh T.,Karnataka,Groundnut,Rabi,3527,3512,62,2023-07-25,3,Cotton
+F0014,Nakul Y.,Punjab,Cotton,Kharif,4138,4113,60,2024-02-27,5,Mustard
+F0015,Trisha G.,Gujarat,Soybean,Zaid,1275,1148,47,2022-11-15,6,Maize
+F0016,Alisha G.,Rajasthan,Onion,Rabi,2603,2413,20,2023-02-27,3,Sugarcane
+F0017,Dhanush C.,Uttar Pradesh,Sugarcane,Zaid,2747,2648,4,2024-07-11,1,Tomato
+F0018,Aarav E.,Gujarat,Groundnut,Zaid,2976,2895,54,2023-10-24,8,Soybean
+F0019,Ishita B.,Punjab,Groundnut,Rabi,2502,2432,49,2022-11-22,6,Rice
+F0020,Ira B.,Bihar,Maize,Zaid,1779,1743,26,2022-04-12,9,Sugarcane
+F0021,Kabir S.,Bihar,Bajra,Rabi,2828,2783,21,2023-12-31,7,Sugarcane
+F0022,Dharmajan S.,Gujarat,Onion,Zaid,1261,1194,26,2023-12-27,5,Mustard
+F0023,Dharmajan A.,Madhya Pradesh,Mustard,Zaid,2447,2415,57,2022-04-12,9,Tomato
+F0024,Anya S.,Maharashtra,Maize,Zaid,1584,1492,22,2022-06-27,6,Maize
+F0025,Kaira G.,Uttar Pradesh,Onion,Rabi,4087,3963,23,2023-10-18,1,Bajra
+F0026,Tanya R.,Rajasthan,Potato,Rabi,1950,1775,24,2024-02-23,10,Maize
+F0027,Urvi D.,Madhya Pradesh,Potato,Zaid,3429,3288,17,2024-04-03,9,Onion
+F0028,Yakshit D.,Punjab,Cotton,Rabi,3293,3193,73,2024-01-10,8,Potato
+F0029,Lavanya B.,Punjab,Soybean,Rabi,2692,2539,45,2022-11-25,5,Wheat
+F0030,Hansh V.,Gujarat,Groundnut,Kharif,3950,3846,59,2024-01-20,1,Sugarcane
+F0031,Sana C.,Punjab,Onion,Kharif,4170,4142,14,2023-09-02,5,Sugarcane
+F0032,Sahil B.,Uttar Pradesh,Soybean,Kharif,4931,4736,49,2022-08-20,4,Tomato
+F0033,Miraya K.,Madhya Pradesh,Groundnut,Rabi,3186,3170,46,2022-07-21,7,Maize
+F0034,Zain H.,Karnataka,Mustard,Zaid,1625,1579,49,2023-07-28,3,Groundnut
+F0035,Ivan M.,Karnataka,Onion,Kharif,3069,2933,25,2022-12-27,4,Bajra
+F0036,Kismat B.,Karnataka,Tomato,Rabi,834,701,16,2022-01-20,4,Rice
+F0037,Darshit B.,Madhya Pradesh,Tomato,Zaid,3576,3494,18,2022-10-09,6,Soybean
+F0038,Nishith S.,Uttar Pradesh,Groundnut,Zaid,3415,3255,55,2022-03-04,7,Sugarcane
+F0039,Kimaya V.,Punjab,Groundnut,Rabi,807,700,45,2022-02-20,2,Potato
+F0040,Aarush R.,Madhya Pradesh,Groundnut,Kharif,3011,2827,55,2023-11-13,10,Maize
+F0041,Hiran G.,Uttar Pradesh,Wheat,Rabi,2717,2626,27,2022-10-01,4,Maize
+F0042,Emir C.,Gujarat,Groundnut,Kharif,1589,1420,56,2022-06-06,10,Sugarcane
+F0043,Saksham M.,Gujarat,Maize,Rabi,4635,4535,23,2022-10-21,8,Mustard
+F0044,Hazel K.,Madhya Pradesh,Tomato,Rabi,1750,1629,18,2022-01-06,10,Cotton
+F0045,Ahana  B.,Gujarat,Potato,Kharif,904,811,22,2022-01-08,9,Maize
+F0046,Zeeshan S.,Bihar,Onion,Kharif,4643,4504,14,2024-01-13,10,Maize
+F0047,Onkar D.,Madhya Pradesh,Wheat,Zaid,2824,2818,22,2022-01-09,5,Tomato
+F0048,Ryan S.,Gujarat,Sugarcane,Kharif,826,803,3,2023-10-10,3,Sugarcane
+F0049,Hridaan K.,Madhya Pradesh,Soybean,Rabi,2266,2202,43,2024-04-29,4,Cotton
+F0050,Hazel B.,Rajasthan,Soybean,Kharif,1294,1163,48,2022-04-25,2,Bajra
+F0051,Jhanvi J.,Maharashtra,Potato,Kharif,3810,3682,12,2022-06-16,4,Onion
+F0052,Jhanvi G.,Maharashtra,Cotton,Zaid,1667,1520,70,2023-05-12,2,Sugarcane
+F0053,Shaan B.,Bihar,Soybean,Kharif,3662,3525,54,2024-06-26,10,Potato
+F0054,Jiya K.,Karnataka,Cotton,Kharif,3386,3352,67,2022-09-29,2,Cotton
+F0055,Miraan A.,Maharashtra,Bajra,Rabi,1283,1137,23,2022-04-15,10,Potato
+F0056,Shamik K.,Karnataka,Mustard,Rabi,1500,1467,60,2023-09-09,4,Onion
+F0057,Saanvi C.,Rajasthan,Potato,Zaid,1459,1423,16,2022-01-09,8,Sugarcane
+F0058,Tejas B.,Bihar,Maize,Zaid,4860,4731,24,2022-05-31,4,Groundnut
+F0059,Sahil M.,Madhya Pradesh,Soybean,Kharif,1981,1854,51,2023-08-24,9,Bajra
+F0060,Ehsaan R.,Karnataka,Cotton,Zaid,4274,4242,68,2023-06-16,3,Potato
+F0061,Kanav G.,Gujarat,Rice,Rabi,1887,1836,35,2024-02-25,10,Wheat
+F0062,Ehsaan M.,Maharashtra,Wheat,Zaid,1399,1232,25,2022-12-08,7,Maize
+F0063,Nirvaan D.,Rajasthan,Cotton,Zaid,2333,2158,73,2023-03-31,3,Groundnut
+F0064,Lavanya B.,Rajasthan,Tomato,Kharif,861,719,12,2023-07-16,6,Bajra
+F0065,Anvi S.,Maharashtra,Sugarcane,Rabi,975,859,5,2024-03-15,4,Rice
+F0066,Dishani C.,Uttar Pradesh,Bajra,Zaid,4829,4752,19,2024-05-28,2,Wheat
+F0067,Samar I.,Karnataka,Bajra,Rabi,3132,3028,23,2022-11-10,7,Wheat
+F0068,Alia R.,Karnataka,Cotton,Zaid,3272,3081,63,2022-11-02,4,Wheat
+F0069,Ehsaan M.,Rajasthan,Rice,Kharif,2821,2739,33,2024-03-15,2,Potato
+F0070,Rania K.,Bihar,Rice,Kharif,4150,4149,29,2023-01-20,10,Soybean
+F0071,Misha R.,Punjab,Mustard,Kharif,2326,2300,47,2024-01-22,2,Cotton
+F0072,Jayan K.,Madhya Pradesh,Bajra,Zaid,1269,1219,21,2022-01-18,10,Cotton
+F0073,Aniruddh Z.,Madhya Pradesh,Onion,Rabi,3256,3244,21,2022-03-26,3,Wheat
+F0074,Renee S.,Punjab,Groundnut,Kharif,2749,2717,63,2022-02-15,3,Tomato
+F0075,Alia G.,Madhya Pradesh,Maize,Zaid,4357,4240,25,2023-04-24,6,Bajra
+F0076,Jayant H.,Uttar Pradesh,Tomato,Kharif,1760,1561,12,2023-04-15,1,Mustard
+F0077,Vidur V.,Rajasthan,Mustard,Rabi,3869,3777,58,2024-04-26,3,Groundnut
+F0078,Jivika K.,Gujarat,Mustard,Rabi,851,771,50,2024-01-02,6,Tomato
+F0079,Gatik D.,Bihar,Bajra,Kharif,1823,1657,19,2022-02-16,1,Bajra
+F0080,Reyansh D.,Maharashtra,Soybean,Kharif,2952,2947,46,2024-02-10,9,Wheat
+F0081,Aarush K.,Rajasthan,Soybean,Zaid,910,854,45,2022-04-04,3,Soybean
+F0082,Kabir B.,Rajasthan,Mustard,Rabi,3841,3706,51,2024-03-08,7,Potato
+F0083,Hridaan S.,Punjab,Maize,Zaid,994,958,19,2023-03-25,1,Maize
+F0084,Pari B.,Madhya Pradesh,Potato,Zaid,1417,1361,22,2023-02-26,5,Soybean
+F0085,Anahita D.,Karnataka,Groundnut,Rabi,1622,1491,50,2024-05-08,8,Mustard
+F0086,Ivan S.,Karnataka,Groundnut,Rabi,4116,4059,55,2022-01-18,5,Maize
+F0087,Heer S.,Maharashtra,Cotton,Kharif,1257,1197,75,2022-06-11,4,Wheat
+F0088,Rasha L.,Maharashtra,Mustard,Kharif,2754,2705,51,2022-01-24,10,Soybean
+F0089,Anay M.,Karnataka,Potato,Zaid,1824,1674,14,2022-07-30,2,Onion
+F0090,Ivan M.,Karnataka,Tomato,Zaid,2985,2979,18,2023-08-03,3,Bajra
+F0091,Anya D.,Maharashtra,Groundnut,Kharif,1949,1799,45,2022-02-06,2,Soybean
+F0092,Saira S.,Maharashtra,Maize,Zaid,3628,3539,18,2022-04-19,6,Onion
+F0093,Suhana K.,Uttar Pradesh,Groundnut,Rabi,4502,4429,54,2022-01-06,10,Wheat
+F0094,Divit B.,Gujarat,Mustard,Kharif,3664,3653,46,2023-12-02,8,Maize
+F0095,Piya C.,Madhya Pradesh,Tomato,Rabi,4883,4714,11,2022-04-19,4,Tomato
+F0096,Vritika R.,Rajasthan,Mustard,Zaid,4673,4633,59,2022-03-12,8,Soybean
+F0097,Veer B.,Rajasthan,Rice,Kharif,1849,1789,31,2023-07-13,2,Onion
+F0098,Aniruddh J.,Punjab,Rice,Zaid,4730,4532,31,2022-12-22,8,Mustard
+F0099,Jayant M.,Karnataka,Onion,Zaid,4141,4022,25,2022-10-10,5,Potato
+F0100,Neysa B.,Gujarat,Wheat,Rabi,943,936,24,2022-10-19,4,Maize
+F0101,Samaira H.,Bihar,Wheat,Zaid,2966,2965,27,2022-03-07,5,Potato
+F0102,Samar M.,Karnataka,Bajra,Kharif,3822,3794,25,2022-08-31,5,Wheat
+F0103,Tejas D.,Madhya Pradesh,Tomato,Zaid,3051,2941,18,2023-12-29,9,Maize
+F0104,Hazel M.,Madhya Pradesh,Cotton,Kharif,2655,2528,72,2023-01-09,8,Rice
+F0105,Rania C.,Bihar,Groundnut,Kharif,1176,1130,47,2024-01-21,1,Potato
+F0106,Rohan R.,Gujarat,Rice,Rabi,3199,3006,28,2022-05-04,4,Onion
+F0107,Rohan B.,Maharashtra,Tomato,Zaid,2995,2798,13,2022-02-01,3,Maize
+F0108,Adira C.,Maharashtra,Groundnut,Zaid,4735,4608,56,2024-01-20,1,Tomato
+F0109,Purab J.,Bihar,Maize,Rabi,3073,2982,18,2022-03-11,5,Bajra
+F0110,Mahika C.,Karnataka,Onion,Zaid,2507,2495,17,2023-02-01,6,Mustard
+F0111,Aarush S.,Madhya Pradesh,Mustard,Kharif,3371,3278,55,2022-09-18,5,Maize
+F0112,Aniruddh K.,Rajasthan,Bajra,Rabi,2118,2028,26,2023-03-18,10,Tomato
+F0113,Vardaniya G.,Rajasthan,Potato,Zaid,3330,3144,25,2023-06-11,4,Bajra
+F0114,Ishita S.,Uttar Pradesh,Groundnut,Kharif,892,762,52,2022-09-23,4,Tomato
+F0115,Zain S.,Madhya Pradesh,Mustard,Zaid,1752,1629,52,2023-04-09,1,Wheat
+F0116,Himmat V.,Rajasthan,Soybean,Rabi,2299,2254,47,2023-06-30,3,Rice
+F0117,Shaan R.,Gujarat,Sugarcane,Kharif,4455,4329,4,2023-11-10,7,Tomato
+F0118,Faiyaz B.,Karnataka,Potato,Kharif,4866,4752,20,2022-03-20,6,Sugarcane
+F0119,Divij J.,Punjab,Tomato,Kharif,1594,1460,12,2023-11-25,8,Wheat
+F0120,Anaya A.,Madhya Pradesh,Onion,Kharif,2617,2572,24,2023-03-12,9,Onion
+F0121,Anaya S.,Bihar,Soybean,Zaid,1230,1212,48,2023-02-03,2,Potato
+F0122,Shayak D.,Rajasthan,Wheat,Kharif,3362,3331,28,2024-07-10,2,Wheat
+F0123,Ehsaan D.,Gujarat,Cotton,Kharif,1515,1513,64,2022-07-07,6,Soybean
+F0124,Veer H.,Punjab,Soybean,Kharif,2116,2090,55,2022-04-10,5,Potato
+F0125,Pranay C.,Madhya Pradesh,Cotton,Zaid,4947,4879,61,2022-02-04,1,Wheat
+F0126,Bhamini B.,Gujarat,Wheat,Kharif,2358,2293,21,2024-05-27,10,Tomato
+F0127,Anahi C.,Madhya Pradesh,Wheat,Kharif,4927,4814,21,2023-09-24,6,Soybean
+F0128,Zoya C.,Gujarat,Sugarcane,Rabi,1927,1860,4,2022-12-07,8,Soybean
+F0129,Yuvraj  B.,Madhya Pradesh,Soybean,Rabi,3049,2959,44,2022-08-13,2,Potato
+F0130,Anya L.,Madhya Pradesh,Mustard,Zaid,2547,2394,60,2023-09-05,10,Wheat
+F0131,Dhruv D.,Maharashtra,Groundnut,Rabi,1280,1201,47,2022-03-11,10,Groundnut
+F0132,Advika C.,Gujarat,Tomato,Kharif,2163,2062,20,2024-02-10,8,Mustard
+F0133,Shaan R.,Uttar Pradesh,Cotton,Rabi,961,936,57,2024-02-22,10,Wheat
+F0134,Pranay M.,Madhya Pradesh,Tomato,Zaid,3314,3145,9,2023-09-29,5,Potato
+F0135,Siya D.,Karnataka,Potato,Zaid,2751,2588,22,2024-07-15,8,Mustard
+F0136,Ivan S.,Bihar,Mustard,Kharif,4521,4391,54,2023-10-07,8,Onion
+F0137,Advika B.,Rajasthan,Maize,Kharif,1469,1460,22,2023-01-15,1,Soybean
+F0138,Shaan M.,Maharashtra,Rice,Zaid,1821,1692,32,2023-05-23,1,Maize
+F0139,Shayak B.,Uttar Pradesh,Maize,Rabi,1104,955,26,2022-08-06,1,Rice
+F0140,Arhaan L.,Madhya Pradesh,Maize,Kharif,1079,934,19,2022-05-10,3,Bajra
+F0141,Piya K.,Madhya Pradesh,Bajra,Kharif,2781,2719,25,2022-04-24,3,Onion
+F0142,Mahika B.,Karnataka,Sugarcane,Kharif,3392,3317,4,2023-11-13,10,Potato
+F0143,Yuvaan M.,Madhya Pradesh,Soybean,Rabi,4064,4048,49,2023-03-10,10,Groundnut
+F0144,Kimaya S.,Maharashtra,Onion,Rabi,3627,3613,19,2023-02-15,4,Onion
+F0145,Parinaaz S.,Rajasthan,Rice,Kharif,1285,1094,31,2023-05-15,5,Bajra
+F0146,Yashvi R.,Gujarat,Bajra,Zaid,2792,2711,22,2023-06-24,7,Rice
+F0147,Pari S.,Maharashtra,Sugarcane,Zaid,2867,2821,5,2024-02-24,2,Potato
+F0148,Anya G.,Punjab,Groundnut,Zaid,918,800,54,2024-04-14,3,Sugarcane
+F0149,Shanaya S.,Rajasthan,Tomato,Zaid,1709,1629,14,2022-04-29,7,Potato
+F0150,Manjari S.,Punjab,Potato,Zaid,2041,1920,15,2022-09-03,2,Maize
+F0151,Alisha A.,Madhya Pradesh,Maize,Zaid,1881,1853,28,2023-06-12,4,Mustard
+F0152,Aarav S.,Gujarat,Tomato,Zaid,976,851,14,2024-02-28,5,Groundnut
+F0153,Gatik K.,Bihar,Maize,Rabi,3825,3720,26,2022-03-10,3,Potato
+F0154,Romil W.,Punjab,Wheat,Kharif,3445,3287,20,2023-09-12,10,Rice
+F0155,Yakshit K.,Rajasthan,Mustard,Rabi,1467,1407,58,2023-09-25,3,Groundnut
+F0156,Azad H.,Maharashtra,Mustard,Rabi,4288,4270,54,2023-07-18,9,Soybean
+F0157,Priyansh K.,Karnataka,Tomato,Rabi,3758,3658,8,2023-03-16,6,Soybean
+F0158,Saksham C.,Uttar Pradesh,Onion,Kharif,3039,2935,17,2023-12-05,7,Wheat
+F0159,Aaryahi S.,Bihar,Wheat,Kharif,2305,2264,24,2023-10-07,3,Rice
+F0160,Sara C.,Bihar,Soybean,Zaid,3879,3794,40,2022-11-26,1,Bajra
+F0161,Tejas D.,Karnataka,Wheat,Kharif,3320,3213,22,2022-06-15,8,Wheat
+F0162,Yuvaan C.,Punjab,Tomato,Zaid,4724,4559,18,2022-03-14,3,Groundnut
+F0163,Aarav S.,Rajasthan,Onion,Rabi,2568,2542,14,2024-02-21,8,Maize
+F0164,Anya T.,Maharashtra,Mustard,Zaid,967,926,58,2022-03-25,5,Potato
+F0165,Vedika K.,Bihar,Bajra,Zaid,1482,1440,22,2024-07-12,6,Wheat
+F0166,Oorja D.,Karnataka,Sugarcane,Zaid,2768,2661,5,2023-12-21,3,Sugarcane
+F0167,Renee G.,Uttar Pradesh,Soybean,Kharif,3399,3350,47,2022-02-06,3,Bajra
+F0168,Ishita K.,Maharashtra,Bajra,Kharif,887,878,26,2023-12-27,7,Mustard
+F0169,Aniruddh M.,Uttar Pradesh,Tomato,Zaid,1932,1744,17,2022-11-29,6,Cotton
+F0170,Prisha B.,Rajasthan,Onion,Zaid,3291,3122,23,2024-02-26,4,Maize
+F0171,Vardaniya G.,Bihar,Groundnut,Kharif,4006,3936,63,2022-03-20,2,Potato
+F0172,Nayantara J.,Bihar,Potato,Zaid,4967,4872,19,2024-06-18,2,Wheat
+F0173,Vardaniya W.,Gujarat,Wheat,Zaid,3608,3559,29,2024-02-29,7,Tomato
+F0174,Dhanush H.,Gujarat,Sugarcane,Zaid,4975,4939,3,2022-11-24,1,Tomato
+F0175,Shayak B.,Uttar Pradesh,Bajra,Rabi,3882,3765,19,2024-03-31,10,Tomato
+F0176,Rati T.,Maharashtra,Potato,Rabi,2911,2780,12,2022-10-21,4,Potato
+F0177,Kismat C.,Rajasthan,Rice,Rabi,2644,2521,28,2023-02-11,2,Bajra
+F0178,Armaan G.,Punjab,Potato,Zaid,1122,1086,19,2023-10-05,8,Soybean
+F0179,Arnav G.,Gujarat,Maize,Zaid,2087,1988,26,2022-03-10,9,Bajra
+F0180,Anvi B.,Rajasthan,Sugarcane,Zaid,3893,3708,5,2022-12-11,9,Mustard
+F0181,Prerak M.,Bihar,Mustard,Kharif,3066,2948,48,2022-07-03,7,Maize
+F0182,Bhamini S.,Madhya Pradesh,Wheat,Rabi,4339,4139,21,2023-07-05,10,Groundnut
+F0183,Vaibhav S.,Rajasthan,Soybean,Rabi,4374,4280,54,2023-08-19,8,Tomato
+F0184,Kaira C.,Rajasthan,Cotton,Rabi,1235,1070,64,2023-05-25,8,Soybean
+F0185,Samaira V.,Bihar,Onion,Kharif,4989,4913,17,2023-08-17,6,Bajra
+F0186,Akarsh S.,Rajasthan,Tomato,Zaid,4198,4074,11,2024-02-01,8,Cotton
+F0187,Aarna R.,Rajasthan,Sugarcane,Kharif,1581,1435,5,2024-06-02,8,Wheat
+F0188,Suhana K.,Maharashtra,Groundnut,Rabi,4292,4214,56,2022-03-31,10,Tomato
+F0189,Shalv C.,Bihar,Bajra,Rabi,4868,4695,21,2024-07-09,5,Soybean
+F0190,Anaya G.,Gujarat,Tomato,Zaid,933,929,12,2022-02-25,6,Soybean
+F0191,Divij B.,Bihar,Groundnut,Zaid,1955,1943,60,2022-02-08,3,Cotton
+F0192,Advik M.,Uttar Pradesh,Sugarcane,Kharif,2408,2341,3,2023-04-05,5,Groundnut
+F0193,Rasha S.,Maharashtra,Bajra,Zaid,2296,2199,19,2022-04-13,8,Potato
+F0194,Farhan K.,Rajasthan,Maize,Zaid,1845,1776,25,2023-06-17,5,Wheat
+F0195,Hunar A.,Punjab,Rice,Zaid,879,693,25,2024-04-23,9,Potato
+F0196,Madhav B.,Gujarat,Tomato,Rabi,4024,3884,12,2023-08-12,10,Rice
+F0197,Krish K.,Bihar,Mustard,Kharif,4665,4519,54,2024-03-20,7,Onion
+F0198,Pranay V.,Uttar Pradesh,Maize,Kharif,952,910,24,2022-07-21,9,Soybean
+F0199,Vanya G.,Punjab,Groundnut,Rabi,2264,2152,60,2023-09-15,8,Rice
+F0200,Riya D.,Maharashtra,Sugarcane,Kharif,3316,3277,5,2023-12-17,10,Cotton
+F0201,Uthkarsh K.,Punjab,Cotton,Rabi,1318,1222,68,2022-11-25,9,Potato
+F0202,Chirag L.,Maharashtra,Rice,Kharif,4811,4805,26,2022-07-19,10,Mustard
+F0203,Nitya G.,Uttar Pradesh,Bajra,Kharif,4645,4525,22,2022-04-22,6,Potato
+F0204,Yasmin D.,Uttar Pradesh,Bajra,Rabi,3907,3808,22,2024-07-21,6,Rice
+F0205,Shayak D.,Rajasthan,Groundnut,Kharif,1204,1092,59,2023-09-08,8,Soybean
+F0206,Ishaan C.,Gujarat,Potato,Kharif,4115,4024,23,2023-04-08,7,Cotton
+F0207,Riya B.,Bihar,Wheat,Kharif,1882,1709,21,2024-01-15,6,Groundnut
+F0208,Ivan W.,Rajasthan,Sugarcane,Kharif,1109,935,5,2023-09-09,4,Wheat
+F0209,Myra B.,Rajasthan,Groundnut,Rabi,2413,2374,46,2023-02-01,9,Tomato
+F0210,Yakshit D.,Punjab,Wheat,Zaid,2674,2530,30,2023-03-26,4,Maize
+F0211,Emir K.,Rajasthan,Tomato,Zaid,2075,1996,17,2022-06-16,5,Sugarcane
+F0212,Ira B.,Maharashtra,Mustard,Zaid,2546,2525,54,2023-05-21,9,Wheat
+F0213,Urvi H.,Uttar Pradesh,Tomato,Zaid,2764,2761,16,2024-06-24,2,Tomato
+F0214,Renee G.,Punjab,Soybean,Rabi,4971,4887,41,2022-01-18,4,Cotton
+F0215,Shlok S.,Uttar Pradesh,Wheat,Kharif,919,839,30,2022-01-27,5,Maize
+F0216,Nayantara Z.,Uttar Pradesh,Wheat,Zaid,1188,1182,30,2022-11-13,1,Onion
+F0217,Gatik D.,Rajasthan,Mustard,Zaid,3019,2995,50,2023-04-19,2,Soybean
+F0218,Kanav S.,Karnataka,Bajra,Kharif,4661,4556,18,2023-08-12,8,Maize
+F0219,Tanya D.,Rajasthan,Wheat,Rabi,3724,3719,23,2022-11-20,2,Cotton
+F0220,Advik D.,Bihar,Wheat,Rabi,4104,3979,30,2023-11-23,10,Sugarcane
+F0221,Sana V.,Rajasthan,Soybean,Kharif,4330,4192,47,2023-12-23,6,Rice
+F0222,Aaryahi K.,Punjab,Soybean,Rabi,4108,3981,45,2022-04-10,8,Onion
+F0223,Faiyaz D.,Gujarat,Wheat,Rabi,3151,3142,27,2023-02-11,4,Bajra
+F0224,Devansh B.,Karnataka,Bajra,Kharif,4269,4107,26,2022-03-24,6,Maize
+F0225,Tiya K.,Punjab,Sugarcane,Zaid,1880,1719,5,2023-12-04,1,Bajra
+F0226,Emir S.,Karnataka,Mustard,Kharif,2260,2155,54,2022-09-21,3,Tomato
+F0227,Priyansh D.,Maharashtra,Groundnut,Rabi,4153,4131,53,2022-10-19,7,Mustard
+F0228,Navya L.,Madhya Pradesh,Sugarcane,Zaid,2166,2160,3,2023-06-16,3,Soybean
+F0229,Vedika T.,Gujarat,Cotton,Kharif,4496,4355,55,2022-04-27,8,Rice
+F0230,Zeeshan B.,Karnataka,Onion,Zaid,2923,2892,16,2023-02-01,9,Cotton
+F0231,Dharmajan D.,Rajasthan,Potato,Zaid,2866,2755,12,2023-07-25,8,Cotton
+F0232,Romil A.,Madhya Pradesh,Cotton,Zaid,3096,3086,56,2023-02-25,4,Cotton
+F0233,Vivaan C.,Rajasthan,Potato,Rabi,1285,1239,23,2023-04-18,1,Sugarcane
+F0234,Tiya D.,Maharashtra,Bajra,Zaid,1078,933,25,2023-05-04,8,Tomato
+F0235,Ishaan B.,Madhya Pradesh,Sugarcane,Zaid,1706,1697,5,2023-12-07,9,Tomato
+F0236,Saira A.,Bihar,Groundnut,Zaid,1722,1657,48,2023-09-17,7,Maize
+F0237,Anya K.,Punjab,Tomato,Zaid,2171,2121,12,2022-06-09,9,Tomato
+F0238,Amira K.,Karnataka,Wheat,Rabi,1272,1268,23,2022-12-26,3,Tomato
+F0239,Piya A.,Punjab,Groundnut,Rabi,4469,4371,62,2023-08-09,1,Rice
+F0240,Samar K.,Karnataka,Soybean,Kharif,3329,3303,51,2022-05-04,8,Rice
+F0241,Anvi B.,Rajasthan,Maize,Zaid,808,796,26,2024-01-03,4,Bajra
+F0242,Nirvaan R.,Uttar Pradesh,Rice,Rabi,1860,1681,31,2023-11-22,7,Onion
+F0243,Samaira H.,Uttar Pradesh,Sugarcane,Kharif,1414,1327,3,2022-07-03,10,Soybean
+F0244,Oorja W.,Uttar Pradesh,Tomato,Kharif,2893,2807,18,2022-11-05,6,Potato
+F0245,Kimaya B.,Karnataka,Bajra,Rabi,4865,4755,23,2023-03-17,3,Wheat
+F0246,Mohanlal C.,Karnataka,Cotton,Zaid,1067,920,73,2022-05-06,10,Onion
+F0247,Yashvi A.,Karnataka,Cotton,Rabi,1430,1348,68,2023-11-29,7,Tomato
+F0248,Pari G.,Madhya Pradesh,Tomato,Zaid,2725,2553,18,2023-02-03,6,Maize
+F0249,Aaina B.,Maharashtra,Onion,Rabi,2232,2044,12,2023-05-03,6,Sugarcane
+F0250,Jiya T.,Rajasthan,Wheat,Zaid,3510,3345,20,2024-03-12,10,Groundnut
+F0251,Shalv B.,Rajasthan,Sugarcane,Zaid,2525,2483,5,2023-08-29,2,Mustard
+F0252,Mahika H.,Maharashtra,Wheat,Rabi,4018,3990,22,2023-07-11,2,Onion
+F0253,Raunak S.,Gujarat,Soybean,Kharif,2122,2098,42,2023-02-15,5,Maize
+F0254,Akarsh S.,Punjab,Sugarcane,Rabi,4459,4276,5,2024-06-10,4,Mustard
+F0255,Pari B.,Bihar,Sugarcane,Kharif,4732,4539,5,2023-05-31,10,Soybean
+F0256,Adira S.,Maharashtra,Soybean,Kharif,1610,1601,40,2023-05-29,9,Maize
+F0257,Ivan S.,Rajasthan,Rice,Rabi,4813,4729,34,2023-06-28,10,Maize
+F0258,Adah S.,Madhya Pradesh,Cotton,Rabi,3221,3061,58,2024-02-12,2,Cotton
+F0259,Aradhya K.,Rajasthan,Potato,Rabi,3785,3748,16,2022-01-09,3,Cotton
+F0260,Samiha R.,Maharashtra,Potato,Kharif,4726,4610,13,2024-02-17,5,Maize
+F0261,Umang S.,Uttar Pradesh,Wheat,Kharif,4865,4735,26,2023-10-13,8,Groundnut
+F0262,Dishani B.,Maharashtra,Wheat,Kharif,1505,1410,22,2023-02-13,6,Soybean
+F0263,Riaan W.,Maharashtra,Groundnut,Rabi,1166,1041,58,2022-08-30,2,Potato
+F0264,Shanaya J.,Rajasthan,Cotton,Rabi,2624,2437,67,2023-02-26,8,Onion
+F0265,Riya K.,Bihar,Onion,Kharif,2645,2574,28,2023-03-19,10,Soybean
+F0266,Tanya K.,Bihar,Soybean,Kharif,2870,2693,45,2023-01-02,2,Tomato
+F0267,Lakshay B.,Gujarat,Sugarcane,Rabi,4860,4763,3,2022-03-22,7,Soybean
+F0268,Khushi T.,Uttar Pradesh,Cotton,Zaid,988,977,58,2022-06-20,6,Onion
+F0269,Rhea K.,Karnataka,Rice,Zaid,4692,4541,33,2023-10-04,6,Onion
+F0270,Amira D.,Punjab,Groundnut,Rabi,2642,2509,59,2023-06-05,2,Groundnut
+F0271,Tanya L.,Rajasthan,Potato,Zaid,3073,2969,18,2023-07-27,10,Tomato
+F0272,Hazel B.,Maharashtra,Groundnut,Rabi,4606,4590,46,2022-08-27,3,Soybean
+F0273,Ahana  B.,Uttar Pradesh,Sugarcane,Kharif,4150,4019,5,2022-01-17,9,Maize
+F0274,Sana B.,Maharashtra,Bajra,Kharif,2590,2570,24,2023-06-10,7,Soybean
+F0275,Amira B.,Uttar Pradesh,Rice,Rabi,3416,3385,33,2023-03-16,7,Mustard
+F0276,Samaira K.,Gujarat,Sugarcane,Kharif,909,766,3,2022-12-12,8,Cotton
+F0277,Biju B.,Uttar Pradesh,Onion,Kharif,4898,4881,12,2023-04-22,3,Cotton
+F0278,Amira H.,Bihar,Bajra,Rabi,1978,1812,26,2022-03-11,6,Wheat
+F0279,Anya D.,Uttar Pradesh,Wheat,Kharif,1878,1730,20,2022-12-08,2,Sugarcane
+F0280,Dhruv K.,Karnataka,Maize,Rabi,2803,2650,23,2023-07-05,4,Onion
+F0281,Ehsaan C.,Karnataka,Onion,Kharif,3792,3692,29,2024-01-29,4,Rice
+F0282,Tejas V.,Maharashtra,Groundnut,Kharif,3581,3475,50,2022-01-24,3,Groundnut
+F0283,Arnav B.,Punjab,Potato,Kharif,2101,1952,25,2022-06-23,6,Onion
+F0284,Ranbir K.,Madhya Pradesh,Bajra,Kharif,868,692,18,2024-07-19,1,Tomato
+F0285,Hunar T.,Rajasthan,Groundnut,Zaid,3720,3641,55,2022-01-23,1,Sugarcane
+F0286,Veer B.,Punjab,Bajra,Zaid,4626,4511,25,2022-08-21,10,Cotton
+F0287,Arnav S.,Rajasthan,Tomato,Rabi,4685,4609,8,2024-03-05,1,Rice
+F0288,Zoya A.,Madhya Pradesh,Mustard,Zaid,1417,1417,60,2023-04-07,4,Bajra
+F0289,Kaira K.,Gujarat,Soybean,Rabi,2811,2659,43,2023-04-03,10,Cotton
+F0290,Pihu B.,Gujarat,Mustard,Zaid,1992,1931,49,2022-11-13,8,Bajra
+F0291,Saksham T.,Bihar,Tomato,Kharif,4533,4480,19,2022-09-20,3,Groundnut
+F0292,Zoya C.,Karnataka,Maize,Kharif,2953,2775,24,2024-02-23,10,Maize
+F0293,Hansh S.,Bihar,Bajra,Kharif,1331,1238,22,2022-02-15,6,Tomato
+F0294,Keya B.,Gujarat,Soybean,Rabi,4658,4565,49,2023-03-08,2,Groundnut
+F0295,Misha K.,Uttar Pradesh,Wheat,Kharif,2617,2588,29,2023-09-22,4,Onion
+F0296,Vardaniya B.,Punjab,Sugarcane,Zaid,934,896,3,2022-07-26,3,Soybean
+F0297,Chirag G.,Karnataka,Groundnut,Kharif,1342,1279,51,2023-10-25,5,Bajra
+F0298,Vanya R.,Maharashtra,Soybean,Kharif,2666,2555,40,2023-03-24,10,Potato
+F0299,Ahana  R.,Gujarat,Onion,Kharif,2204,2197,16,2022-09-20,9,Mustard
+F0300,Divij R.,Gujarat,Tomato,Kharif,2359,2190,20,2023-05-23,8,Tomato
+F0301,Veer S.,Madhya Pradesh,Onion,Zaid,2058,1896,26,2024-01-31,9,Maize
+F0302,Sahil K.,Punjab,Rice,Rabi,3198,3098,32,2023-03-23,5,Mustard
+F0303,Pranay V.,Gujarat,Bajra,Zaid,3474,3468,20,2023-11-14,2,Groundnut
+F0304,Dhanuk R.,Karnataka,Potato,Kharif,3498,3394,19,2023-04-04,10,Rice
+F0305,Anahi B.,Rajasthan,Maize,Zaid,3770,3575,24,2022-03-21,4,Wheat
+F0306,Himmat S.,Madhya Pradesh,Cotton,Rabi,1138,995,65,2022-01-27,1,Bajra
+F0307,Shanaya K.,Rajasthan,Mustard,Zaid,4699,4557,57,2022-12-18,6,Rice
+F0308,Jayant B.,Karnataka,Groundnut,Rabi,4233,4094,60,2022-11-10,1,Potato
+F0309,Dhanuk M.,Uttar Pradesh,Bajra,Rabi,1978,1934,26,2022-12-09,4,Mustard
+F0310,Pari M.,Madhya Pradesh,Potato,Rabi,2014,1873,12,2023-02-04,10,Rice
+F0311,Lakshay B.,Karnataka,Onion,Kharif,4018,3841,19,2023-11-16,5,Sugarcane
+F0312,Ivana B.,Uttar Pradesh,Rice,Zaid,1491,1302,34,2022-08-04,4,Bajra
+F0313,Vedika C.,Maharashtra,Wheat,Rabi,3575,3389,24,2022-01-24,8,Tomato
+F0314,Sana C.,Rajasthan,Potato,Rabi,1234,1108,17,2023-07-14,4,Tomato
+F0315,Indrans K.,Uttar Pradesh,Bajra,Rabi,3028,3027,19,2024-03-06,5,Mustard
+F0316,Khushi T.,Rajasthan,Wheat,Rabi,4030,3920,21,2024-03-23,10,Sugarcane
+F0317,Ishita W.,Maharashtra,Potato,Kharif,2631,2496,17,2022-07-21,7,Rice
+F0318,Aayush H.,Gujarat,Rice,Zaid,1566,1535,35,2022-12-21,1,Mustard
+F0319,Shaan M.,Maharashtra,Rice,Zaid,3584,3417,35,2023-07-26,6,Sugarcane
+F0320,Dhanuk S.,Punjab,Bajra,Rabi,3175,3125,19,2023-03-18,8,Onion
+F0321,Zaina L.,Maharashtra,Soybean,Kharif,1040,887,51,2022-08-26,1,Groundnut
+F0322,Nirvaan G.,Punjab,Onion,Rabi,4438,4332,10,2024-02-20,4,Soybean
+F0323,Vedika D.,Bihar,Wheat,Zaid,1103,1033,27,2023-07-21,10,Tomato
+F0324,Tara D.,Uttar Pradesh,Onion,Rabi,1983,1855,23,2022-06-27,10,Rice
+F0325,Himmat K.,Punjab,Rice,Kharif,2179,2045,29,2024-04-03,9,Wheat
+F0326,Armaan J.,Rajasthan,Onion,Rabi,2336,2277,15,2024-03-04,10,Tomato
+F0327,Adira K.,Karnataka,Bajra,Rabi,2284,2229,18,2024-07-17,1,Cotton
+F0328,Riaan S.,Madhya Pradesh,Potato,Kharif,4934,4900,22,2024-05-29,2,Onion
+F0329,Badal B.,Rajasthan,Onion,Rabi,1372,1318,29,2023-04-27,7,Sugarcane
+F0330,Kanav T.,Madhya Pradesh,Onion,Zaid,3167,2989,16,2024-03-04,1,Cotton
+F0331,Jivika M.,Bihar,Cotton,Rabi,1413,1307,66,2024-03-30,3,Rice
+F0332,Trisha A.,Gujarat,Bajra,Zaid,1046,942,19,2023-09-11,4,Bajra
+F0333,Sara T.,Maharashtra,Tomato,Kharif,1044,903,9,2023-08-02,2,Wheat
+F0334,Armaan G.,Karnataka,Mustard,Zaid,2644,2549,45,2024-02-06,8,Groundnut
+F0335,Heer K.,Bihar,Onion,Rabi,4335,4238,21,2024-05-11,8,Soybean
+F0336,Oorja R.,Rajasthan,Cotton,Kharif,2438,2322,59,2023-08-13,8,Onion
+F0337,Abram M.,Maharashtra,Maize,Rabi,4541,4506,26,2023-09-05,1,Mustard
+F0338,Purab S.,Maharashtra,Mustard,Rabi,4058,3874,53,2022-03-11,1,Mustard
+F0339,Neysa B.,Maharashtra,Mustard,Zaid,2257,2228,54,2024-05-06,2,Maize
+F0340,Chirag B.,Maharashtra,Groundnut,Zaid,1114,1008,49,2023-03-19,2,Rice
+F0341,Ishita B.,Uttar Pradesh,Onion,Rabi,1237,1055,14,2023-01-09,7,Onion
+F0342,Ehsaan J.,Punjab,Cotton,Rabi,1840,1759,68,2023-10-04,2,Bajra
+F0343,Sahil B.,Uttar Pradesh,Cotton,Kharif,1134,999,71,2022-12-30,6,Groundnut
+F0344,Inaaya  S.,Bihar,Wheat,Zaid,1406,1363,20,2023-03-01,5,Groundnut
+F0345,Hazel S.,Madhya Pradesh,Rice,Zaid,1060,1029,32,2022-09-12,8,Onion
+F0346,Hiran T.,Bihar,Maize,Kharif,1321,1286,18,2023-01-19,6,Mustard
+F0347,Mamooty M.,Punjab,Soybean,Kharif,1284,1275,46,2022-10-14,5,Rice
+F0348,Ira M.,Maharashtra,Groundnut,Rabi,3940,3782,46,2022-04-02,1,Tomato
+F0349,Renee Z.,Uttar Pradesh,Cotton,Rabi,1345,1184,64,2024-05-16,4,Maize
+F0350,Pranay S.,Bihar,Onion,Zaid,2134,1936,16,2022-08-15,9,Soybean
+F0351,Kashvi B.,Rajasthan,Soybean,Kharif,3079,2968,49,2023-12-29,4,Sugarcane
+F0352,Divij D.,Karnataka,Groundnut,Rabi,2510,2478,57,2023-02-03,10,Wheat
+F0353,Dharmajan B.,Maharashtra,Soybean,Zaid,1329,1296,47,2023-04-04,1,Wheat
+F0354,Biju S.,Gujarat,Soybean,Kharif,2781,2595,50,2023-03-28,9,Wheat
+F0355,Uthkarsh D.,Bihar,Maize,Zaid,1828,1634,20,2023-09-28,10,Wheat
+F0356,Eva K.,Uttar Pradesh,Onion,Kharif,3346,3241,26,2022-10-16,7,Cotton
+F0357,Vritika R.,Maharashtra,Soybean,Zaid,2668,2639,41,2022-03-09,4,Rice
+F0358,Mamooty A.,Punjab,Groundnut,Zaid,2223,2172,46,2022-05-23,7,Bajra
+F0359,Onkar D.,Karnataka,Cotton,Zaid,1133,1133,57,2022-02-16,10,Soybean
+F0360,Dhanuk B.,Rajasthan,Cotton,Kharif,4041,3882,67,2024-04-04,8,Onion
+F0361,Zain S.,Uttar Pradesh,Soybean,Rabi,4203,4172,55,2022-10-27,10,Bajra
+F0362,Anay B.,Bihar,Sugarcane,Zaid,1932,1926,3,2023-09-20,7,Bajra
+F0363,Nakul B.,Bihar,Mustard,Zaid,3241,3090,49,2024-02-05,8,Cotton
+F0364,Zeeshan B.,Uttar Pradesh,Bajra,Kharif,1598,1591,19,2022-08-10,4,Rice
+F0365,Baiju T.,Maharashtra,Sugarcane,Zaid,2875,2724,4,2024-07-20,8,Groundnut
+F0366,Nishith C.,Punjab,Potato,Rabi,938,781,16,2022-12-18,1,Tomato
+F0367,Eva S.,Punjab,Bajra,Kharif,1348,1245,20,2024-06-15,1,Sugarcane
+F0368,Kismat T.,Maharashtra,Rice,Rabi,943,895,33,2023-05-01,1,Cotton
+F0369,Nirvi B.,Uttar Pradesh,Potato,Zaid,826,644,24,2024-03-31,4,Onion
+F0370,Amira R.,Madhya Pradesh,Mustard,Rabi,1115,1027,58,2022-05-19,7,Groundnut
+F0371,Nirvi D.,Punjab,Maize,Kharif,3931,3871,26,2023-04-10,1,Soybean
+F0372,Gatik C.,Maharashtra,Wheat,Kharif,1957,1767,20,2022-03-16,1,Rice
+F0373,Raghav S.,Punjab,Potato,Zaid,1564,1486,23,2022-10-16,10,Bajra
+F0374,Dharmajan V.,Bihar,Groundnut,Rabi,1414,1314,48,2023-06-03,4,Onion
+F0375,Tejas T.,Madhya Pradesh,Groundnut,Zaid,2856,2766,51,2024-03-26,4,Mustard
+F0376,Jayesh G.,Maharashtra,Soybean,Kharif,2849,2726,49,2022-03-02,7,Groundnut
+F0377,Ranbir J.,Rajasthan,Mustard,Rabi,2505,2429,47,2024-03-19,10,Tomato
+F0378,Navya V.,Madhya Pradesh,Soybean,Zaid,1763,1629,40,2024-01-20,1,Maize
+F0379,Kimaya S.,Bihar,Bajra,Zaid,937,746,23,2023-09-13,2,Soybean
+F0380,Kaira D.,Uttar Pradesh,Potato,Kharif,3566,3471,14,2024-01-25,6,Potato
+F0381,Hunar T.,Bihar,Soybean,Kharif,4440,4424,51,2022-07-29,9,Soybean
+F0382,Ira M.,Uttar Pradesh,Rice,Rabi,1490,1299,25,2023-04-29,4,Wheat
+F0383,Nishith D.,Gujarat,Soybean,Kharif,3214,3040,49,2022-07-17,5,Wheat
+F0384,Hridaan D.,Uttar Pradesh,Bajra,Rabi,2849,2660,23,2022-04-04,5,Soybean
+F0385,Prisha R.,Madhya Pradesh,Tomato,Zaid,2961,2779,19,2022-01-26,4,Groundnut
+F0386,Nitya S.,Rajasthan,Sugarcane,Zaid,4405,4327,5,2022-01-03,3,Wheat
+F0387,Nayantara B.,Madhya Pradesh,Potato,Zaid,922,858,17,2024-04-10,9,Potato
+F0388,Madhup W.,Madhya Pradesh,Groundnut,Rabi,3928,3736,49,2024-04-13,2,Bajra
+F0389,Nitara M.,Uttar Pradesh,Potato,Zaid,2926,2806,22,2022-06-27,9,Potato
+F0390,Eva K.,Gujarat,Cotton,Kharif,3466,3297,66,2024-02-03,9,Wheat
+F0391,Devansh D.,Rajasthan,Maize,Kharif,1649,1645,24,2022-05-25,8,Maize
+F0392,Divit T.,Rajasthan,Mustard,Rabi,1769,1683,59,2023-02-09,8,Cotton
+F0393,Advika K.,Bihar,Rice,Rabi,1790,1657,29,2023-10-04,7,Cotton
+F0394,Zeeshan K.,Rajasthan,Bajra,Kharif,3354,3230,22,2022-05-16,3,Maize
+F0395,Ela G.,Maharashtra,Mustard,Rabi,2536,2507,56,2023-04-25,8,Tomato
+F0396,Indranil D.,Madhya Pradesh,Mustard,Kharif,2774,2716,59,2022-11-05,10,Groundnut
+F0397,Anahi B.,Maharashtra,Wheat,Rabi,2152,2036,20,2024-02-01,8,Cotton
+F0398,Aaina T.,Punjab,Soybean,Rabi,2394,2298,44,2024-04-04,2,Soybean
+F0399,Kavya W.,Madhya Pradesh,Bajra,Zaid,2169,2062,20,2024-03-19,4,Rice
+F0400,Kiara B.,Uttar Pradesh,Maize,Zaid,985,938,26,2024-06-14,4,Potato
+F0401,Kiaan R.,Uttar Pradesh,Sugarcane,Rabi,3667,3573,3,2024-05-16,9,Mustard
+F0402,Ahana  M.,Gujarat,Tomato,Kharif,1836,1818,13,2022-02-16,2,Wheat
+F0403,Kavya G.,Punjab,Sugarcane,Rabi,3118,2918,5,2024-04-26,1,Bajra
+F0404,Eva S.,Gujarat,Rice,Zaid,2326,2312,25,2022-12-19,10,Groundnut
+F0405,Krish B.,Uttar Pradesh,Onion,Kharif,4871,4672,17,2024-01-24,6,Soybean
+F0406,Taran C.,Maharashtra,Groundnut,Rabi,1677,1560,45,2023-11-22,5,Sugarcane
+F0407,Mishti D.,Maharashtra,Onion,Zaid,3098,3034,29,2024-04-07,1,Groundnut
+F0408,Vardaniya S.,Karnataka,Wheat,Zaid,4901,4730,29,2022-10-16,4,Mustard
+F0409,Devansh S.,Karnataka,Potato,Rabi,1826,1690,24,2022-08-29,3,Maize
+F0410,Vaibhav G.,Karnataka,Groundnut,Kharif,2953,2802,51,2023-04-23,4,Potato
+F0411,Myra H.,Gujarat,Rice,Rabi,806,787,29,2023-09-09,8,Onion
+F0412,Zoya S.,Bihar,Rice,Zaid,1326,1276,34,2023-08-03,7,Sugarcane
+F0413,Rati K.,Gujarat,Wheat,Zaid,1835,1754,24,2024-05-03,1,Tomato
+F0414,Kartik G.,Karnataka,Soybean,Kharif,3124,2992,47,2022-07-11,3,Maize
+F0415,Heer G.,Punjab,Mustard,Kharif,1089,1052,52,2022-08-08,2,Groundnut
+F0416,Chirag D.,Karnataka,Maize,Zaid,2115,2055,23,2023-08-28,1,Groundnut
+F0417,Urvi J.,Punjab,Cotton,Zaid,4287,4158,71,2023-03-11,2,Wheat
+F0418,Indrajit K.,Gujarat,Potato,Kharif,2368,2267,15,2023-05-01,10,Mustard
+F0419,Raghav B.,Rajasthan,Cotton,Rabi,897,801,64,2022-07-03,10,Potato
+F0420,Nirvaan R.,Punjab,Mustard,Kharif,2085,1994,52,2023-12-20,3,Onion
+F0421,Akarsh S.,Gujarat,Groundnut,Zaid,859,829,47,2023-02-05,4,Tomato
+F0422,Aarush R.,Rajasthan,Onion,Kharif,4090,4021,26,2022-07-01,4,Maize
+F0423,Himmat B.,Gujarat,Onion,Zaid,1705,1539,18,2023-11-07,8,Groundnut
+F0424,Dharmajan G.,Rajasthan,Cotton,Zaid,2047,1988,71,2022-08-07,9,Sugarcane
+F0425,Hazel V.,Punjab,Cotton,Rabi,1171,1140,58,2022-10-13,4,Tomato
+F0426,Mohanlal S.,Gujarat,Groundnut,Rabi,2727,2575,64,2023-12-19,8,Potato
+F0427,Anahita K.,Gujarat,Wheat,Zaid,2901,2725,21,2024-02-23,10,Wheat
+F0428,Saksham B.,Punjab,Sugarcane,Kharif,4681,4607,4,2023-07-10,3,Groundnut
+F0429,Dhruv Y.,Punjab,Potato,Zaid,3272,3158,13,2022-04-06,4,Bajra
+F0430,Vidur B.,Punjab,Groundnut,Rabi,3886,3846,62,2023-01-15,1,Maize
+F0431,Seher D.,Bihar,Bajra,Rabi,4889,4747,24,2023-05-21,10,Sugarcane
+F0432,Sara T.,Rajasthan,Rice,Rabi,2991,2970,35,2022-10-14,6,Groundnut
+F0433,Reyansh S.,Gujarat,Sugarcane,Rabi,2179,2136,4,2022-08-05,2,Soybean
+F0434,Kabir T.,Uttar Pradesh,Wheat,Rabi,4985,4947,29,2023-01-14,10,Sugarcane
+F0435,Vivaan D.,Bihar,Bajra,Rabi,1081,993,22,2023-11-12,9,Soybean
+F0436,Siya S.,Punjab,Groundnut,Zaid,3668,3561,47,2023-01-13,10,Maize
+F0437,Vidur B.,Gujarat,Soybean,Kharif,2334,2165,52,2023-04-22,10,Tomato
+F0438,Veer G.,Karnataka,Soybean,Zaid,3125,3073,45,2023-06-17,5,Soybean
+F0439,Zaina R.,Gujarat,Bajra,Rabi,4570,4467,25,2022-07-16,10,Onion
+F0440,Ranbir B.,Madhya Pradesh,Maize,Kharif,2508,2500,28,2022-07-30,1,Wheat
+F0441,Nishith G.,Bihar,Maize,Kharif,2280,2123,27,2024-04-11,8,Potato
+F0442,Raghav K.,Uttar Pradesh,Mustard,Zaid,4161,4159,47,2022-11-19,1,Potato
+F0443,Neelofar K.,Gujarat,Maize,Zaid,2167,2058,18,2024-07-19,2,Maize
+F0444,Tarini D.,Punjab,Rice,Kharif,1023,866,34,2022-08-18,6,Bajra
+F0445,Priyansh S.,Gujarat,Mustard,Rabi,4131,4098,57,2023-07-10,1,Onion
+F0446,Ritvik S.,Uttar Pradesh,Cotton,Zaid,3329,3329,57,2023-12-21,2,Sugarcane
+F0447,Nehmat B.,Maharashtra,Maize,Rabi,908,871,25,2022-10-30,1,Sugarcane
+F0448,Kartik A.,Maharashtra,Tomato,Rabi,4871,4676,18,2022-12-10,8,Maize
+F0449,Miraya C.,Punjab,Maize,Rabi,3161,3115,22,2022-02-16,4,Mustard
+F0450,Oorja K.,Madhya Pradesh,Wheat,Kharif,4063,3896,23,2024-04-01,2,Mustard
+F0451,Pari S.,Punjab,Bajra,Rabi,1219,1154,22,2022-03-17,6,Sugarcane
+F0452,Vidur S.,Karnataka,Bajra,Zaid,4713,4515,25,2024-02-22,10,Sugarcane
+F0453,Veer B.,Bihar,Cotton,Rabi,3231,3086,58,2022-09-06,10,Wheat
+F0454,Sara H.,Maharashtra,Cotton,Zaid,2430,2242,64,2023-03-11,9,Soybean
+F0455,Lagan R.,Bihar,Groundnut,Rabi,4633,4519,63,2023-05-23,10,Soybean
+F0456,Shaan S.,Karnataka,Soybean,Zaid,3089,2993,52,2022-11-08,10,Wheat
+F0457,Hazel V.,Punjab,Mustard,Kharif,1197,1032,54,2023-04-09,1,Maize
+F0458,Vanya D.,Uttar Pradesh,Soybean,Zaid,2435,2277,43,2023-11-23,2,Mustard
+F0459,Zain A.,Madhya Pradesh,Wheat,Rabi,4937,4770,30,2023-06-22,5,Cotton
+F0460,Nitya C.,Karnataka,Bajra,Rabi,4833,4683,26,2022-03-19,4,Soybean
+F0461,Jiya C.,Uttar Pradesh,Groundnut,Zaid,3789,3761,48,2024-02-14,10,Potato
+F0462,Aaryahi R.,Gujarat,Tomato,Zaid,1148,987,17,2022-01-21,5,Potato
+F0463,Madhav B.,Gujarat,Maize,Zaid,3988,3910,24,2023-02-16,10,Bajra
+F0464,Hazel K.,Karnataka,Maize,Kharif,2004,1822,19,2022-05-25,10,Soybean
+F0465,Riaan T.,Karnataka,Wheat,Zaid,3525,3466,26,2023-03-07,6,Rice
+F0466,Zoya S.,Bihar,Tomato,Kharif,3756,3566,20,2022-12-19,1,Groundnut
+F0467,Drishya B.,Maharashtra,Sugarcane,Rabi,3146,2970,4,2022-12-26,1,Mustard
+F0468,Dishani B.,Punjab,Tomato,Zaid,1120,935,11,2022-09-04,3,Cotton
+F0469,Emir G.,Karnataka,Cotton,Zaid,918,841,69,2023-09-06,1,Bajra
+F0470,Jiya R.,Karnataka,Wheat,Zaid,3526,3398,29,2022-02-09,9,Potato
+F0471,Aarav C.,Maharashtra,Bajra,Rabi,4665,4642,19,2024-07-31,1,Bajra
+F0472,Abram S.,Bihar,Bajra,Rabi,828,653,21,2022-09-29,9,Wheat
+F0473,Dishani M.,Rajasthan,Soybean,Kharif,2714,2713,48,2024-05-16,7,Soybean
+F0474,Rania D.,Bihar,Rice,Rabi,3089,2931,30,2023-10-19,1,Potato
+F0475,Aayush M.,Madhya Pradesh,Maize,Kharif,2916,2835,19,2022-08-19,8,Bajra
+F0476,Sahil S.,Maharashtra,Mustard,Kharif,2623,2574,60,2022-10-06,5,Tomato
+F0477,Ritvik V.,Karnataka,Groundnut,Zaid,4612,4420,51,2022-03-11,4,Soybean
+F0478,Indrajit C.,Uttar Pradesh,Maize,Rabi,3695,3643,22,2022-08-23,10,Maize
+F0479,Saira B.,Bihar,Potato,Rabi,2041,1954,23,2023-05-04,4,Rice
+F0480,Akarsh M.,Maharashtra,Cotton,Kharif,1649,1455,60,2022-01-07,8,Groundnut
+F0481,Mishti R.,Madhya Pradesh,Tomato,Zaid,2592,2474,17,2024-06-26,3,Potato
+F0482,Inaaya  S.,Maharashtra,Onion,Kharif,1514,1340,25,2023-07-15,7,Bajra
+F0483,Akarsh S.,Bihar,Soybean,Rabi,3303,3111,47,2022-05-06,7,Sugarcane
+F0484,Anaya D.,Uttar Pradesh,Tomato,Rabi,2448,2389,11,2024-03-15,1,Cotton
+F0485,Diya M.,Bihar,Onion,Zaid,4113,3966,12,2024-06-06,3,Tomato
+F0486,Nitya B.,Rajasthan,Rice,Zaid,1449,1412,26,2022-12-24,7,Wheat
+F0487,Ayesha K.,Maharashtra,Soybean,Rabi,2063,2057,53,2022-05-28,8,Cotton
+F0488,Nitara B.,Gujarat,Cotton,Rabi,3194,3191,65,2024-01-08,1,Potato
+F0489,Adah D.,Maharashtra,Groundnut,Kharif,1475,1414,45,2023-07-09,8,Groundnut
+F0490,Pihu D.,Rajasthan,Tomato,Kharif,4889,4710,12,2023-03-05,6,Tomato
+F0491,Indrans S.,Punjab,Groundnut,Zaid,4221,4211,58,2022-07-07,7,Potato
+F0492,Zaina H.,Madhya Pradesh,Onion,Zaid,1009,836,27,2024-02-26,10,Mustard
+F0493,Raghav S.,Madhya Pradesh,Soybean,Kharif,3971,3800,40,2023-03-03,2,Maize
+F0494,Anahita S.,Punjab,Maize,Kharif,1293,1288,26,2023-01-02,10,Rice
+F0495,Saira W.,Maharashtra,Rice,Rabi,1357,1167,34,2024-04-30,3,Groundnut
+F0496,Anahi M.,Madhya Pradesh,Cotton,Kharif,2385,2302,71,2023-06-18,8,Cotton
+F0497,Amani R.,Madhya Pradesh,Potato,Kharif,3702,3508,15,2022-01-31,6,Onion
+F0498,Madhav D.,Bihar,Sugarcane,Zaid,4732,4643,4,2022-11-11,4,Wheat
+F0499,Badal S.,Uttar Pradesh,Potato,Rabi,4488,4376,20,2024-04-05,10,Sugarcane
+F0500,Saksham S.,Punjab,Rice,Kharif,3142,3083,33,2024-04-01,1,Mustard
+F0501,Eshani B.,Maharashtra,Groundnut,Kharif,2220,2106,52,2023-01-31,6,Cotton
+F0502,Yuvraj  W.,Gujarat,Bajra,Kharif,3425,3373,18,2022-11-05,8,Rice
+F0503,Lakshit S.,Gujarat,Bajra,Rabi,2805,2630,18,2023-01-24,2,Groundnut
+F0504,Rohan G.,Bihar,Potato,Zaid,3309,3202,23,2022-05-03,8,Cotton
+F0505,Nayantara D.,Punjab,Cotton,Zaid,3888,3801,73,2024-03-10,7,Sugarcane
+F0506,Navya T.,Rajasthan,Soybean,Kharif,4564,4396,54,2023-11-10,8,Tomato
+F0507,Piya C.,Karnataka,Bajra,Kharif,2754,2588,20,2022-01-16,7,Rice
+F0508,Dharmajan S.,Rajasthan,Maize,Kharif,3790,3707,18,2022-01-11,6,Maize
+F0509,Samarth G.,Madhya Pradesh,Mustard,Zaid,1898,1763,45,2022-08-16,9,Potato
+F0510,Eva S.,Bihar,Onion,Zaid,2771,2637,18,2024-03-08,10,Tomato
+F0511,Vritika S.,Uttar Pradesh,Wheat,Zaid,1407,1233,25,2024-02-19,3,Groundnut
+F0512,Yakshit C.,Rajasthan,Maize,Zaid,1600,1465,19,2024-06-26,10,Maize
+F0513,Samaira A.,Gujarat,Wheat,Zaid,872,797,26,2022-03-15,1,Sugarcane
+F0514,Pari S.,Rajasthan,Potato,Kharif,4645,4467,20,2023-05-22,5,Cotton
+F0515,Khushi M.,Bihar,Onion,Zaid,4950,4807,11,2023-12-20,6,Wheat
+F0516,Jiya C.,Madhya Pradesh,Wheat,Rabi,1496,1352,20,2023-02-16,10,Maize
+F0517,Ayesha S.,Madhya Pradesh,Wheat,Kharif,4268,4073,26,2023-01-20,6,Mustard
+F0518,Ivan S.,Madhya Pradesh,Soybean,Rabi,3662,3598,52,2022-10-01,3,Wheat
+F0519,Lakshit S.,Uttar Pradesh,Tomato,Kharif,4475,4469,10,2024-01-02,3,Potato
+F0520,Saanvi D.,Gujarat,Mustard,Rabi,2731,2605,56,2024-02-07,2,Groundnut
+F0521,Samaira C.,Madhya Pradesh,Potato,Zaid,2108,2068,17,2022-11-24,2,Rice
+F0522,Uthkarsh G.,Gujarat,Potato,Zaid,4253,4094,23,2023-05-14,7,Mustard
+F0523,Abram U.,Gujarat,Bajra,Rabi,2372,2225,21,2023-12-03,10,Potato
+F0524,Priyansh S.,Punjab,Onion,Rabi,4520,4472,14,2022-07-03,7,Potato
+F0525,Kiara S.,Maharashtra,Bajra,Rabi,4132,3982,21,2023-11-01,1,Soybean
+F0526,Fateh K.,Rajasthan,Cotton,Kharif,3416,3219,70,2024-06-08,3,Cotton
+F0527,Diya M.,Rajasthan,Groundnut,Kharif,2330,2221,50,2022-09-18,1,Wheat
+F0528,Oorja S.,Uttar Pradesh,Onion,Kharif,2482,2465,15,2022-01-14,2,Soybean
+F0529,Aarav G.,Punjab,Bajra,Zaid,1744,1561,18,2024-07-21,4,Bajra
+F0530,Rati T.,Gujarat,Soybean,Rabi,4323,4231,41,2022-04-06,5,Rice
+F0531,Anya S.,Madhya Pradesh,Bajra,Rabi,3858,3748,26,2023-03-30,10,Wheat
+F0532,Kaira D.,Karnataka,Potato,Rabi,3840,3704,12,2023-04-21,10,Wheat
+F0533,Inaaya  M.,Karnataka,Tomato,Rabi,1138,1099,11,2024-01-27,5,Cotton
+F0534,Samar K.,Punjab,Soybean,Kharif,4975,4897,43,2022-10-06,6,Mustard
+F0535,Chirag R.,Madhya Pradesh,Rice,Rabi,3539,3372,30,2022-04-30,5,Onion
+F0536,Prisha I.,Uttar Pradesh,Groundnut,Rabi,4890,4878,46,2022-11-16,7,Cotton
+F0537,Adah K.,Gujarat,Maize,Kharif,2905,2872,25,2022-04-21,10,Groundnut
+F0538,Anaya B.,Rajasthan,Sugarcane,Zaid,1172,1018,4,2022-09-08,10,Wheat
+F0539,Umang B.,Gujarat,Groundnut,Rabi,1424,1266,61,2023-03-05,2,Cotton
+F0540,Ritvik B.,Maharashtra,Bajra,Zaid,2367,2330,20,2023-11-10,2,Cotton
+F0541,Alisha S.,Bihar,Maize,Rabi,1123,1087,24,2023-10-28,7,Onion
+F0542,Pihu C.,Karnataka,Sugarcane,Rabi,4704,4698,5,2023-04-19,9,Mustard
+F0543,Vaibhav Y.,Madhya Pradesh,Bajra,Kharif,4301,4284,25,2024-07-14,6,Bajra
+F0544,Ela K.,Gujarat,Bajra,Kharif,3969,3842,20,2022-10-01,3,Maize
+F0545,Samarth D.,Punjab,Groundnut,Zaid,4731,4671,59,2022-09-14,3,Onion
+F0546,Dishani L.,Karnataka,Cotton,Kharif,895,825,63,2023-03-10,8,Bajra
+F0547,Manjari C.,Maharashtra,Groundnut,Rabi,2434,2406,53,2024-04-06,5,Onion
+F0548,Zaina L.,Karnataka,Bajra,Kharif,4713,4533,24,2022-01-25,8,Bajra
+F0549,Keya B.,Gujarat,Cotton,Rabi,4075,3901,72,2022-05-15,4,Wheat
+F0550,Jivin B.,Punjab,Maize,Kharif,4458,4291,20,2022-01-02,3,Bajra
+F0551,Indranil R.,Maharashtra,Rice,Zaid,3006,2832,30,2022-02-26,9,Wheat
+F0552,Anay K.,Punjab,Bajra,Zaid,1324,1180,18,2022-05-31,2,Groundnut
+F0553,Madhup B.,Bihar,Soybean,Kharif,801,689,51,2023-09-19,10,Wheat
+F0554,Dhruv D.,Punjab,Onion,Kharif,4706,4594,28,2022-04-01,1,Cotton
+F0555,Amani S.,Bihar,Maize,Kharif,3714,3651,28,2022-03-12,8,Wheat
+F0556,Nayantara B.,Bihar,Cotton,Rabi,3079,2947,56,2022-04-23,3,Soybean
+F0557,Oorja C.,Madhya Pradesh,Soybean,Zaid,823,678,44,2022-09-04,8,Mustard
+F0558,Aradhya A.,Madhya Pradesh,Groundnut,Rabi,4900,4710,47,2023-04-22,7,Wheat
+F0559,Anaya T.,Rajasthan,Potato,Rabi,4839,4675,22,2022-08-28,4,Tomato
+F0560,Advik S.,Rajasthan,Cotton,Zaid,3852,3681,66,2024-05-29,7,Bajra
+F0561,Ishaan R.,Uttar Pradesh,Wheat,Zaid,1059,1000,25,2024-04-09,6,Mustard
+F0562,Ahana  B.,Rajasthan,Maize,Rabi,1452,1282,23,2024-01-26,2,Onion
+F0563,Prerak G.,Gujarat,Mustard,Kharif,3111,2988,58,2022-08-07,5,Potato
+F0564,Anya B.,Gujarat,Rice,Kharif,1003,865,30,2022-05-12,10,Rice
+F0565,Darshit B.,Maharashtra,Sugarcane,Rabi,4390,4258,5,2022-08-10,9,Bajra
+F0566,Sumer B.,Uttar Pradesh,Sugarcane,Zaid,2138,2076,5,2022-09-30,2,Onion
+F0567,Samiha S.,Bihar,Potato,Kharif,3373,3209,21,2023-11-15,1,Potato
+F0568,Raghav S.,Bihar,Bajra,Kharif,1208,1117,18,2022-08-26,7,Potato
+F0569,Aarush J.,Maharashtra,Potato,Kharif,4290,4200,25,2022-05-25,5,Tomato
+F0570,Anika B.,Rajasthan,Maize,Rabi,3807,3662,21,2022-01-31,4,Groundnut
+F0571,Jivika S.,Maharashtra,Onion,Kharif,2395,2361,12,2022-01-17,5,Bajra
+F0572,Kabir B.,Bihar,Potato,Rabi,4712,4578,25,2024-07-18,1,Wheat
+F0573,Eshani C.,Karnataka,Tomato,Zaid,4868,4860,13,2023-06-08,7,Mustard
+F0574,Myra W.,Karnataka,Maize,Kharif,1549,1383,19,2023-10-23,4,Groundnut
+F0575,Shray C.,Uttar Pradesh,Groundnut,Rabi,1421,1365,60,2023-11-08,7,Rice
+F0576,Tejas B.,Uttar Pradesh,Sugarcane,Rabi,3929,3759,5,2023-12-26,2,Wheat
+F0577,Hunar S.,Karnataka,Rice,Zaid,4887,4696,26,2024-07-18,7,Onion
+F0578,Sumer R.,Madhya Pradesh,Rice,Rabi,4546,4521,29,2023-04-12,1,Rice
+F0579,Indrans C.,Madhya Pradesh,Mustard,Zaid,1021,846,59,2022-05-27,9,Wheat
+F0580,Oorja B.,Karnataka,Mustard,Rabi,2556,2489,54,2022-03-09,3,Sugarcane
+F0581,Lakshay S.,Madhya Pradesh,Potato,Rabi,2192,2042,18,2022-12-28,1,Onion
+F0582,Armaan S.,Madhya Pradesh,Rice,Kharif,990,803,34,2022-10-24,9,Cotton
+F0583,Lakshit S.,Rajasthan,Sugarcane,Rabi,3665,3560,4,2023-05-05,1,Groundnut
+F0584,Samiha C.,Karnataka,Cotton,Rabi,2437,2357,66,2022-02-22,4,Wheat
+F0585,Dishani S.,Bihar,Groundnut,Zaid,1040,983,52,2024-04-19,6,Rice
+F0586,Inaaya  G.,Karnataka,Groundnut,Kharif,2859,2738,56,2023-02-18,1,Maize
+F0587,Aaryahi S.,Bihar,Cotton,Zaid,4829,4656,60,2023-03-22,2,Sugarcane
+F0588,Oorja V.,Bihar,Mustard,Kharif,2509,2431,47,2023-05-03,7,Tomato
+F0589,Heer G.,Maharashtra,Soybean,Zaid,2612,2541,41,2022-12-29,7,Tomato
+F0590,Yuvaan B.,Maharashtra,Mustard,Zaid,1521,1472,56,2023-11-15,4,Potato
+F0591,Heer J.,Uttar Pradesh,Wheat,Zaid,3100,3055,23,2022-12-04,8,Rice
+F0592,Eshani L.,Madhya Pradesh,Sugarcane,Zaid,4289,4100,4,2022-01-09,6,Cotton
+F0593,Inaaya  G.,Maharashtra,Tomato,Kharif,1207,1165,15,2023-09-26,1,Soybean
+F0594,Arhaan K.,Madhya Pradesh,Bajra,Rabi,4458,4286,18,2022-01-05,2,Maize
+F0595,Heer D.,Madhya Pradesh,Groundnut,Zaid,4688,4494,63,2022-11-14,2,Rice
+F0596,Tarini B.,Maharashtra,Cotton,Kharif,1987,1835,57,2022-04-05,2,Potato
+F0597,Madhup D.,Karnataka,Potato,Kharif,1286,1167,19,2023-12-28,5,Potato
+F0598,Kimaya S.,Gujarat,Cotton,Rabi,1399,1375,57,2023-10-08,3,Potato
+F0599,Faiyaz A.,Uttar Pradesh,Potato,Kharif,1116,957,12,2022-12-09,2,Bajra
+F0600,Shaan B.,Maharashtra,Onion,Zaid,3211,3117,17,2024-03-30,8,Potato
+F0601,Tiya K.,Rajasthan,Maize,Rabi,3687,3668,27,2022-11-02,4,Bajra
+F0602,Vidur D.,Madhya Pradesh,Maize,Zaid,2088,2064,27,2023-12-03,1,Potato
+F0603,Khushi S.,Gujarat,Onion,Rabi,4553,4475,19,2022-12-17,9,Mustard
+F0604,Siya S.,Rajasthan,Tomato,Kharif,1181,1058,15,2022-05-08,4,Tomato
+F0605,Damini G.,Gujarat,Soybean,Rabi,2256,2167,43,2023-09-20,2,Mustard
+F0606,Yuvraj  M.,Madhya Pradesh,Sugarcane,Kharif,1291,1212,3,2024-04-01,1,Groundnut
+F0607,Khushi U.,Maharashtra,Onion,Rabi,865,675,17,2024-08-01,4,Maize
+F0608,Vihaan S.,Gujarat,Rice,Kharif,1251,1127,26,2023-11-07,8,Bajra
+F0609,Pranay K.,Gujarat,Tomato,Rabi,3880,3752,20,2023-08-10,5,Potato
+F0610,Darshit M.,Madhya Pradesh,Bajra,Rabi,4737,4645,24,2022-07-23,2,Rice
+F0611,Heer S.,Madhya Pradesh,Sugarcane,Kharif,3718,3661,5,2024-04-09,5,Wheat
+F0612,Shanaya S.,Karnataka,Sugarcane,Rabi,1894,1712,4,2024-03-05,10,Rice
+F0613,Vidur B.,Punjab,Mustard,Kharif,2194,2139,53,2022-12-14,3,Wheat
+F0614,Raghav S.,Gujarat,Wheat,Rabi,2963,2945,21,2023-12-15,4,Soybean
+F0615,Samiha C.,Gujarat,Tomato,Kharif,3558,3501,11,2023-08-10,10,Mustard
+F0616,Vanya B.,Uttar Pradesh,Potato,Zaid,3610,3498,25,2023-01-16,6,Potato
+F0617,Anaya S.,Punjab,Wheat,Rabi,3867,3847,20,2023-10-25,5,Groundnut
+F0618,Umang D.,Gujarat,Maize,Zaid,2048,1911,19,2024-04-03,4,Groundnut
+F0619,Bhamini R.,Gujarat,Rice,Kharif,1927,1778,29,2022-02-23,7,Groundnut
+F0620,Ishaan A.,Uttar Pradesh,Wheat,Kharif,2147,2064,24,2024-07-28,7,Mustard
+F0621,Tanya I.,Gujarat,Tomato,Kharif,3681,3634,16,2022-09-28,1,Cotton
+F0622,Hridaan M.,Punjab,Wheat,Kharif,3542,3512,26,2023-05-24,4,Wheat
+F0623,Damini L.,Karnataka,Sugarcane,Rabi,2118,2022,5,2022-03-01,6,Tomato
+F0624,Advik B.,Uttar Pradesh,Mustard,Rabi,2630,2587,53,2023-10-12,9,Onion
+F0625,Hridaan R.,Gujarat,Bajra,Zaid,2649,2517,19,2022-10-06,5,Potato
+F0626,Biju S.,Rajasthan,Soybean,Zaid,4040,3840,41,2022-03-27,7,Maize
+F0627,Sumer T.,Gujarat,Onion,Kharif,1911,1753,14,2022-07-07,10,Groundnut
+F0628,Farhan A.,Gujarat,Groundnut,Kharif,4597,4459,51,2023-08-30,5,Tomato
+F0629,Shayak D.,Punjab,Cotton,Zaid,2490,2418,65,2022-10-08,6,Tomato
+F0630,Emir R.,Bihar,Onion,Zaid,820,774,17,2023-09-22,7,Cotton
+F0631,Bhavin B.,Maharashtra,Rice,Rabi,4583,4528,25,2024-02-09,3,Bajra
+F0632,Badal B.,Punjab,Groundnut,Kharif,2037,1949,63,2024-03-05,6,Mustard
+F0633,Divyansh R.,Rajasthan,Soybean,Kharif,890,726,50,2023-10-17,8,Wheat
+F0634,Aradhya V.,Karnataka,Sugarcane,Rabi,3507,3394,5,2024-05-02,8,Mustard
+F0635,Nirvaan D.,Madhya Pradesh,Cotton,Zaid,3757,3735,59,2024-01-09,6,Bajra
+F0636,Anay Z.,Gujarat,Rice,Kharif,2836,2709,35,2022-01-23,1,Maize
+F0637,Jhanvi L.,Rajasthan,Cotton,Zaid,4957,4868,72,2023-09-10,6,Tomato
+F0638,Shalv G.,Uttar Pradesh,Soybean,Zaid,1123,982,53,2023-12-27,9,Cotton
+F0639,Badal T.,Madhya Pradesh,Maize,Zaid,4753,4677,23,2022-03-11,10,Cotton
+F0640,Pihu B.,Karnataka,Sugarcane,Kharif,4816,4671,4,2023-12-17,2,Soybean
+F0641,Mamooty B.,Maharashtra,Onion,Kharif,4190,4079,20,2023-03-23,2,Potato
+F0642,Dhanush B.,Punjab,Sugarcane,Zaid,2040,2023,5,2022-07-26,3,Bajra
+F0643,Kismat B.,Karnataka,Wheat,Zaid,2275,2169,21,2023-08-28,2,Rice
+F0644,Zain J.,Bihar,Mustard,Rabi,4254,4102,60,2022-05-24,7,Groundnut
+F0645,Biju B.,Maharashtra,Mustard,Kharif,3448,3310,49,2023-03-16,2,Mustard
+F0646,Pranay A.,Punjab,Soybean,Zaid,1059,913,52,2023-01-19,9,Maize
+F0647,Jivin A.,Bihar,Mustard,Zaid,1783,1731,60,2024-01-28,6,Bajra
+F0648,Nishith D.,Punjab,Maize,Kharif,3651,3573,22,2023-01-29,7,Potato
+F0649,Vardaniya S.,Gujarat,Sugarcane,Kharif,3984,3947,3,2023-01-15,10,Bajra
+F0650,Shaan H.,Madhya Pradesh,Tomato,Zaid,2551,2429,20,2022-04-28,2,Bajra
+F0651,Rania S.,Karnataka,Potato,Zaid,4637,4510,24,2023-03-18,1,Mustard
+F0652,Kimaya V.,Rajasthan,Sugarcane,Zaid,1359,1254,4,2024-03-01,3,Potato
+F0653,Parinaaz C.,Rajasthan,Soybean,Kharif,2405,2371,50,2023-12-23,7,Sugarcane
+F0654,Ira B.,Punjab,Tomato,Rabi,1890,1855,12,2022-08-12,9,Soybean
+F0655,Amira B.,Maharashtra,Sugarcane,Zaid,1627,1444,5,2022-03-09,5,Mustard
+F0656,Madhup A.,Punjab,Tomato,Rabi,2935,2789,13,2022-07-26,5,Maize
+F0657,Krish S.,Rajasthan,Groundnut,Kharif,1558,1482,46,2023-02-11,5,Tomato
+F0658,Mannat K.,Karnataka,Groundnut,Kharif,1388,1360,59,2023-07-17,6,Potato
+F0659,Mehul S.,Punjab,Potato,Rabi,4000,3821,13,2022-01-25,5,Mustard
+F0660,Ela D.,Uttar Pradesh,Rice,Zaid,945,855,33,2022-06-26,3,Soybean
+F0661,Indranil S.,Bihar,Cotton,Zaid,4677,4607,73,2022-11-06,10,Soybean
+F0662,Mohanlal B.,Madhya Pradesh,Rice,Kharif,1561,1438,35,2023-01-14,3,Soybean
+F0663,Manikya W.,Madhya Pradesh,Onion,Kharif,2735,2664,22,2024-07-02,3,Groundnut
+F0664,Dishani S.,Madhya Pradesh,Tomato,Zaid,3134,3114,9,2023-11-21,1,Wheat
+F0665,Dishani T.,Maharashtra,Groundnut,Rabi,3041,3020,57,2022-02-19,9,Mustard
+F0666,Taran L.,Punjab,Wheat,Rabi,1642,1449,27,2023-04-27,3,Wheat
+F0667,Shray V.,Madhya Pradesh,Soybean,Zaid,1968,1894,40,2022-12-24,2,Rice
+F0668,Stuvan S.,Madhya Pradesh,Tomato,Zaid,809,615,13,2022-02-08,1,Maize
+F0669,Miraya S.,Rajasthan,Maize,Rabi,1795,1751,22,2022-12-08,8,Soybean
+F0670,Sana D.,Bihar,Mustard,Rabi,3444,3443,55,2024-01-22,4,Onion
+F0671,Reyansh L.,Punjab,Rice,Kharif,1231,1097,29,2023-04-27,9,Sugarcane
+F0672,Hrishita S.,Karnataka,Rice,Rabi,3523,3510,33,2022-01-04,5,Soybean
+F0673,Arhaan K.,Gujarat,Sugarcane,Zaid,3967,3841,3,2024-07-09,5,Mustard
+F0674,Pihu T.,Punjab,Bajra,Zaid,3750,3664,21,2023-03-21,6,Wheat
+F0675,Aayush K.,Gujarat,Soybean,Zaid,2378,2297,50,2022-01-27,9,Rice
+F0676,Shray D.,Maharashtra,Onion,Kharif,2237,2082,28,2024-01-09,7,Mustard
+F0677,Khushi S.,Madhya Pradesh,Rice,Zaid,1183,1023,33,2022-06-01,7,Sugarcane
+F0678,Madhup T.,Bihar,Tomato,Zaid,2555,2501,9,2022-10-10,8,Maize
+F0679,Sumer S.,Bihar,Sugarcane,Kharif,1769,1613,4,2022-04-24,8,Potato
+F0680,Mishti M.,Karnataka,Mustard,Kharif,1772,1686,57,2022-03-08,5,Potato
+F0681,Nishith R.,Madhya Pradesh,Wheat,Rabi,1115,990,21,2024-01-05,8,Sugarcane
+F0682,Aaina T.,Punjab,Soybean,Kharif,3092,2919,46,2024-03-22,6,Soybean
+F0683,Farhan M.,Gujarat,Rice,Kharif,3992,3862,31,2022-09-22,4,Maize
+F0684,Manikya S.,Rajasthan,Soybean,Kharif,802,644,47,2023-05-07,1,Maize
+F0685,Mannat A.,Rajasthan,Cotton,Rabi,3620,3544,67,2023-07-03,9,Wheat
+F0686,Anahi D.,Rajasthan,Potato,Zaid,2043,2029,24,2023-01-10,2,Bajra
+F0687,Kismat G.,Uttar Pradesh,Sugarcane,Rabi,3992,3806,3,2023-01-15,2,Tomato
+F0688,Tara R.,Punjab,Wheat,Zaid,3543,3522,26,2023-01-24,8,Mustard
+F0689,Pari K.,Bihar,Cotton,Kharif,1417,1289,63,2022-06-19,4,Onion
+F0690,Shamik B.,Maharashtra,Wheat,Kharif,3211,3190,26,2022-02-02,7,Mustard
+F0691,Ahana  M.,Madhya Pradesh,Soybean,Zaid,4331,4134,53,2023-06-19,4,Onion
+F0692,Sara D.,Maharashtra,Rice,Rabi,2455,2358,33,2022-02-13,1,Groundnut
+F0693,Shamik K.,Maharashtra,Rice,Kharif,1023,925,35,2023-04-02,9,Maize
+F0694,Inaaya  B.,Gujarat,Groundnut,Rabi,1655,1470,52,2022-01-26,7,Soybean
+F0695,Ahana  V.,Maharashtra,Tomato,Rabi,2768,2573,12,2022-11-07,6,Sugarcane
+F0696,Elakshi S.,Punjab,Cotton,Zaid,2050,1921,66,2023-05-18,1,Potato
+F0697,Mamooty S.,Karnataka,Maize,Zaid,4188,4127,19,2022-06-23,5,Cotton
+F0698,Rati A.,Gujarat,Mustard,Rabi,4477,4464,54,2024-02-11,2,Sugarcane
+F0699,Indrans K.,Bihar,Sugarcane,Rabi,2321,2214,5,2024-07-21,7,Mustard
+F0700,Sahil K.,Maharashtra,Soybean,Rabi,1125,943,51,2024-04-10,3,Bajra
+F0701,Vardaniya S.,Punjab,Groundnut,Rabi,3267,3115,50,2022-07-29,8,Sugarcane
+F0702,Ishita B.,Gujarat,Bajra,Kharif,920,769,19,2023-04-01,2,Onion
+F0703,Lakshit D.,Rajasthan,Mustard,Rabi,3317,3233,47,2023-06-12,7,Tomato
+F0704,Nehmat K.,Maharashtra,Groundnut,Kharif,1175,1048,64,2023-04-21,1,Soybean
+F0705,Nirvaan C.,Bihar,Rice,Rabi,1414,1235,26,2023-04-18,9,Wheat
+F0706,Darshit K.,Maharashtra,Bajra,Kharif,1366,1293,19,2024-03-02,10,Rice
+F0707,Shanaya G.,Rajasthan,Rice,Kharif,2252,2119,29,2023-07-21,10,Sugarcane
+F0708,Kanav K.,Rajasthan,Soybean,Zaid,3604,3477,54,2024-06-19,4,Potato
+F0709,Urvi R.,Karnataka,Onion,Kharif,2942,2763,25,2023-07-11,5,Groundnut
+F0710,Tiya S.,Uttar Pradesh,Bajra,Rabi,3676,3620,25,2023-01-09,3,Sugarcane
+F0711,Ivana D.,Punjab,Sugarcane,Kharif,3593,3498,4,2023-09-09,2,Mustard
+F0712,Eshani B.,Uttar Pradesh,Wheat,Kharif,3630,3519,29,2024-03-29,5,Tomato
+F0713,Nehmat G.,Rajasthan,Groundnut,Zaid,4864,4848,63,2023-06-30,1,Tomato
+F0714,Oorja G.,Maharashtra,Bajra,Rabi,4938,4835,26,2023-04-03,4,Soybean
+F0715,Shamik G.,Maharashtra,Wheat,Zaid,1015,828,20,2022-06-20,10,Mustard
+F0716,Ahana  Z.,Bihar,Cotton,Rabi,1435,1273,63,2024-03-10,9,Sugarcane
+F0717,Mehul S.,Maharashtra,Bajra,Kharif,1048,872,22,2023-06-25,2,Rice
+F0718,Samaira B.,Madhya Pradesh,Rice,Zaid,4550,4367,32,2023-07-10,4,Rice
+F0719,Madhav B.,Karnataka,Potato,Kharif,1733,1731,17,2023-10-31,10,Soybean
+F0720,Ira S.,Rajasthan,Sugarcane,Rabi,4373,4302,5,2022-03-16,10,Wheat
+F0721,Ranbir S.,Gujarat,Tomato,Rabi,1708,1537,11,2023-11-10,4,Rice
+F0722,Ayesha B.,Gujarat,Cotton,Rabi,4406,4368,65,2022-07-20,9,Rice
+F0723,Anay D.,Maharashtra,Potato,Kharif,2065,2016,21,2023-12-28,8,Rice
+F0724,Drishya D.,Maharashtra,Potato,Kharif,4477,4397,19,2024-06-02,6,Maize
+F0725,Rati K.,Bihar,Mustard,Zaid,1911,1789,48,2023-02-27,4,Groundnut
+F0726,Dharmajan K.,Maharashtra,Sugarcane,Kharif,3884,3774,3,2023-12-31,5,Onion
+F0727,Pranay R.,Rajasthan,Cotton,Rabi,1462,1296,64,2023-12-07,4,Rice
+F0728,Emir H.,Gujarat,Rice,Zaid,3971,3800,25,2023-03-02,3,Rice
+F0729,Rati M.,Maharashtra,Bajra,Rabi,3543,3452,20,2024-02-02,3,Rice
+F0730,Zaina R.,Rajasthan,Wheat,Zaid,4925,4856,28,2024-01-19,9,Groundnut
+F0731,Nayantara K.,Punjab,Rice,Zaid,943,906,27,2023-12-30,10,Maize
+F0732,Anya S.,Bihar,Maize,Kharif,2360,2351,25,2023-04-23,10,Sugarcane
+F0733,Kartik M.,Bihar,Maize,Zaid,4516,4444,28,2023-06-03,3,Tomato
+F0734,Romil B.,Bihar,Onion,Rabi,3655,3485,19,2023-03-01,5,Onion
+F0735,Yuvraj  K.,Punjab,Mustard,Zaid,3785,3785,59,2024-04-08,2,Wheat
+F0736,Siya G.,Karnataka,Mustard,Kharif,4774,4700,50,2023-08-31,6,Maize
+F0737,Saksham D.,Uttar Pradesh,Sugarcane,Kharif,2810,2644,4,2023-11-23,2,Cotton
+F0738,Armaan A.,Madhya Pradesh,Wheat,Kharif,1635,1630,27,2023-05-13,8,Tomato
+F0739,Yuvraj  B.,Punjab,Mustard,Kharif,3723,3657,60,2022-03-23,2,Mustard
+F0740,Elakshi S.,Gujarat,Cotton,Kharif,4846,4666,72,2024-07-19,7,Onion
+F0741,Lakshit G.,Maharashtra,Groundnut,Zaid,2759,2584,51,2023-09-14,3,Cotton
+F0742,Saira B.,Uttar Pradesh,Onion,Zaid,3736,3538,13,2022-05-21,10,Cotton
+F0743,Kabir B.,Madhya Pradesh,Rice,Kharif,3642,3465,29,2024-07-19,4,Soybean
+F0744,Kaira T.,Maharashtra,Potato,Zaid,3214,3021,21,2022-08-29,3,Potato
+F0745,Neelofar G.,Karnataka,Rice,Rabi,4983,4965,27,2023-02-03,8,Sugarcane
+F0746,Misha R.,Maharashtra,Wheat,Kharif,994,901,29,2022-09-24,2,Tomato
+F0747,Farhan C.,Bihar,Sugarcane,Zaid,1378,1274,3,2022-11-25,10,Maize
+F0748,Himmat R.,Madhya Pradesh,Mustard,Kharif,1099,1003,55,2022-02-12,3,Mustard
+F0749,Vedika C.,Maharashtra,Mustard,Kharif,3851,3814,52,2024-03-31,8,Sugarcane
+F0750,Shlok R.,Gujarat,Maize,Kharif,2339,2253,27,2024-07-24,5,Wheat
+F0751,Vanya R.,Rajasthan,Maize,Rabi,4617,4548,22,2022-08-21,10,Onion
+F0752,Pihu C.,Gujarat,Onion,Rabi,1845,1840,11,2022-07-12,5,Potato
+F0753,Sahil K.,Bihar,Wheat,Kharif,3623,3489,26,2022-02-17,6,Wheat
+F0754,Mamooty B.,Uttar Pradesh,Sugarcane,Zaid,4624,4472,4,2023-10-31,8,Bajra
+F0755,Khushi M.,Karnataka,Groundnut,Kharif,3277,3090,64,2024-01-01,7,Sugarcane
+F0756,Aayush B.,Gujarat,Maize,Kharif,808,765,24,2024-02-07,3,Maize
+F0757,Samaira T.,Bihar,Cotton,Kharif,3031,2926,71,2024-01-14,2,Sugarcane
+F0758,Charvi K.,Punjab,Soybean,Rabi,1804,1616,45,2023-06-20,3,Onion
+F0759,Adah S.,Madhya Pradesh,Bajra,Rabi,2993,2794,18,2024-04-04,3,Groundnut
+F0760,Zoya V.,Bihar,Groundnut,Kharif,4114,4100,49,2024-02-09,5,Tomato
+F0761,Saanvi S.,Uttar Pradesh,Cotton,Zaid,3219,3075,59,2022-02-01,4,Tomato
+F0762,Khushi C.,Maharashtra,Rice,Zaid,1523,1425,26,2024-02-22,1,Cotton
+F0763,Tara C.,Maharashtra,Groundnut,Kharif,1136,995,59,2023-04-08,4,Bajra
+F0764,Vanya C.,Rajasthan,Tomato,Zaid,4297,4120,8,2024-01-29,4,Bajra
+F0765,Darshit S.,Gujarat,Bajra,Kharif,3105,3041,26,2023-03-03,5,Bajra
+F0766,Vritika D.,Karnataka,Sugarcane,Rabi,4215,4073,3,2024-06-17,6,Mustard
+F0767,Krish E.,Uttar Pradesh,Groundnut,Kharif,2783,2634,50,2023-05-11,2,Groundnut
+F0768,Amani K.,Madhya Pradesh,Mustard,Zaid,4624,4618,45,2023-06-05,6,Groundnut
+F0769,Samiha B.,Madhya Pradesh,Groundnut,Zaid,1890,1870,58,2024-06-19,9,Maize
+F0770,Lakshit V.,Gujarat,Mustard,Kharif,2608,2474,48,2023-06-16,1,Groundnut
+F0771,Khushi R.,Bihar,Bajra,Rabi,1303,1221,25,2022-07-23,3,Groundnut
+F0772,Darshit S.,Madhya Pradesh,Mustard,Rabi,1305,1186,54,2024-06-03,1,Potato
+F0773,Samarth L.,Uttar Pradesh,Sugarcane,Zaid,3428,3358,5,2024-03-04,7,Wheat
+F0774,Alia V.,Bihar,Bajra,Zaid,3742,3575,26,2022-03-07,5,Cotton
+F0775,Ritvik B.,Punjab,Potato,Rabi,1649,1497,13,2024-01-05,4,Maize
+F0776,Uthkarsh B.,Bihar,Wheat,Zaid,4000,3938,30,2022-05-03,2,Rice
+F0777,Anahi C.,Karnataka,Mustard,Zaid,2064,1984,57,2022-06-12,7,Maize
+F0778,Miraan S.,Uttar Pradesh,Sugarcane,Zaid,2830,2713,5,2022-12-21,8,Bajra
+F0779,Anika S.,Maharashtra,Cotton,Kharif,3988,3862,62,2022-12-03,6,Onion
+F0780,Jivin D.,Punjab,Rice,Rabi,1920,1757,28,2022-03-05,3,Rice
+F0781,Kashvi B.,Bihar,Groundnut,Zaid,4210,4067,64,2022-08-04,4,Rice
+F0782,Amani B.,Bihar,Potato,Rabi,4130,4124,13,2022-03-11,7,Groundnut
+F0783,Ishaan S.,Punjab,Cotton,Kharif,2511,2466,63,2024-06-28,7,Rice
+F0784,Bhamini L.,Bihar,Cotton,Zaid,3979,3906,71,2022-01-20,9,Groundnut
+F0785,Dishani C.,Karnataka,Sugarcane,Kharif,1796,1628,3,2022-01-22,5,Maize
+F0786,Mamooty S.,Madhya Pradesh,Cotton,Rabi,1951,1751,58,2022-01-27,10,Mustard
+F0787,Indrans S.,Rajasthan,Rice,Kharif,1852,1698,32,2023-10-09,9,Potato
+F0788,Prisha S.,Punjab,Sugarcane,Kharif,4310,4172,3,2024-03-06,8,Onion
+F0789,Siya C.,Punjab,Tomato,Zaid,905,727,10,2022-07-06,6,Mustard
+F0790,Tara S.,Madhya Pradesh,Mustard,Rabi,3233,3060,45,2024-02-27,1,Potato
+F0791,Heer D.,Rajasthan,Bajra,Rabi,3798,3611,18,2022-05-25,9,Soybean
+F0792,Bhavin G.,Uttar Pradesh,Onion,Rabi,1617,1450,21,2022-07-23,2,Tomato
+F0793,Aaryahi D.,Punjab,Mustard,Kharif,4856,4790,57,2022-08-15,5,Soybean
+F0794,Romil B.,Maharashtra,Sugarcane,Rabi,3736,3642,3,2022-05-14,2,Bajra
+F0795,Divit V.,Rajasthan,Cotton,Rabi,2790,2740,69,2024-04-15,8,Groundnut
+F0796,Zoya G.,Maharashtra,Rice,Kharif,2938,2845,29,2023-05-04,10,Rice
+F0797,Navya K.,Bihar,Rice,Zaid,2549,2502,34,2024-02-10,3,Onion
+F0798,Gokul D.,Punjab,Onion,Kharif,2399,2278,20,2022-10-22,4,Groundnut
+F0799,Anya D.,Bihar,Tomato,Rabi,1340,1320,19,2022-01-06,7,Tomato
+F0800,Yasmin S.,Madhya Pradesh,Cotton,Rabi,4276,4220,65,2023-09-19,4,Onion
+F0801,Zeeshan H.,Madhya Pradesh,Onion,Rabi,4851,4687,27,2022-08-15,3,Maize
+F0802,Hansh B.,Gujarat,Mustard,Kharif,1603,1420,57,2023-09-27,6,Maize
+F0803,Kabir S.,Madhya Pradesh,Maize,Zaid,4995,4831,24,2023-01-04,10,Bajra
+F0804,Kashvi B.,Punjab,Wheat,Rabi,2451,2388,28,2023-05-04,4,Soybean
+F0805,Anahi D.,Madhya Pradesh,Soybean,Rabi,3849,3674,48,2023-09-28,10,Groundnut
+F0806,Umang S.,Rajasthan,Mustard,Rabi,1495,1357,46,2022-05-18,1,Soybean
+F0807,Umang W.,Karnataka,Cotton,Zaid,1431,1234,66,2024-04-14,5,Soybean
+F0808,Kavya B.,Punjab,Soybean,Kharif,3070,2900,45,2024-06-05,2,Mustard
+F0809,Aarna B.,Bihar,Rice,Rabi,902,795,32,2022-07-09,6,Mustard
+F0810,Sara K.,Karnataka,Tomato,Rabi,1349,1193,17,2024-02-20,3,Maize
+F0811,Tara A.,Uttar Pradesh,Rice,Zaid,2329,2226,35,2023-05-12,9,Cotton
+F0812,Lakshay B.,Maharashtra,Cotton,Rabi,3746,3654,56,2023-04-09,10,Onion
+F0813,Taimur S.,Uttar Pradesh,Sugarcane,Rabi,3154,3153,5,2022-08-10,4,Soybean
+F0814,Divyansh K.,Karnataka,Bajra,Kharif,1295,1240,22,2022-01-07,9,Groundnut
+F0815,Akarsh S.,Gujarat,Potato,Rabi,4568,4513,13,2023-08-21,10,Mustard
+F0816,Pranay B.,Punjab,Soybean,Zaid,1438,1438,43,2023-02-11,3,Mustard
+F0817,Alia K.,Gujarat,Onion,Zaid,1620,1612,29,2022-09-13,7,Potato
+F0818,Charvi S.,Maharashtra,Groundnut,Rabi,1989,1851,53,2022-07-14,8,Soybean
+F0819,Urvi S.,Karnataka,Sugarcane,Kharif,2392,2344,4,2023-03-16,7,Rice
+F0820,Piya S.,Bihar,Tomato,Kharif,4399,4336,9,2023-05-07,4,Rice
+F0821,Anaya T.,Gujarat,Sugarcane,Kharif,3532,3409,4,2023-12-04,10,Onion
+F0822,Pari H.,Maharashtra,Maize,Zaid,4966,4898,24,2022-06-24,1,Wheat
+F0823,Chirag B.,Punjab,Mustard,Kharif,1706,1519,52,2023-07-21,8,Cotton
+F0824,Neysa K.,Karnataka,Soybean,Rabi,2371,2281,51,2023-06-28,4,Soybean
+F0825,Parinaaz M.,Maharashtra,Sugarcane,Kharif,3398,3327,5,2022-09-15,10,Groundnut
+F0826,Hazel G.,Uttar Pradesh,Sugarcane,Kharif,2396,2229,4,2023-11-27,6,Groundnut
+F0827,Alisha B.,Maharashtra,Tomato,Kharif,2530,2458,18,2022-07-12,9,Groundnut
+F0828,Aaina K.,Rajasthan,Bajra,Zaid,2492,2370,19,2024-07-22,4,Rice
+F0829,Anaya M.,Madhya Pradesh,Rice,Zaid,4773,4680,32,2022-03-20,8,Wheat
+F0830,Aradhya C.,Bihar,Groundnut,Zaid,916,860,52,2022-08-28,5,Soybean
+F0831,Yuvaan B.,Bihar,Tomato,Rabi,984,835,8,2022-03-19,3,Bajra
+F0832,Vedika B.,Karnataka,Soybean,Rabi,4422,4365,54,2024-03-30,6,Mustard
+F0833,Khushi D.,Madhya Pradesh,Sugarcane,Zaid,2466,2448,3,2024-02-08,1,Rice
+F0834,Nakul T.,Rajasthan,Mustard,Zaid,2851,2727,58,2023-11-28,10,Cotton
+F0835,Romil B.,Maharashtra,Potato,Zaid,2259,2118,16,2023-05-01,8,Soybean
+F0836,Himmat C.,Madhya Pradesh,Sugarcane,Zaid,3038,2903,4,2022-05-19,9,Soybean
+F0837,Arhaan W.,Maharashtra,Tomato,Rabi,897,735,11,2022-07-16,2,Wheat
+F0838,Ojas M.,Maharashtra,Maize,Zaid,3947,3796,25,2023-10-26,4,Cotton
+F0839,Shalv K.,Maharashtra,Cotton,Kharif,2164,2101,65,2023-12-26,1,Maize
+F0840,Pari W.,Rajasthan,Potato,Rabi,1743,1742,20,2022-03-19,10,Cotton
+F0841,Nayantara K.,Rajasthan,Cotton,Zaid,1435,1411,75,2022-12-22,4,Cotton
+F0842,Taimur K.,Punjab,Sugarcane,Zaid,3862,3760,4,2024-02-25,9,Wheat
+F0843,Rania M.,Uttar Pradesh,Potato,Zaid,1730,1572,25,2023-12-22,8,Groundnut
+F0844,Vritika Z.,Gujarat,Bajra,Kharif,3416,3415,21,2023-10-07,6,Potato
+F0845,Yakshit K.,Bihar,Mustard,Kharif,4894,4780,45,2022-06-07,1,Bajra
+F0846,Fateh D.,Karnataka,Bajra,Rabi,3556,3520,26,2023-05-14,10,Soybean
+F0847,Dhanuk B.,Karnataka,Soybean,Kharif,1086,1018,54,2023-12-25,4,Potato
+F0848,Armaan Z.,Rajasthan,Maize,Kharif,2100,2068,28,2022-04-29,7,Maize
+F0849,Anahita V.,Maharashtra,Rice,Rabi,2833,2748,35,2022-11-06,4,Onion
+F0850,Vidur S.,Uttar Pradesh,Cotton,Zaid,4383,4330,65,2022-12-18,10,Onion
+F0851,Raunak S.,Rajasthan,Tomato,Rabi,1942,1826,15,2023-07-14,2,Onion
+F0852,Seher C.,Bihar,Potato,Rabi,3443,3288,23,2022-10-08,1,Bajra
+F0853,Saksham R.,Rajasthan,Sugarcane,Rabi,3430,3311,4,2022-01-17,3,Groundnut
+F0854,Fateh T.,Bihar,Sugarcane,Rabi,3013,2893,4,2022-03-26,2,Maize
+F0855,Vedika W.,Karnataka,Tomato,Kharif,4069,3983,12,2022-04-17,1,Soybean
+F0856,Arnav T.,Madhya Pradesh,Soybean,Kharif,4130,4106,47,2024-01-02,9,Maize
+F0857,Badal S.,Punjab,Rice,Zaid,1272,1267,31,2023-07-05,2,Mustard
+F0858,Tushar C.,Madhya Pradesh,Sugarcane,Zaid,4404,4300,3,2023-12-01,10,Tomato
+F0859,Amani R.,Rajasthan,Mustard,Rabi,2529,2361,48,2024-02-28,8,Soybean
+F0860,Badal W.,Punjab,Tomato,Zaid,4050,3962,16,2024-06-25,8,Bajra
+F0861,Dishani T.,Punjab,Rice,Kharif,819,624,32,2022-03-02,6,Rice
+F0862,Baiju S.,Rajasthan,Onion,Kharif,1575,1474,29,2022-08-27,8,Potato
+F0863,Zain K.,Bihar,Maize,Rabi,3261,3251,27,2023-07-01,1,Sugarcane
+F0864,Manikya B.,Karnataka,Cotton,Zaid,2738,2579,63,2022-05-07,9,Potato
+F0865,Aarav C.,Rajasthan,Rice,Kharif,3836,3642,34,2022-06-24,2,Bajra
+F0866,Nitara R.,Rajasthan,Bajra,Zaid,2434,2424,23,2024-01-22,3,Mustard
+F0867,Khushi S.,Punjab,Onion,Rabi,1564,1406,18,2023-11-01,1,Rice
+F0868,Raunak R.,Madhya Pradesh,Rice,Zaid,937,740,31,2022-02-08,7,Rice
+F0869,Sahil D.,Maharashtra,Tomato,Zaid,3265,3135,14,2023-05-27,8,Bajra
+F0870,Zaina S.,Uttar Pradesh,Sugarcane,Zaid,1104,1048,3,2023-11-28,1,Cotton
+F0871,Aarna S.,Rajasthan,Sugarcane,Kharif,1911,1832,4,2023-06-15,1,Tomato
+F0872,Nayantara S.,Uttar Pradesh,Potato,Rabi,1354,1352,17,2023-12-07,5,Bajra
+F0873,Baiju R.,Gujarat,Groundnut,Zaid,4134,4119,47,2022-11-03,8,Sugarcane
+F0874,Devansh G.,Bihar,Rice,Kharif,3322,3253,33,2024-05-08,1,Maize
+F0875,Lavanya C.,Karnataka,Wheat,Zaid,2085,2080,24,2022-07-18,2,Maize
+F0876,Divit S.,Gujarat,Wheat,Rabi,2466,2399,27,2024-05-30,9,Rice
+F0877,Darshit S.,Uttar Pradesh,Mustard,Zaid,2220,2183,59,2023-06-03,5,Bajra
+F0878,Riya D.,Uttar Pradesh,Wheat,Kharif,4610,4591,23,2023-01-03,1,Rice
+F0879,Suhana R.,Karnataka,Rice,Rabi,4122,3922,25,2023-06-24,6,Potato
+F0880,Anahita S.,Maharashtra,Potato,Rabi,1376,1355,19,2022-07-21,2,Tomato
+F0881,Hazel M.,Gujarat,Mustard,Zaid,2471,2324,49,2024-01-06,3,Rice
+F0882,Farhan E.,Maharashtra,Bajra,Kharif,2650,2552,26,2022-05-29,7,Onion
+F0883,Nitya M.,Maharashtra,Sugarcane,Zaid,4643,4554,3,2023-07-12,10,Mustard
+F0884,Prisha K.,Karnataka,Bajra,Kharif,3995,3963,25,2023-02-21,5,Mustard
+F0885,Samarth C.,Karnataka,Sugarcane,Rabi,3647,3465,4,2023-03-17,8,Cotton
+F0886,Arnav S.,Uttar Pradesh,Potato,Zaid,3722,3643,12,2022-05-13,4,Cotton
+F0887,Amani R.,Karnataka,Bajra,Rabi,892,803,20,2022-05-05,7,Bajra
+F0888,Rasha J.,Bihar,Maize,Rabi,2292,2127,26,2022-04-30,9,Sugarcane
+F0889,Shayak B.,Madhya Pradesh,Potato,Zaid,1585,1546,21,2023-05-20,10,Cotton
+F0890,Zara V.,Karnataka,Cotton,Kharif,3800,3681,74,2023-08-15,10,Cotton
+F0891,Nitara C.,Madhya Pradesh,Groundnut,Kharif,2182,2105,46,2024-02-13,7,Onion
+F0892,Ritvik D.,Karnataka,Bajra,Zaid,931,901,21,2024-06-21,6,Sugarcane
+F0893,Amani M.,Bihar,Tomato,Kharif,2616,2448,17,2023-10-24,5,Groundnut
+F0894,Pranay D.,Punjab,Groundnut,Kharif,2754,2676,65,2023-07-08,5,Maize
+F0895,Faiyaz K.,Gujarat,Tomato,Kharif,2091,2075,19,2022-04-23,4,Maize
+F0896,Rasha B.,Gujarat,Mustard,Kharif,3215,3091,47,2023-10-24,2,Soybean
+F0897,Madhup S.,Uttar Pradesh,Mustard,Rabi,2008,1958,50,2023-10-26,2,Bajra
+F0898,Jivin G.,Uttar Pradesh,Mustard,Zaid,2881,2824,52,2024-01-19,8,Potato
+F0899,Lakshit G.,Punjab,Bajra,Kharif,3016,2861,24,2022-12-26,2,Maize
+F0900,Vivaan K.,Punjab,Maize,Zaid,4270,4264,21,2023-03-24,8,Onion
+F0901,Saira C.,Maharashtra,Bajra,Zaid,3732,3708,19,2024-01-09,9,Bajra
+F0902,Shlok C.,Punjab,Cotton,Rabi,3306,3250,64,2022-11-28,8,Tomato
+F0903,Raunak G.,Gujarat,Maize,Zaid,4674,4623,28,2022-04-13,2,Sugarcane
+F0904,Indrajit D.,Maharashtra,Bajra,Kharif,1132,1123,19,2022-11-06,8,Maize
+F0905,Dharmajan S.,Rajasthan,Rice,Zaid,3766,3745,34,2023-06-17,1,Mustard
+F0906,Indrajit S.,Madhya Pradesh,Mustard,Rabi,4411,4347,59,2024-07-17,5,Sugarcane
+F0907,Nitya D.,Bihar,Potato,Zaid,4214,4085,25,2023-12-28,5,Mustard
+F0908,Krish S.,Madhya Pradesh,Maize,Zaid,2783,2592,25,2024-05-31,3,Groundnut
+F0909,Drishya J.,Rajasthan,Cotton,Zaid,2999,2852,58,2023-02-26,5,Wheat
+F0910,Shanaya S.,Madhya Pradesh,Maize,Rabi,1144,965,23,2023-11-11,5,Maize
+F0911,Azad L.,Gujarat,Soybean,Kharif,4407,4278,43,2023-03-15,3,Groundnut
+F0912,Anahi D.,Bihar,Soybean,Zaid,4565,4564,49,2023-07-31,7,Sugarcane
+F0913,Aayush H.,Madhya Pradesh,Maize,Rabi,3831,3641,22,2022-02-25,4,Wheat
+F0914,Aarav K.,Karnataka,Rice,Kharif,3053,2970,34,2022-01-22,9,Onion
+F0915,Saira D.,Bihar,Bajra,Rabi,4660,4491,25,2024-07-02,9,Soybean
+F0916,Anahi D.,Rajasthan,Groundnut,Kharif,4094,4037,57,2024-07-23,8,Maize
+F0917,Kismat K.,Gujarat,Cotton,Zaid,1330,1139,62,2023-11-12,9,Wheat
+F0918,Advika D.,Punjab,Tomato,Rabi,1793,1602,15,2023-05-13,7,Wheat
+F0919,Prisha K.,Maharashtra,Wheat,Rabi,1914,1866,28,2024-07-20,3,Onion
+F0920,Ehsaan S.,Karnataka,Potato,Rabi,2311,2220,24,2023-01-05,2,Rice
+F0921,Miraan U.,Maharashtra,Potato,Zaid,3248,3061,17,2024-06-14,8,Tomato
+F0922,Tara S.,Karnataka,Wheat,Kharif,1038,905,20,2023-12-20,2,Rice
+F0923,Tiya D.,Rajasthan,Rice,Kharif,2512,2493,34,2023-03-25,5,Soybean
+F0924,Samiha K.,Punjab,Tomato,Zaid,4939,4777,18,2022-12-21,5,Mustard
+F0925,Vihaan B.,Gujarat,Potato,Rabi,1349,1198,24,2024-03-16,1,Wheat
+F0926,Kavya G.,Bihar,Bajra,Zaid,1519,1452,23,2024-04-02,9,Mustard
+F0927,Alia R.,Punjab,Onion,Zaid,2009,1917,28,2024-07-07,7,Soybean
+F0928,Misha R.,Maharashtra,Cotton,Rabi,2912,2866,65,2024-05-09,10,Onion
+F0929,Badal A.,Bihar,Mustard,Kharif,3796,3611,59,2022-11-16,9,Groundnut
+F0930,Badal K.,Uttar Pradesh,Wheat,Kharif,2330,2286,20,2023-02-14,1,Maize
+F0931,Samiha V.,Madhya Pradesh,Sugarcane,Rabi,3882,3809,5,2024-03-04,8,Soybean
+F0932,Rhea S.,Karnataka,Groundnut,Rabi,3681,3528,57,2024-03-01,6,Rice
+F0933,Nitara D.,Madhya Pradesh,Soybean,Zaid,2094,2004,55,2023-07-01,6,Bajra
+F0934,Vaibhav G.,Gujarat,Soybean,Kharif,1067,920,40,2024-04-27,1,Maize
+F0935,Zeeshan D.,Rajasthan,Groundnut,Zaid,2845,2786,50,2022-12-08,4,Soybean
+F0936,Ayesha B.,Bihar,Tomato,Kharif,880,832,17,2023-06-26,9,Wheat
+F0937,Miraya D.,Maharashtra,Groundnut,Rabi,1858,1720,45,2023-01-10,8,Sugarcane
+F0938,Anay G.,Madhya Pradesh,Bajra,Kharif,2330,2216,24,2023-07-14,2,Rice
+F0939,Samarth D.,Uttar Pradesh,Potato,Kharif,1451,1303,13,2024-03-12,5,Sugarcane
+F0940,Oorja D.,Bihar,Groundnut,Zaid,3782,3781,60,2023-02-18,3,Bajra
+F0941,Neelofar S.,Gujarat,Bajra,Rabi,1753,1625,22,2022-09-15,10,Bajra
+F0942,Miraan S.,Gujarat,Tomato,Kharif,4882,4753,20,2023-10-19,6,Rice
+F0943,Jivin M.,Uttar Pradesh,Sugarcane,Kharif,3712,3618,3,2023-06-13,4,Bajra
+F0944,Myra S.,Madhya Pradesh,Groundnut,Rabi,2707,2657,61,2022-12-10,2,Bajra
+F0945,Adira B.,Gujarat,Wheat,Kharif,1079,1068,26,2023-08-19,3,Rice
+F0946,Fateh K.,Gujarat,Soybean,Kharif,1506,1398,47,2023-12-10,4,Groundnut
+F0947,Suhana D.,Rajasthan,Bajra,Zaid,3285,3246,20,2023-10-08,7,Cotton
+F0948,Zain A.,Rajasthan,Soybean,Zaid,1514,1391,43,2023-02-12,5,Mustard
+F0949,Hunar L.,Uttar Pradesh,Sugarcane,Rabi,1357,1247,4,2023-11-30,8,Wheat
+F0950,Indrans C.,Rajasthan,Soybean,Rabi,1309,1199,52,2022-01-27,4,Soybean
+F0951,Saksham D.,Bihar,Bajra,Rabi,960,875,20,2023-09-21,4,Soybean
+F0952,Sana B.,Uttar Pradesh,Rice,Kharif,3194,3141,28,2024-06-30,2,Potato
+F0953,Sana A.,Gujarat,Mustard,Zaid,4633,4489,53,2022-10-31,8,Wheat
+F0954,Shaan S.,Punjab,Soybean,Zaid,4575,4416,53,2023-04-27,8,Sugarcane
+F0955,Anahita S.,Rajasthan,Wheat,Rabi,1957,1886,26,2022-09-15,8,Potato
+F0956,Mehul S.,Gujarat,Mustard,Kharif,4637,4544,57,2023-09-17,4,Groundnut
+F0957,Jayesh S.,Bihar,Wheat,Rabi,3610,3502,26,2024-05-01,1,Onion
+F0958,Himmat S.,Rajasthan,Soybean,Zaid,2721,2637,54,2022-02-23,9,Mustard
+F0959,Tejas S.,Madhya Pradesh,Rice,Rabi,4174,4149,25,2023-10-05,6,Bajra
+F0960,Pranay S.,Karnataka,Tomato,Rabi,3304,3289,16,2022-09-07,1,Mustard
+F0961,Zara V.,Uttar Pradesh,Bajra,Kharif,4961,4878,25,2023-02-25,3,Tomato
+F0962,Biju H.,Bihar,Wheat,Rabi,2732,2646,25,2023-08-03,4,Onion
+F0963,Sara D.,Rajasthan,Groundnut,Zaid,2773,2590,54,2023-05-15,7,Potato
+F0964,Adah A.,Gujarat,Mustard,Kharif,3587,3538,52,2023-01-30,10,Cotton
+F0965,Saanvi L.,Madhya Pradesh,Sugarcane,Kharif,2725,2601,4,2022-04-05,10,Cotton
+F0966,Kiaan B.,Bihar,Potato,Kharif,3258,3220,24,2023-10-05,8,Tomato
+F0967,Shlok H.,Gujarat,Potato,Zaid,1772,1657,22,2023-09-07,5,Groundnut
+F0968,Divit S.,Punjab,Onion,Kharif,2409,2393,21,2023-02-23,3,Mustard
+F0969,Umang K.,Karnataka,Bajra,Zaid,4580,4530,18,2024-03-03,1,Rice
+F0970,Drishya T.,Uttar Pradesh,Wheat,Rabi,1169,1107,22,2023-03-08,2,Mustard
+F0971,Ivana D.,Karnataka,Sugarcane,Rabi,1755,1580,5,2023-10-06,7,Sugarcane
+F0972,Piya S.,Maharashtra,Sugarcane,Kharif,2819,2732,3,2024-07-06,10,Potato
+F0973,Darshit K.,Uttar Pradesh,Wheat,Rabi,4639,4507,26,2022-06-21,8,Mustard
+F0974,Saksham R.,Rajasthan,Wheat,Zaid,4821,4767,23,2024-04-11,4,Onion
+F0975,Zain M.,Karnataka,Mustard,Rabi,4688,4566,48,2024-06-01,9,Tomato
+F0976,Hiran G.,Gujarat,Groundnut,Zaid,2696,2541,52,2022-05-27,4,Sugarcane
+F0977,Jayesh T.,Uttar Pradesh,Potato,Kharif,2599,2402,25,2024-05-04,3,Bajra
+F0978,Hrishita C.,Maharashtra,Tomato,Kharif,1441,1299,8,2023-07-20,2,Potato
+F0979,Shanaya G.,Gujarat,Sugarcane,Rabi,3749,3730,3,2023-01-24,6,Potato
+F0980,Ayesha E.,Karnataka,Potato,Zaid,4536,4454,15,2024-04-21,8,Wheat
+F0981,Damini D.,Bihar,Wheat,Zaid,2093,1964,20,2023-05-17,2,Wheat
+F0982,Bhavin B.,Uttar Pradesh,Cotton,Kharif,984,910,69,2022-11-03,4,Tomato
+F0983,Oorja C.,Maharashtra,Mustard,Kharif,4237,4153,59,2022-07-27,8,Cotton
+F0984,Umang K.,Maharashtra,Groundnut,Rabi,3795,3636,62,2022-04-07,9,Potato
+F0985,Aaryahi G.,Maharashtra,Bajra,Zaid,1383,1296,23,2024-01-07,8,Cotton
+F0986,Prisha D.,Maharashtra,Tomato,Zaid,1651,1504,20,2024-07-01,2,Sugarcane
+F0987,Nayantara R.,Rajasthan,Tomato,Zaid,1389,1247,10,2022-08-16,5,Potato
+F0988,Manjari C.,Gujarat,Cotton,Kharif,3378,3201,72,2022-05-31,2,Soybean
+F0989,Vaibhav B.,Karnataka,Mustard,Kharif,4745,4630,60,2023-05-10,1,Potato
+F0990,Manikya K.,Uttar Pradesh,Mustard,Rabi,4873,4759,47,2024-07-14,1,Sugarcane
+F0991,Prerak D.,Punjab,Wheat,Kharif,3048,2929,29,2022-01-03,7,Bajra
+F0992,Rania B.,Madhya Pradesh,Groundnut,Zaid,1782,1614,63,2022-08-27,10,Maize
+F0993,Madhup B.,Karnataka,Onion,Rabi,854,723,19,2024-03-24,7,Sugarcane
+F0994,Indranil C.,Rajasthan,Groundnut,Rabi,2125,1993,47,2023-12-02,4,Potato
+F0995,Vihaan I.,Madhya Pradesh,Tomato,Kharif,1837,1710,12,2023-11-16,9,Wheat
+F0996,Himmat V.,Rajasthan,Rice,Kharif,2835,2665,30,2022-06-11,6,Maize
+F0997,Zaina C.,Madhya Pradesh,Potato,Kharif,4754,4578,17,2023-05-19,8,Mustard
+F0998,Jayesh K.,Gujarat,Wheat,Rabi,1573,1384,22,2024-01-04,8,Maize
+F0999,Aayush A.,Uttar Pradesh,Groundnut,Zaid,4324,4230,61,2024-04-07,1,Tomato
+F1000,Adira V.,Rajasthan,Sugarcane,Kharif,4995,4912,4,2022-01-23,6,Groundnut
+F1001,Ishaan K.,Rajasthan,Tomato,Rabi,3575,3443,11,2022-11-10,8,Potato
+F1002,Ayesha T.,Maharashtra,Maize,Zaid,1249,1143,25,2022-06-25,1,Potato
+F1003,Nehmat K.,Rajasthan,Maize,Rabi,2370,2326,20,2023-06-12,10,Onion
+F1004,Pranay G.,Rajasthan,Tomato,Rabi,3484,3381,18,2023-03-29,10,Maize
+F1005,Alisha K.,Punjab,Wheat,Zaid,4581,4480,28,2023-04-26,2,Mustard
+F1006,Saanvi B.,Gujarat,Onion,Rabi,844,832,13,2022-06-12,6,Tomato
+F1007,Rasha S.,Maharashtra,Potato,Rabi,4179,3990,15,2023-09-19,1,Wheat
+F1008,Dhanush C.,Uttar Pradesh,Soybean,Zaid,3244,3174,49,2023-07-03,4,Wheat
+F1009,Ela S.,Maharashtra,Cotton,Kharif,2579,2449,73,2024-05-07,9,Mustard
+F1010,Seher B.,Punjab,Groundnut,Zaid,919,859,55,2022-10-09,9,Soybean
+F1011,Manjari B.,Karnataka,Mustard,Kharif,4368,4295,60,2024-02-12,7,Sugarcane
+F1012,Samiha U.,Punjab,Maize,Rabi,1967,1790,27,2022-08-15,9,Mustard
+F1013,Anaya S.,Bihar,Sugarcane,Rabi,2349,2230,3,2023-01-25,5,Cotton
+F1014,Ehsaan H.,Uttar Pradesh,Bajra,Zaid,3214,3020,26,2024-01-02,8,Groundnut
+F1015,Miraya D.,Karnataka,Mustard,Rabi,4888,4868,50,2024-03-11,1,Mustard
+F1016,Renee A.,Gujarat,Rice,Zaid,1594,1466,27,2022-10-10,6,Soybean
+F1017,Piya A.,Bihar,Mustard,Rabi,2878,2844,54,2022-11-26,5,Wheat
+F1018,Urvi A.,Madhya Pradesh,Potato,Kharif,4760,4714,21,2023-12-05,6,Sugarcane
+F1019,Fateh C.,Maharashtra,Maize,Kharif,1006,830,19,2022-04-20,9,Potato
+F1020,Keya B.,Uttar Pradesh,Onion,Zaid,2456,2277,13,2023-04-09,9,Maize
+F1021,Manikya S.,Karnataka,Bajra,Kharif,1976,1781,23,2022-11-24,10,Wheat
+F1022,Myra D.,Rajasthan,Onion,Rabi,3149,2981,27,2022-01-26,7,Sugarcane
+F1023,Rasha K.,Rajasthan,Potato,Zaid,3788,3753,19,2023-02-09,1,Mustard
+F1024,Hiran S.,Uttar Pradesh,Tomato,Zaid,2758,2589,15,2024-04-24,8,Bajra
+F1025,Elakshi S.,Maharashtra,Potato,Kharif,2955,2855,16,2023-07-12,6,Maize
+F1026,Aaina B.,Bihar,Bajra,Zaid,1418,1343,26,2022-04-27,1,Potato
+F1027,Lavanya K.,Karnataka,Potato,Zaid,4045,4026,14,2023-05-07,6,Onion
+F1028,Taran D.,Punjab,Groundnut,Kharif,4057,4033,49,2022-10-04,10,Maize
+F1029,Indranil B.,Madhya Pradesh,Tomato,Zaid,3844,3787,16,2022-11-16,1,Rice
+F1030,Shalv S.,Rajasthan,Cotton,Kharif,2065,1904,64,2023-01-25,6,Maize
+F1031,Kiaan S.,Karnataka,Potato,Zaid,3029,2879,12,2023-03-26,6,Potato
+F1032,Divit D.,Madhya Pradesh,Tomato,Rabi,3449,3386,13,2023-03-17,3,Rice
+F1033,Vidur Z.,Gujarat,Potato,Kharif,918,895,25,2024-04-25,8,Sugarcane
+F1034,Diya K.,Uttar Pradesh,Wheat,Rabi,4070,3885,21,2023-08-08,5,Maize
+F1035,Miraya C.,Madhya Pradesh,Mustard,Kharif,1035,867,53,2023-06-06,8,Bajra
+F1036,Hansh B.,Maharashtra,Wheat,Kharif,2060,1916,27,2022-07-16,1,Mustard
+F1037,Ira S.,Punjab,Soybean,Kharif,2588,2406,50,2024-06-09,9,Soybean
+F1038,Mahika B.,Uttar Pradesh,Onion,Zaid,1476,1467,29,2022-02-15,5,Onion
+F1039,Aradhya T.,Madhya Pradesh,Rice,Kharif,2255,2225,31,2023-03-15,10,Tomato
+F1040,Dhanush U.,Karnataka,Onion,Rabi,3395,3389,14,2022-06-11,3,Groundnut
+F1041,Mohanlal B.,Uttar Pradesh,Sugarcane,Kharif,4828,4632,3,2022-12-13,10,Rice
+F1042,Kiaan W.,Maharashtra,Onion,Zaid,4153,4092,22,2022-01-10,3,Mustard
+F1043,Aaina R.,Rajasthan,Maize,Kharif,4742,4655,28,2022-07-01,5,Maize
+F1044,Kanav D.,Punjab,Rice,Rabi,2817,2801,27,2022-08-29,8,Onion
+F1045,Yakshit T.,Madhya Pradesh,Wheat,Zaid,4575,4420,24,2024-07-23,10,Wheat
+F1046,Lakshay K.,Rajasthan,Cotton,Kharif,3823,3634,75,2022-10-13,3,Groundnut
+F1047,Saksham R.,Maharashtra,Wheat,Zaid,1206,1200,22,2023-04-02,4,Bajra
+F1048,Vivaan D.,Gujarat,Onion,Kharif,4609,4534,17,2022-09-27,10,Tomato
+F1049,Badal B.,Rajasthan,Cotton,Rabi,4017,3877,73,2023-09-02,9,Wheat
+F1050,Ela S.,Gujarat,Rice,Zaid,4187,4163,25,2024-07-30,9,Sugarcane
+F1051,Manikya T.,Punjab,Mustard,Zaid,3154,3110,60,2022-09-26,2,Rice
+F1052,Hazel G.,Punjab,Cotton,Rabi,1439,1295,57,2023-03-07,6,Soybean
+F1053,Romil S.,Gujarat,Onion,Kharif,1368,1335,22,2024-01-26,6,Onion
+F1054,Vihaan C.,Maharashtra,Maize,Kharif,3823,3775,19,2023-07-15,8,Onion
+F1055,Taran S.,Maharashtra,Potato,Kharif,4345,4328,19,2022-09-11,9,Wheat
+F1056,Diya G.,Bihar,Cotton,Rabi,3859,3677,69,2023-01-29,10,Sugarcane
+F1057,Inaaya  U.,Maharashtra,Cotton,Rabi,2203,2072,62,2023-03-24,7,Bajra
+F1058,Neysa R.,Maharashtra,Rice,Rabi,1418,1331,35,2024-05-03,4,Mustard
+F1059,Yasmin C.,Uttar Pradesh,Bajra,Zaid,4490,4479,22,2023-07-24,9,Tomato
+F1060,Miraya B.,Uttar Pradesh,Sugarcane,Rabi,1971,1949,5,2023-07-07,9,Wheat
+F1061,Raunak B.,Maharashtra,Potato,Zaid,1708,1598,19,2023-11-24,5,Maize
+F1062,Adah S.,Rajasthan,Tomato,Zaid,4836,4684,9,2024-03-12,5,Potato
+F1063,Navya T.,Rajasthan,Tomato,Kharif,1935,1756,13,2024-05-31,6,Bajra
+F1064,Divit D.,Rajasthan,Groundnut,Zaid,1500,1415,51,2022-09-26,6,Rice
+F1065,Tara B.,Maharashtra,Bajra,Zaid,3569,3417,26,2023-03-21,6,Bajra
+F1066,Badal Y.,Madhya Pradesh,Potato,Zaid,3580,3504,13,2022-08-01,10,Potato
+F1067,Pari D.,Uttar Pradesh,Bajra,Zaid,2816,2682,23,2023-01-03,2,Wheat
+F1068,Aaina C.,Bihar,Groundnut,Kharif,2071,1945,46,2022-10-09,8,Tomato
+F1069,Yuvraj  D.,Bihar,Cotton,Kharif,2713,2626,57,2023-03-22,10,Sugarcane
+F1070,Jiya S.,Maharashtra,Groundnut,Kharif,2702,2595,46,2023-02-27,4,Sugarcane
+F1071,Miraan S.,Bihar,Groundnut,Rabi,4596,4560,49,2022-07-20,9,Sugarcane
+F1072,Heer S.,Bihar,Rice,Zaid,3940,3882,31,2023-09-20,2,Cotton
+F1073,Yashvi D.,Bihar,Sugarcane,Zaid,4612,4441,4,2024-05-15,4,Rice
+F1074,Trisha H.,Karnataka,Bajra,Kharif,3841,3733,22,2023-07-21,10,Soybean
+F1075,Dhruv S.,Gujarat,Potato,Rabi,1422,1370,12,2024-02-02,4,Wheat
+F1076,Ojas V.,Rajasthan,Wheat,Kharif,1745,1597,24,2023-02-25,9,Groundnut
+F1077,Elakshi S.,Punjab,Rice,Zaid,868,817,34,2022-09-08,4,Wheat
+F1078,Bhamini G.,Rajasthan,Onion,Kharif,2288,2229,11,2022-06-02,1,Soybean
+F1079,Siya S.,Maharashtra,Potato,Kharif,1343,1271,18,2022-02-19,4,Sugarcane
+F1080,Armaan M.,Gujarat,Rice,Zaid,3095,3009,25,2022-11-24,2,Potato
+F1081,Indrajit J.,Bihar,Wheat,Kharif,3126,3070,20,2023-03-18,6,Onion
+F1082,Chirag H.,Karnataka,Cotton,Zaid,3506,3345,57,2024-06-30,1,Soybean
+F1083,Rhea B.,Karnataka,Cotton,Kharif,2061,1995,65,2023-09-26,8,Sugarcane
+F1084,Umang K.,Karnataka,Rice,Rabi,1973,1846,29,2022-05-07,7,Groundnut
+F1085,Kanav D.,Gujarat,Sugarcane,Kharif,1620,1543,3,2022-04-19,8,Bajra
+F1086,Taran K.,Bihar,Cotton,Kharif,3791,3676,63,2022-09-27,6,Maize
+F1087,Anika H.,Rajasthan,Soybean,Kharif,2707,2536,42,2023-11-11,9,Bajra
+F1088,Azad S.,Rajasthan,Potato,Rabi,4430,4315,23,2023-01-07,1,Soybean
+F1089,Samar S.,Bihar,Tomato,Zaid,4993,4883,8,2023-06-05,3,Onion
+F1090,Kaira C.,Gujarat,Wheat,Rabi,925,797,30,2023-01-28,2,Rice
+F1091,Devansh D.,Uttar Pradesh,Soybean,Kharif,4604,4564,41,2023-02-12,5,Onion
+F1092,Diya S.,Bihar,Sugarcane,Kharif,2971,2843,5,2023-10-21,9,Groundnut
+F1093,Stuvan B.,Uttar Pradesh,Sugarcane,Rabi,2730,2534,3,2022-08-06,6,Bajra
+F1094,Reyansh H.,Rajasthan,Sugarcane,Rabi,4655,4635,5,2023-08-18,5,Groundnut
+F1095,Damini B.,Gujarat,Groundnut,Zaid,4979,4973,48,2022-06-14,8,Mustard
+F1096,Madhav B.,Bihar,Tomato,Zaid,2303,2277,16,2022-02-23,10,Cotton
+F1097,Raghav T.,Maharashtra,Wheat,Kharif,2396,2307,30,2023-10-25,8,Rice
+F1098,Stuvan S.,Madhya Pradesh,Tomato,Kharif,4691,4612,15,2023-09-28,2,Tomato
+F1099,Dhruv B.,Uttar Pradesh,Potato,Kharif,1061,905,23,2022-01-31,8,Potato
+F1100,Anahita R.,Bihar,Potato,Rabi,1496,1307,25,2024-04-27,4,Potato
+F1101,Vanya V.,Uttar Pradesh,Maize,Kharif,2030,1943,20,2024-07-25,7,Maize
+F1102,Indrans H.,Uttar Pradesh,Rice,Zaid,1060,1037,33,2023-07-20,2,Onion
+F1103,Anaya V.,Rajasthan,Onion,Kharif,1155,1034,15,2023-12-30,7,Potato
+F1104,Kashvi S.,Madhya Pradesh,Sugarcane,Rabi,3389,3267,3,2022-09-10,8,Cotton
+F1105,Vidur B.,Karnataka,Tomato,Kharif,2574,2460,12,2022-05-03,9,Cotton
+F1106,Rohan L.,Maharashtra,Tomato,Kharif,2887,2768,14,2022-01-24,2,Rice
+F1107,Divit B.,Maharashtra,Bajra,Zaid,2166,2042,20,2022-06-20,5,Tomato
+F1108,Mannat B.,Bihar,Groundnut,Zaid,4402,4330,54,2022-02-21,9,Potato
+F1109,Aaryahi M.,Karnataka,Bajra,Zaid,3254,3076,23,2023-01-19,2,Sugarcane
+F1110,Umang K.,Gujarat,Rice,Kharif,1933,1863,27,2022-10-30,6,Rice
+F1111,Aayush D.,Uttar Pradesh,Sugarcane,Zaid,2735,2548,4,2022-12-15,1,Bajra
+F1112,Adah R.,Punjab,Cotton,Kharif,917,834,75,2023-11-08,7,Cotton
+F1113,Kiaan G.,Uttar Pradesh,Potato,Kharif,4203,4151,13,2023-11-28,5,Maize
+F1114,Badal S.,Madhya Pradesh,Mustard,Zaid,3121,3091,60,2022-02-15,2,Soybean
+F1115,Prisha M.,Gujarat,Cotton,Rabi,3864,3842,65,2023-09-11,6,Groundnut
+F1116,Alia T.,Punjab,Tomato,Rabi,3575,3532,15,2024-01-22,2,Soybean
+F1117,Aarav G.,Maharashtra,Maize,Kharif,3084,2963,27,2023-10-20,6,Rice
+F1118,Zeeshan D.,Karnataka,Rice,Rabi,2306,2180,33,2023-04-17,5,Rice
+F1119,Mishti B.,Karnataka,Wheat,Kharif,1082,985,20,2022-09-27,2,Sugarcane
+F1120,Samarth B.,Gujarat,Maize,Zaid,3603,3579,21,2023-05-05,9,Rice
+F1121,Raghav K.,Uttar Pradesh,Soybean,Rabi,4173,4059,41,2022-02-20,8,Rice
+F1122,Nitara B.,Gujarat,Maize,Rabi,1947,1850,24,2024-06-24,8,Onion
+F1123,Sara S.,Madhya Pradesh,Tomato,Zaid,1024,989,17,2022-12-27,1,Rice
+F1124,Pranay B.,Uttar Pradesh,Sugarcane,Zaid,4340,4303,5,2022-10-22,4,Maize
+F1125,Kabir S.,Punjab,Wheat,Rabi,2141,1979,28,2024-07-24,1,Maize
+F1126,Divij R.,Punjab,Sugarcane,Rabi,4516,4330,4,2022-10-19,5,Potato
+F1127,Pari M.,Karnataka,Rice,Zaid,4920,4917,31,2023-12-03,3,Tomato
+F1128,Biju M.,Karnataka,Onion,Rabi,2770,2705,17,2022-09-28,1,Wheat
+F1129,Raghav S.,Bihar,Wheat,Rabi,4712,4520,21,2024-05-06,1,Bajra
+F1130,Hansh K.,Uttar Pradesh,Mustard,Kharif,2628,2457,49,2022-06-17,4,Onion
+F1131,Ira S.,Bihar,Maize,Rabi,2465,2453,28,2022-12-16,10,Bajra
+F1132,Lavanya S.,Punjab,Cotton,Rabi,823,714,62,2023-04-15,3,Tomato
+F1133,Priyansh S.,Madhya Pradesh,Cotton,Kharif,4864,4763,59,2023-07-01,7,Bajra
+F1134,Zain B.,Madhya Pradesh,Wheat,Zaid,2006,1865,24,2023-04-12,8,Groundnut
+F1135,Umang G.,Bihar,Sugarcane,Rabi,3699,3513,4,2022-07-01,2,Wheat
+F1136,Mehul S.,Uttar Pradesh,Groundnut,Rabi,849,790,52,2022-09-26,2,Potato
+F1137,Mamooty G.,Karnataka,Groundnut,Zaid,1066,993,62,2022-02-20,9,Groundnut
+F1138,Kiara B.,Bihar,Soybean,Rabi,1451,1382,52,2023-12-14,1,Rice
+F1139,Advik A.,Madhya Pradesh,Tomato,Zaid,4678,4571,11,2023-09-12,3,Mustard
+F1140,Yasmin S.,Karnataka,Rice,Rabi,2047,1946,32,2023-05-09,9,Tomato
+F1141,Shlok G.,Rajasthan,Groundnut,Rabi,2093,1921,60,2023-12-01,3,Groundnut
+F1142,Renee R.,Karnataka,Sugarcane,Rabi,4093,4016,4,2024-07-15,1,Cotton
+F1143,Neysa C.,Karnataka,Potato,Rabi,2076,1983,25,2022-02-03,4,Groundnut
+F1144,Alia R.,Rajasthan,Tomato,Kharif,3173,3105,20,2022-08-19,10,Onion
+F1145,Nayantara S.,Karnataka,Mustard,Zaid,1191,1125,51,2023-10-24,2,Groundnut
+F1146,Riaan G.,Karnataka,Groundnut,Kharif,2849,2832,53,2023-11-07,1,Groundnut
+F1147,Darshit S.,Bihar,Mustard,Rabi,4901,4775,47,2024-01-30,3,Mustard
+F1148,Kanav D.,Maharashtra,Rice,Zaid,3261,3123,27,2023-10-25,10,Groundnut
+F1149,Badal G.,Bihar,Wheat,Zaid,1381,1283,20,2023-01-25,10,Soybean
+F1150,Dhanuk V.,Punjab,Potato,Zaid,1621,1610,19,2022-05-28,1,Cotton
+F1151,Taran T.,Uttar Pradesh,Onion,Rabi,3076,3057,19,2022-04-15,9,Cotton
+F1152,Madhup D.,Maharashtra,Potato,Zaid,1259,1201,21,2024-03-08,1,Wheat
+F1153,Eshani D.,Karnataka,Onion,Rabi,3206,3163,25,2023-08-16,4,Tomato
+F1154,Reyansh H.,Maharashtra,Potato,Kharif,2066,1882,22,2023-03-01,4,Wheat
+F1155,Divij B.,Gujarat,Groundnut,Rabi,2877,2785,61,2022-06-04,10,Wheat
+F1156,Hansh C.,Uttar Pradesh,Maize,Kharif,4174,4053,25,2023-09-27,8,Potato
+F1157,Nirvaan R.,Maharashtra,Cotton,Zaid,825,644,68,2023-08-09,10,Cotton
+F1158,Krish S.,Rajasthan,Cotton,Kharif,1913,1804,62,2022-08-13,10,Potato
+F1159,Indranil B.,Maharashtra,Tomato,Kharif,4044,3852,8,2024-04-03,2,Soybean
+F1160,Trisha K.,Uttar Pradesh,Wheat,Rabi,3760,3612,22,2023-06-18,10,Mustard
+F1161,Rasha M.,Uttar Pradesh,Mustard,Rabi,3034,2931,52,2024-03-08,10,Potato
+F1162,Hunar R.,Karnataka,Groundnut,Rabi,2381,2363,45,2023-03-23,7,Potato
+F1163,Neelofar T.,Punjab,Cotton,Zaid,1668,1630,61,2024-02-08,10,Cotton
+F1164,Piya B.,Uttar Pradesh,Sugarcane,Kharif,1963,1963,5,2023-09-23,3,Rice
+F1165,Ira S.,Uttar Pradesh,Rice,Kharif,1774,1672,26,2022-09-24,4,Onion
+F1166,Pranay S.,Punjab,Rice,Zaid,909,790,28,2022-06-16,5,Bajra
+F1167,Manjari R.,Rajasthan,Cotton,Zaid,1078,1013,59,2022-11-05,8,Wheat
+F1168,Navya W.,Gujarat,Onion,Zaid,1304,1297,24,2024-03-28,9,Cotton
+F1169,Diya B.,Rajasthan,Bajra,Kharif,1692,1595,18,2022-10-13,7,Maize
+F1170,Nirvaan S.,Rajasthan,Mustard,Rabi,3108,3099,45,2022-03-09,3,Tomato
+F1171,Jhanvi C.,Rajasthan,Potato,Kharif,4439,4402,15,2024-03-15,5,Groundnut
+F1172,Ivan V.,Maharashtra,Wheat,Zaid,3397,3205,21,2023-06-14,2,Sugarcane
+F1173,Ishaan A.,Rajasthan,Groundnut,Zaid,4830,4781,61,2022-03-23,9,Groundnut
+F1174,Navya D.,Gujarat,Cotton,Rabi,2282,2094,57,2022-02-23,8,Cotton
+F1175,Navya Z.,Bihar,Maize,Rabi,2812,2616,23,2024-04-03,1,Groundnut
+F1176,Aniruddh B.,Rajasthan,Tomato,Zaid,4410,4244,9,2023-05-04,5,Bajra
+F1177,Riaan S.,Karnataka,Wheat,Rabi,3091,2995,21,2022-01-24,4,Cotton
+F1178,Kimaya T.,Bihar,Onion,Kharif,2491,2484,29,2023-10-08,7,Soybean
+F1179,Nishith L.,Gujarat,Bajra,Rabi,2043,1901,19,2024-07-06,5,Rice
+F1180,Anya B.,Gujarat,Bajra,Kharif,4788,4784,22,2023-11-17,6,Tomato
+F1181,Gokul R.,Madhya Pradesh,Soybean,Zaid,3018,2826,48,2023-09-16,8,Soybean
+F1182,Mehul S.,Punjab,Maize,Rabi,1356,1316,19,2024-01-12,1,Cotton
+F1183,Stuvan G.,Rajasthan,Tomato,Zaid,1224,1102,10,2023-08-02,5,Sugarcane
+F1184,Vihaan B.,Gujarat,Bajra,Kharif,3833,3649,23,2024-03-31,5,Cotton
+F1185,Jivika K.,Maharashtra,Bajra,Kharif,4235,4050,25,2022-04-04,6,Bajra
+F1186,Dhanush K.,Gujarat,Soybean,Rabi,1434,1332,41,2023-07-01,6,Potato
+F1187,Nitya B.,Maharashtra,Wheat,Zaid,2523,2327,23,2023-10-14,4,Onion
+F1188,Hridaan B.,Madhya Pradesh,Onion,Zaid,1058,1044,29,2023-07-29,3,Potato
+F1189,Dhanush V.,Madhya Pradesh,Rice,Kharif,2034,2012,26,2023-06-24,5,Bajra
+F1190,Shray W.,Punjab,Tomato,Kharif,3686,3545,11,2023-03-25,7,Mustard
+F1191,Shalv D.,Punjab,Potato,Kharif,4387,4269,22,2023-08-06,2,Bajra
+F1192,Nirvaan S.,Karnataka,Rice,Rabi,1640,1452,25,2023-08-19,8,Maize
+F1193,Suhana K.,Punjab,Maize,Rabi,3127,2938,25,2023-05-29,2,Wheat
+F1194,Tejas S.,Uttar Pradesh,Soybean,Rabi,1219,1126,40,2023-04-08,10,Mustard
+F1195,Miraan M.,Gujarat,Cotton,Kharif,3932,3786,75,2022-04-16,7,Soybean
+F1196,Aarush M.,Gujarat,Bajra,Zaid,3122,2988,25,2022-04-14,7,Sugarcane
+F1197,Raunak C.,Bihar,Maize,Kharif,886,863,20,2022-03-08,3,Groundnut
+F1198,Misha D.,Rajasthan,Groundnut,Rabi,4193,4092,56,2022-02-06,3,Cotton
+F1199,Vivaan B.,Madhya Pradesh,Wheat,Zaid,4993,4890,24,2023-07-01,10,Soybean
+F1200,Sara K.,Punjab,Bajra,Rabi,4819,4664,25,2023-07-09,8,Wheat
+F1201,Zeeshan R.,Punjab,Soybean,Zaid,847,713,52,2022-07-06,2,Rice
+F1202,Dishani A.,Punjab,Maize,Kharif,4061,4052,20,2023-06-06,10,Mustard
+F1203,Samaira G.,Madhya Pradesh,Groundnut,Kharif,899,861,50,2023-11-21,3,Soybean
+F1204,Parinaaz C.,Punjab,Tomato,Rabi,4299,4285,16,2023-09-01,10,Soybean
+F1205,Piya K.,Karnataka,Rice,Kharif,1856,1764,30,2022-11-11,5,Maize
+F1206,Yuvaan D.,Maharashtra,Onion,Kharif,4148,3985,11,2024-05-13,9,Mustard
+F1207,Jayesh A.,Karnataka,Maize,Kharif,3839,3775,20,2022-09-12,9,Maize
+F1208,Bhamini R.,Karnataka,Onion,Zaid,2678,2481,27,2023-11-02,10,Cotton
+F1209,Indrans S.,Punjab,Bajra,Kharif,2065,1993,18,2022-06-17,4,Rice
+F1210,Anvi B.,Bihar,Potato,Kharif,2756,2700,13,2023-12-23,4,Cotton
+F1211,Shaan K.,Karnataka,Cotton,Rabi,4955,4920,65,2022-07-13,5,Groundnut
+F1212,Anika K.,Rajasthan,Soybean,Zaid,858,813,40,2022-01-29,8,Groundnut
+F1213,Dishani G.,Gujarat,Onion,Zaid,1722,1696,17,2022-04-20,10,Tomato
+F1214,Yashvi T.,Rajasthan,Onion,Kharif,1268,1197,13,2023-10-30,2,Wheat
+F1215,Yakshit B.,Punjab,Potato,Rabi,3974,3903,17,2023-09-03,10,Wheat
+F1216,Ishaan V.,Karnataka,Potato,Rabi,3305,3164,25,2023-06-15,5,Sugarcane
+F1217,Anvi B.,Karnataka,Soybean,Rabi,1632,1513,53,2023-09-04,4,Soybean
+F1218,Rasha V.,Gujarat,Maize,Kharif,2022,1848,23,2022-06-30,1,Rice
+F1219,Akarsh T.,Madhya Pradesh,Tomato,Rabi,2263,2093,11,2024-01-28,5,Wheat
+F1220,Vidur K.,Gujarat,Onion,Kharif,3994,3908,29,2023-02-22,5,Sugarcane
+F1221,Oorja C.,Punjab,Potato,Rabi,1371,1340,18,2022-04-15,2,Maize
+F1222,Indranil G.,Madhya Pradesh,Mustard,Rabi,942,814,52,2023-09-11,5,Cotton
+F1223,Miraya D.,Maharashtra,Maize,Zaid,4183,4040,24,2023-11-23,7,Wheat
+F1224,Madhup A.,Karnataka,Groundnut,Zaid,2120,1951,49,2024-04-13,4,Tomato
+F1225,Anahita R.,Bihar,Wheat,Rabi,1614,1614,27,2022-01-08,3,Onion
+F1226,Manjari C.,Punjab,Soybean,Rabi,2485,2477,46,2022-03-24,7,Cotton
+F1227,Yakshit M.,Uttar Pradesh,Groundnut,Zaid,3987,3893,51,2024-03-03,1,Mustard
+F1228,Indrans R.,Karnataka,Cotton,Zaid,3583,3538,63,2023-01-23,4,Tomato
+F1229,Ayesha G.,Punjab,Rice,Zaid,3825,3642,31,2022-10-28,10,Cotton
+F1230,Lakshit C.,Gujarat,Bajra,Kharif,1845,1817,18,2022-01-19,1,Potato
+F1231,Kanav S.,Punjab,Wheat,Kharif,4097,4056,26,2023-07-11,7,Groundnut
+F1232,Fateh S.,Madhya Pradesh,Mustard,Zaid,2475,2287,56,2024-04-07,9,Cotton
+F1233,Vidur M.,Punjab,Soybean,Zaid,3551,3520,55,2024-07-30,6,Cotton
+F1234,Onkar D.,Madhya Pradesh,Mustard,Rabi,3486,3376,46,2022-04-07,2,Tomato
+F1235,Kismat S.,Rajasthan,Maize,Zaid,2247,2087,20,2024-02-21,6,Soybean
+F1236,Abram B.,Rajasthan,Soybean,Zaid,2039,2035,43,2023-12-21,4,Groundnut
+F1237,Hansh S.,Rajasthan,Wheat,Zaid,1233,1152,23,2023-10-17,9,Bajra
+F1238,Lakshit D.,Bihar,Wheat,Kharif,1278,1216,27,2024-06-05,8,Cotton
+F1239,Shanaya G.,Punjab,Onion,Kharif,1447,1404,14,2023-04-23,8,Potato
+F1240,Manikya L.,Maharashtra,Onion,Zaid,4057,4054,28,2022-08-06,2,Maize
+F1241,Keya K.,Gujarat,Maize,Kharif,943,907,27,2024-04-27,8,Bajra
+F1242,Tarini D.,Uttar Pradesh,Soybean,Zaid,4913,4885,45,2023-07-30,4,Bajra
+F1243,Seher K.,Uttar Pradesh,Potato,Rabi,1564,1475,12,2022-08-31,6,Mustard
+F1244,Dhruv R.,Madhya Pradesh,Rice,Kharif,1163,1154,29,2022-11-11,9,Wheat
+F1245,Emir D.,Maharashtra,Onion,Kharif,2605,2468,29,2022-11-15,9,Rice
+F1246,Kavya K.,Bihar,Maize,Rabi,1843,1667,27,2023-04-07,4,Potato
+F1247,Madhup T.,Madhya Pradesh,Potato,Zaid,3969,3959,17,2024-07-04,2,Groundnut
+F1248,Ivan D.,Karnataka,Sugarcane,Rabi,3127,3123,3,2023-02-15,7,Wheat
+F1249,Badal H.,Gujarat,Bajra,Rabi,2319,2156,19,2024-04-03,4,Potato
+F1250,Zoya M.,Maharashtra,Cotton,Zaid,2192,2064,64,2023-03-24,7,Mustard
+F1251,Tejas G.,Rajasthan,Sugarcane,Kharif,3335,3218,5,2023-02-03,4,Maize
+F1252,Zain B.,Uttar Pradesh,Onion,Kharif,3490,3396,12,2023-07-31,5,Maize
+F1253,Misha M.,Rajasthan,Cotton,Zaid,4264,4179,66,2022-04-26,4,Soybean
+F1254,Tushar G.,Maharashtra,Tomato,Kharif,4799,4684,15,2024-04-11,10,Maize
+F1255,Reyansh R.,Bihar,Cotton,Kharif,3830,3639,57,2023-06-17,2,Soybean
+F1256,Aniruddh B.,Bihar,Sugarcane,Zaid,2899,2700,4,2024-01-02,2,Rice
+F1257,Mehul S.,Maharashtra,Wheat,Rabi,3282,3093,30,2023-12-17,5,Bajra
+F1258,Myra A.,Uttar Pradesh,Onion,Zaid,1733,1659,28,2022-11-01,5,Rice
+F1259,Samarth R.,Uttar Pradesh,Bajra,Rabi,3084,3041,20,2023-08-19,2,Potato
+F1260,Lakshit B.,Gujarat,Cotton,Zaid,3302,3210,58,2022-11-05,4,Mustard
+F1261,Yasmin B.,Punjab,Onion,Rabi,3274,3228,12,2023-03-28,8,Sugarcane
+F1262,Darshit B.,Maharashtra,Tomato,Rabi,872,702,13,2022-04-24,2,Maize
+F1263,Zain J.,Bihar,Mustard,Kharif,1319,1278,59,2022-06-24,7,Groundnut
+F1264,Ryan W.,Rajasthan,Sugarcane,Rabi,3825,3637,5,2022-05-02,7,Rice
+F1265,Nakul I.,Karnataka,Groundnut,Rabi,2694,2640,45,2024-04-04,9,Wheat
+F1266,Aarush S.,Maharashtra,Soybean,Kharif,3605,3505,46,2024-06-01,5,Groundnut
+F1267,Anaya R.,Rajasthan,Potato,Kharif,2135,2022,22,2023-11-22,4,Maize
+F1268,Lakshit B.,Madhya Pradesh,Cotton,Kharif,3445,3275,64,2023-12-20,9,Cotton
+F1269,Biju S.,Madhya Pradesh,Wheat,Kharif,4823,4708,23,2022-04-22,1,Wheat
+F1270,Yuvraj  U.,Rajasthan,Mustard,Kharif,3221,3152,60,2024-01-11,3,Rice
+F1271,Mishti C.,Bihar,Groundnut,Zaid,4991,4818,56,2023-08-09,4,Groundnut
+F1272,Renee C.,Rajasthan,Rice,Rabi,1184,1039,32,2023-09-29,4,Onion
+F1273,Indranil B.,Madhya Pradesh,Sugarcane,Kharif,2554,2398,4,2022-02-04,3,Soybean
+F1274,Ryan A.,Madhya Pradesh,Groundnut,Rabi,894,724,47,2024-05-23,8,Bajra
+F1275,Raunak B.,Gujarat,Groundnut,Rabi,3157,3157,48,2023-06-24,4,Sugarcane
+F1276,Kimaya B.,Punjab,Onion,Zaid,1281,1214,15,2024-03-23,2,Tomato
+F1277,Tara A.,Maharashtra,Maize,Kharif,1641,1477,27,2023-05-15,9,Onion
+F1278,Zoya G.,Punjab,Sugarcane,Kharif,4497,4359,3,2022-08-21,10,Tomato
+F1279,Zoya V.,Maharashtra,Onion,Rabi,2615,2571,16,2022-11-13,4,Rice
+F1280,Nitara S.,Karnataka,Rice,Rabi,2763,2600,29,2024-02-04,8,Maize
+F1281,Rati W.,Gujarat,Soybean,Rabi,3971,3863,48,2023-08-05,4,Bajra
+F1282,Anahita H.,Gujarat,Maize,Rabi,4437,4315,27,2022-09-05,2,Rice
+F1283,Dhanuk M.,Rajasthan,Mustard,Kharif,3233,3203,56,2024-04-16,4,Tomato
+F1284,Lavanya C.,Bihar,Rice,Zaid,3097,3087,30,2023-01-09,1,Sugarcane
+F1285,Yashvi V.,Maharashtra,Sugarcane,Rabi,4665,4636,5,2023-05-01,3,Cotton
+F1286,Heer C.,Uttar Pradesh,Groundnut,Kharif,3195,3030,54,2023-09-28,10,Potato
+F1287,Faiyaz S.,Gujarat,Wheat,Rabi,1292,1116,26,2023-01-10,5,Wheat
+F1288,Vivaan S.,Bihar,Maize,Kharif,4497,4325,21,2023-10-04,1,Wheat
+F1289,Romil D.,Madhya Pradesh,Mustard,Kharif,3557,3380,54,2024-07-21,8,Maize
+F1290,Vritika A.,Punjab,Bajra,Kharif,1016,963,19,2022-05-07,4,Maize
+F1291,Vivaan G.,Rajasthan,Maize,Kharif,3074,2946,19,2024-07-09,6,Soybean
+F1292,Dishani L.,Rajasthan,Groundnut,Kharif,2207,2030,63,2022-09-09,10,Soybean
+F1293,Renee G.,Bihar,Soybean,Rabi,1302,1279,50,2024-05-20,2,Wheat
+F1294,Urvi B.,Madhya Pradesh,Mustard,Zaid,813,738,54,2022-11-17,8,Soybean
+F1295,Anahi B.,Uttar Pradesh,Wheat,Kharif,1638,1590,20,2024-07-27,8,Soybean
+F1296,Dhanush H.,Bihar,Rice,Zaid,1818,1633,34,2022-11-29,5,Cotton
+F1297,Nakul A.,Maharashtra,Groundnut,Rabi,3359,3350,65,2022-03-08,10,Maize
+F1298,Kiara H.,Rajasthan,Soybean,Rabi,2024,1960,47,2023-08-19,3,Bajra
+F1299,Anya C.,Karnataka,Tomato,Rabi,2373,2196,20,2023-12-11,8,Tomato
+F1300,Nehmat K.,Karnataka,Bajra,Zaid,2252,2192,26,2022-07-17,4,Potato
+F1301,Devansh T.,Gujarat,Cotton,Kharif,4925,4804,55,2023-02-02,7,Tomato
+F1302,Reyansh B.,Gujarat,Cotton,Rabi,4929,4833,55,2022-01-06,1,Sugarcane
+F1303,Pihu B.,Uttar Pradesh,Mustard,Zaid,4670,4604,45,2023-06-23,8,Potato
+F1304,Kavya J.,Punjab,Mustard,Kharif,2594,2531,45,2022-11-19,1,Cotton
+F1305,Zara M.,Rajasthan,Potato,Kharif,971,931,18,2023-10-01,4,Wheat
+F1306,Arhaan G.,Karnataka,Sugarcane,Kharif,910,857,3,2022-11-14,2,Tomato
+F1307,Stuvan K.,Bihar,Maize,Kharif,2471,2277,22,2022-02-19,7,Wheat
+F1308,Adira J.,Bihar,Soybean,Zaid,2821,2791,49,2023-10-28,2,Rice
+F1309,Armaan G.,Karnataka,Cotton,Rabi,3414,3302,56,2023-07-11,5,Soybean
+F1310,Ojas M.,Gujarat,Onion,Kharif,3579,3445,13,2022-06-23,5,Wheat
+F1311,Kabir B.,Bihar,Potato,Kharif,2264,2260,13,2022-10-13,10,Soybean
+F1312,Jiya H.,Madhya Pradesh,Groundnut,Kharif,1066,1032,57,2023-03-25,3,Tomato
+F1313,Saksham S.,Punjab,Cotton,Zaid,2782,2661,55,2024-05-13,8,Cotton
+F1314,Kiara D.,Rajasthan,Cotton,Kharif,2194,2138,66,2023-02-08,4,Onion
+F1315,Shlok G.,Maharashtra,Tomato,Zaid,2396,2310,17,2023-02-15,6,Cotton
+F1316,Keya T.,Bihar,Onion,Rabi,2257,2113,24,2022-04-28,10,Maize
+F1317,Eva J.,Karnataka,Tomato,Kharif,3425,3292,9,2022-02-04,9,Sugarcane
+F1318,Mishti C.,Gujarat,Cotton,Rabi,4056,3925,64,2024-02-03,10,Bajra
+F1319,Rohan B.,Karnataka,Mustard,Rabi,2371,2217,53,2022-01-10,6,Maize
+F1320,Amani D.,Bihar,Groundnut,Kharif,4511,4378,57,2022-06-21,6,Onion
+F1321,Yakshit L.,Uttar Pradesh,Rice,Kharif,1989,1940,34,2023-04-16,2,Wheat
+F1322,Yasmin D.,Maharashtra,Maize,Kharif,3130,3128,24,2022-04-06,5,Sugarcane
+F1323,Sana V.,Punjab,Rice,Rabi,3066,2978,30,2024-07-13,8,Onion
+F1324,Lavanya R.,Madhya Pradesh,Tomato,Kharif,3632,3609,8,2022-04-02,6,Wheat
+F1325,Rohan B.,Punjab,Soybean,Zaid,1376,1275,44,2023-07-22,7,Mustard
+F1326,Divit S.,Rajasthan,Tomato,Rabi,4563,4451,20,2022-02-25,4,Soybean
+F1327,Urvi A.,Karnataka,Cotton,Kharif,3914,3899,74,2023-02-14,6,Sugarcane
+F1328,Nayantara K.,Uttar Pradesh,Onion,Zaid,1469,1438,28,2022-08-03,1,Wheat
+F1329,Vihaan T.,Maharashtra,Bajra,Kharif,2023,1827,22,2023-09-09,2,Cotton
+F1330,Jayesh M.,Karnataka,Cotton,Kharif,3557,3357,57,2023-03-29,2,Rice
+F1331,Abram K.,Gujarat,Cotton,Kharif,3625,3448,60,2023-11-15,1,Wheat
+F1332,Miraan B.,Bihar,Cotton,Rabi,2029,2017,62,2023-07-28,5,Bajra
+F1333,Khushi G.,Madhya Pradesh,Sugarcane,Kharif,3839,3719,5,2022-03-22,7,Maize
+F1334,Armaan C.,Punjab,Groundnut,Zaid,3165,3153,63,2022-02-25,1,Sugarcane
+F1335,Alia A.,Punjab,Tomato,Kharif,2133,2128,20,2023-05-24,2,Rice
+F1336,Akarsh K.,Rajasthan,Potato,Rabi,2192,2126,18,2022-05-09,3,Potato
+F1337,Kanav S.,Punjab,Maize,Zaid,2060,1894,24,2023-01-03,1,Cotton
+F1338,Rasha V.,Punjab,Bajra,Zaid,2910,2814,18,2023-09-27,2,Tomato
+F1339,Mannat S.,Uttar Pradesh,Mustard,Rabi,2700,2546,51,2022-02-26,7,Rice
+F1340,Badal D.,Punjab,Tomato,Rabi,4392,4317,14,2023-07-24,9,Potato
+F1341,Aradhya D.,Uttar Pradesh,Groundnut,Kharif,3845,3818,58,2022-12-26,6,Tomato
+F1342,Neysa R.,Rajasthan,Maize,Zaid,5000,4923,27,2023-11-10,1,Tomato
+F1343,Jayant K.,Punjab,Soybean,Zaid,4128,3943,42,2024-07-01,7,Rice
+F1344,Sana S.,Bihar,Potato,Kharif,3082,2946,24,2023-08-21,4,Onion
+F1345,Piya B.,Rajasthan,Soybean,Rabi,3644,3594,55,2023-01-11,1,Sugarcane
+F1346,Onkar K.,Maharashtra,Groundnut,Kharif,3386,3191,55,2023-01-28,3,Cotton
+F1347,Ishaan B.,Uttar Pradesh,Cotton,Zaid,1891,1849,68,2022-02-11,1,Potato
+F1348,Eshani B.,Maharashtra,Wheat,Rabi,4877,4764,23,2022-09-12,2,Groundnut
+F1349,Pranay Y.,Uttar Pradesh,Groundnut,Rabi,2467,2394,50,2023-05-19,1,Groundnut
+F1350,Parinaaz A.,Rajasthan,Tomato,Kharif,2923,2768,9,2024-03-25,5,Wheat
+F1351,Eva G.,Gujarat,Bajra,Zaid,4309,4156,26,2023-05-31,9,Mustard
+F1352,Heer C.,Bihar,Onion,Rabi,2711,2608,16,2023-05-27,3,Soybean
+F1353,Nehmat L.,Maharashtra,Groundnut,Zaid,1819,1685,64,2022-03-02,3,Potato
+F1354,Aradhya V.,Punjab,Groundnut,Kharif,1606,1535,57,2022-10-29,2,Potato
+F1355,Kiaan U.,Gujarat,Rice,Zaid,982,896,26,2024-03-12,2,Potato
+F1356,Nayantara R.,Maharashtra,Maize,Kharif,1414,1287,28,2022-04-28,4,Cotton
+F1357,Vedika S.,Bihar,Soybean,Rabi,2738,2600,54,2022-11-24,8,Onion
+F1358,Riya B.,Gujarat,Wheat,Kharif,4631,4557,30,2023-02-19,8,Bajra
+F1359,Parinaaz R.,Madhya Pradesh,Groundnut,Zaid,2015,1854,51,2023-02-24,1,Soybean
+F1360,Aarush M.,Bihar,Potato,Rabi,1234,1212,22,2024-02-22,5,Soybean
+F1361,Azad S.,Bihar,Onion,Kharif,3624,3603,26,2022-08-27,7,Cotton
+F1362,Damini T.,Gujarat,Groundnut,Zaid,3000,2965,64,2022-06-05,1,Maize
+F1363,Zara S.,Maharashtra,Groundnut,Rabi,3558,3486,56,2022-01-19,7,Cotton
+F1364,Armaan G.,Madhya Pradesh,Groundnut,Rabi,3920,3766,65,2023-09-04,2,Soybean
+F1365,Onkar C.,Uttar Pradesh,Onion,Zaid,1686,1598,30,2024-01-21,5,Maize
+F1366,Armaan S.,Bihar,Tomato,Kharif,2724,2565,20,2022-08-04,2,Tomato
+F1367,Shray L.,Rajasthan,Rice,Zaid,1598,1581,28,2024-02-25,8,Sugarcane
+F1368,Biju W.,Bihar,Maize,Rabi,2854,2750,20,2024-05-02,3,Maize
+F1369,Azad D.,Gujarat,Wheat,Zaid,3714,3532,28,2024-06-10,2,Soybean
+F1370,Divyansh B.,Uttar Pradesh,Mustard,Rabi,980,811,58,2022-12-18,5,Sugarcane
+F1371,Jiya D.,Gujarat,Onion,Rabi,4499,4463,17,2024-04-16,6,Maize
+F1372,Vardaniya M.,Maharashtra,Mustard,Rabi,3881,3723,57,2024-01-10,1,Tomato
+F1373,Zain V.,Punjab,Mustard,Rabi,1620,1541,49,2023-09-16,9,Potato
+F1374,Ahana  B.,Punjab,Maize,Rabi,3987,3878,22,2022-07-14,8,Tomato
+F1375,Kimaya S.,Punjab,Onion,Kharif,3177,3041,10,2024-01-05,8,Maize
+F1376,Samiha A.,Rajasthan,Wheat,Rabi,3019,2938,24,2023-10-11,1,Wheat
+F1377,Lakshit S.,Rajasthan,Groundnut,Rabi,3261,3234,65,2022-07-03,8,Onion
+F1378,Reyansh T.,Madhya Pradesh,Potato,Kharif,1230,1113,16,2022-11-24,10,Tomato
+F1379,Emir S.,Karnataka,Onion,Rabi,1574,1468,20,2024-01-25,10,Wheat
+F1380,Anya S.,Karnataka,Soybean,Kharif,4387,4236,51,2023-04-02,2,Rice
+F1381,Divyansh B.,Karnataka,Cotton,Rabi,2637,2471,58,2023-12-08,3,Cotton
+F1382,Kiaan K.,Bihar,Maize,Zaid,2032,1852,23,2022-04-03,8,Sugarcane
+F1383,Yuvaan C.,Madhya Pradesh,Rice,Rabi,2155,1975,29,2023-04-16,4,Mustard
+F1384,Badal L.,Madhya Pradesh,Onion,Rabi,3788,3639,20,2022-06-09,1,Onion
+F1385,Purab M.,Rajasthan,Potato,Rabi,3799,3626,14,2023-10-20,8,Mustard
+F1386,Veer T.,Gujarat,Soybean,Kharif,4537,4479,45,2023-10-14,4,Bajra
+F1387,Samaira G.,Bihar,Cotton,Kharif,4954,4826,69,2023-12-18,8,Tomato
+F1388,Saksham C.,Uttar Pradesh,Rice,Zaid,2627,2513,25,2023-03-28,10,Onion
+F1389,Sumer S.,Karnataka,Rice,Kharif,1222,1213,34,2022-12-09,6,Maize
+F1390,Divit W.,Rajasthan,Mustard,Rabi,3663,3577,46,2022-11-14,8,Sugarcane
+F1391,Indranil B.,Maharashtra,Sugarcane,Kharif,3977,3899,4,2023-02-09,9,Rice
+F1392,Alisha T.,Karnataka,Onion,Zaid,1435,1299,16,2023-09-13,2,Groundnut
+F1393,Divij R.,Karnataka,Onion,Kharif,2196,2059,18,2024-02-23,1,Wheat
+F1394,Madhup J.,Madhya Pradesh,Mustard,Zaid,1519,1506,54,2022-08-30,9,Wheat
+F1395,Miraya L.,Uttar Pradesh,Groundnut,Zaid,2682,2530,48,2023-12-18,7,Mustard
+F1396,Jayant H.,Punjab,Cotton,Rabi,2571,2487,72,2023-12-10,10,Onion
+F1397,Darshit S.,Bihar,Mustard,Rabi,4256,4100,50,2023-08-17,7,Cotton
+F1398,Sumer S.,Karnataka,Soybean,Rabi,1649,1540,54,2024-02-15,6,Soybean
+F1399,Nishith S.,Madhya Pradesh,Rice,Rabi,3698,3685,25,2024-05-24,3,Mustard
+F1400,Divij R.,Rajasthan,Wheat,Kharif,2949,2814,25,2024-05-22,8,Rice
+F1401,Shaan C.,Bihar,Soybean,Rabi,3358,3179,45,2022-10-16,4,Tomato
+F1402,Sahil R.,Uttar Pradesh,Onion,Rabi,1364,1216,30,2023-04-06,1,Cotton
+F1403,Alia D.,Karnataka,Wheat,Kharif,3937,3930,26,2022-03-30,3,Soybean
+F1404,Ishita U.,Karnataka,Wheat,Zaid,4725,4527,29,2024-07-19,9,Wheat
+F1405,Emir G.,Bihar,Potato,Rabi,4515,4486,18,2023-08-18,3,Potato
+F1406,Raghav S.,Karnataka,Wheat,Zaid,2573,2527,21,2022-07-11,5,Groundnut
+F1407,Zain C.,Karnataka,Mustard,Kharif,3865,3846,54,2024-03-18,1,Maize
+F1408,Elakshi H.,Maharashtra,Bajra,Zaid,4329,4318,18,2023-08-30,9,Sugarcane
+F1409,Alia C.,Rajasthan,Rice,Kharif,2407,2381,31,2022-06-10,7,Soybean
+F1410,Myra K.,Gujarat,Tomato,Rabi,3026,2873,10,2022-03-20,7,Rice
+F1411,Misha K.,Rajasthan,Tomato,Zaid,2613,2521,14,2023-12-04,3,Wheat
+F1412,Shalv B.,Punjab,Rice,Kharif,3299,3163,26,2022-05-09,8,Wheat
+F1413,Aradhya R.,Uttar Pradesh,Tomato,Kharif,4501,4497,13,2023-05-20,1,Wheat
+F1414,Gokul R.,Rajasthan,Bajra,Kharif,2697,2570,26,2022-02-05,4,Tomato
+F1415,Seher S.,Rajasthan,Cotton,Kharif,4959,4807,65,2023-04-28,2,Onion
+F1416,Ela H.,Gujarat,Soybean,Kharif,3363,3215,54,2023-06-07,1,Cotton
+F1417,Ritvik K.,Gujarat,Maize,Rabi,4907,4874,25,2022-01-21,6,Maize
+F1418,Umang G.,Karnataka,Rice,Rabi,803,658,26,2023-07-09,6,Wheat
+F1419,Khushi K.,Punjab,Potato,Rabi,1837,1724,18,2022-04-18,2,Maize
+F1420,Alia G.,Uttar Pradesh,Maize,Kharif,1296,1236,20,2022-11-24,3,Rice
+F1421,Kabir G.,Madhya Pradesh,Sugarcane,Rabi,2293,2224,5,2022-07-16,7,Mustard
+F1422,Vaibhav K.,Bihar,Potato,Rabi,2145,2086,23,2022-05-09,3,Maize
+F1423,Hridaan L.,Uttar Pradesh,Cotton,Rabi,4915,4846,60,2024-07-19,6,Rice
+F1424,Manjari W.,Bihar,Wheat,Kharif,4692,4538,30,2022-12-17,5,Bajra
+F1425,Rohan B.,Rajasthan,Soybean,Kharif,4696,4675,48,2022-02-15,1,Potato
+F1426,Aniruddh W.,Maharashtra,Groundnut,Zaid,4649,4634,56,2022-10-31,7,Wheat
+F1427,Saksham C.,Gujarat,Maize,Kharif,1292,1133,26,2022-06-18,9,Maize
+F1428,Yuvaan K.,Madhya Pradesh,Sugarcane,Rabi,1203,1201,3,2023-08-13,5,Maize
+F1429,Azad S.,Gujarat,Soybean,Rabi,4423,4267,45,2023-06-08,1,Tomato
+F1430,Aarna K.,Punjab,Groundnut,Zaid,3021,2950,46,2022-03-20,10,Mustard
+F1431,Reyansh G.,Madhya Pradesh,Maize,Rabi,2021,1860,25,2023-11-30,2,Onion
+F1432,Pranay D.,Punjab,Wheat,Kharif,2693,2588,22,2023-11-30,5,Groundnut
+F1433,Tara K.,Maharashtra,Sugarcane,Rabi,1627,1608,3,2023-01-03,5,Onion
+F1434,Ritvik R.,Bihar,Cotton,Rabi,4238,4209,72,2022-04-17,7,Onion
+F1435,Suhana D.,Bihar,Potato,Rabi,2712,2706,16,2023-02-12,3,Onion
+F1436,Rasha S.,Maharashtra,Potato,Zaid,4430,4282,19,2023-10-15,3,Mustard
+F1437,Riya B.,Bihar,Groundnut,Rabi,3666,3596,65,2023-03-29,9,Maize
+F1438,Dharmajan D.,Maharashtra,Potato,Kharif,4566,4534,22,2023-02-11,7,Bajra
+F1439,Saira B.,Madhya Pradesh,Groundnut,Zaid,2555,2445,57,2023-12-06,5,Onion
+F1440,Dhanush B.,Gujarat,Tomato,Rabi,3358,3203,8,2024-07-05,3,Mustard
+F1441,Amira A.,Maharashtra,Potato,Rabi,4079,3882,23,2024-05-13,1,Sugarcane
+F1442,Lakshay L.,Gujarat,Cotton,Kharif,1043,950,58,2024-02-05,6,Cotton
+F1443,Riaan B.,Maharashtra,Wheat,Zaid,4144,4048,20,2022-05-04,3,Tomato
+F1444,Badal K.,Bihar,Rice,Rabi,2969,2893,27,2024-05-28,10,Cotton
+F1445,Riaan S.,Karnataka,Onion,Zaid,4156,4021,27,2023-12-27,1,Onion
+F1446,Diya G.,Uttar Pradesh,Onion,Kharif,1407,1399,26,2023-04-23,5,Maize
+F1447,Yashvi B.,Uttar Pradesh,Bajra,Rabi,1163,1110,19,2023-02-22,2,Soybean
+F1448,Inaaya  D.,Karnataka,Cotton,Rabi,1636,1579,72,2024-04-04,10,Bajra
+F1449,Advika C.,Punjab,Soybean,Kharif,1989,1941,53,2024-05-14,6,Bajra
+F1450,Miraan D.,Maharashtra,Onion,Kharif,4850,4848,14,2023-06-21,4,Soybean
+F1451,Charvi B.,Karnataka,Rice,Zaid,1957,1816,28,2022-02-28,7,Wheat
+F1452,Zain D.,Bihar,Rice,Kharif,3940,3844,27,2023-05-06,9,Tomato
+F1453,Armaan K.,Bihar,Bajra,Kharif,4824,4664,21,2022-04-17,4,Soybean
+F1454,Urvi D.,Punjab,Onion,Kharif,3810,3613,22,2022-06-23,9,Maize
+F1455,Amani J.,Maharashtra,Groundnut,Zaid,2742,2738,49,2023-05-12,7,Mustard
+F1456,Navya B.,Gujarat,Cotton,Zaid,3493,3319,62,2023-09-13,4,Cotton
+F1457,Yuvaan C.,Uttar Pradesh,Tomato,Kharif,2896,2843,10,2023-11-15,9,Tomato
+F1458,Siya K.,Rajasthan,Maize,Rabi,4806,4674,28,2024-06-16,9,Soybean
+F1459,Aaina B.,Karnataka,Bajra,Zaid,4588,4412,20,2022-09-29,10,Potato
+F1460,Devansh B.,Karnataka,Bajra,Rabi,1308,1109,20,2024-04-07,2,Potato
+F1461,Ranbir D.,Rajasthan,Onion,Zaid,2904,2869,14,2022-06-15,6,Mustard
+F1462,Alia K.,Maharashtra,Rice,Kharif,2696,2563,32,2022-01-14,7,Onion
+F1463,Indrajit B.,Bihar,Mustard,Kharif,4686,4589,45,2022-03-16,3,Rice
+F1464,Sara T.,Uttar Pradesh,Sugarcane,Rabi,2843,2656,3,2022-11-04,10,Wheat
+F1465,Jivika B.,Punjab,Wheat,Zaid,951,869,27,2023-03-06,4,Potato
+F1466,Aarna K.,Rajasthan,Cotton,Kharif,1914,1882,65,2023-11-08,2,Tomato
+F1467,Vivaan T.,Karnataka,Onion,Kharif,2326,2315,18,2024-01-06,4,Groundnut
+F1468,Taran S.,Punjab,Soybean,Rabi,1345,1208,48,2022-04-02,6,Tomato
+F1469,Reyansh B.,Gujarat,Mustard,Zaid,2933,2895,55,2023-05-29,5,Sugarcane
+F1470,Vihaan M.,Punjab,Wheat,Zaid,3774,3609,26,2023-10-09,1,Bajra
+F1471,Aarav J.,Rajasthan,Sugarcane,Zaid,2238,2192,3,2023-03-07,1,Cotton
+F1472,Priyansh R.,Maharashtra,Groundnut,Zaid,1036,1017,46,2023-08-03,5,Tomato
+F1473,Uthkarsh W.,Gujarat,Wheat,Kharif,4756,4633,23,2024-04-07,6,Groundnut
+F1474,Jayan R.,Bihar,Bajra,Kharif,879,705,23,2022-07-02,4,Potato
+F1475,Himmat M.,Maharashtra,Onion,Kharif,945,886,13,2023-10-28,2,Groundnut
+F1476,Dishani R.,Punjab,Wheat,Kharif,1439,1386,29,2024-05-17,3,Tomato
+F1477,Mishti M.,Karnataka,Bajra,Rabi,2158,2015,22,2023-09-14,10,Tomato
+F1478,Uthkarsh D.,Gujarat,Rice,Rabi,2787,2760,34,2023-07-09,1,Soybean
+F1479,Charvi A.,Rajasthan,Maize,Rabi,1629,1620,25,2023-12-25,4,Wheat
+F1480,Elakshi B.,Madhya Pradesh,Bajra,Kharif,2665,2604,26,2024-04-24,6,Wheat
+F1481,Oorja B.,Karnataka,Bajra,Kharif,4420,4258,20,2024-02-21,4,Rice
+F1482,Shamik M.,Madhya Pradesh,Sugarcane,Zaid,3023,2990,4,2023-06-05,8,Potato
+F1483,Tara G.,Maharashtra,Potato,Kharif,4101,4042,22,2024-05-18,10,Wheat
+F1484,Mahika S.,Madhya Pradesh,Wheat,Zaid,1435,1242,24,2023-06-07,10,Maize
+F1485,Prisha W.,Rajasthan,Bajra,Rabi,2213,2144,26,2024-03-14,3,Rice
+F1486,Ahana  V.,Bihar,Cotton,Kharif,3727,3559,74,2023-01-12,10,Cotton
+F1487,Saira C.,Maharashtra,Wheat,Kharif,2808,2753,23,2022-11-23,5,Sugarcane
+F1488,Reyansh S.,Maharashtra,Sugarcane,Rabi,1212,1126,4,2024-04-26,7,Onion
+F1489,Rhea H.,Maharashtra,Cotton,Kharif,2808,2711,55,2022-09-05,5,Maize
+F1490,Aarush M.,Bihar,Groundnut,Rabi,2481,2315,60,2023-04-19,1,Onion
+F1491,Aaina G.,Gujarat,Mustard,Zaid,4013,3818,49,2022-02-09,1,Onion
+F1492,Anvi T.,Punjab,Soybean,Rabi,2840,2653,53,2022-11-05,9,Soybean
+F1493,Kabir Y.,Maharashtra,Onion,Rabi,3395,3278,15,2024-06-15,8,Groundnut
+F1494,Baiju S.,Bihar,Wheat,Rabi,4815,4802,27,2023-10-09,10,Bajra
+F1495,Purab G.,Gujarat,Sugarcane,Zaid,4258,4171,3,2023-07-07,4,Soybean
+F1496,Tarini S.,Gujarat,Mustard,Zaid,2402,2353,59,2022-11-06,1,Groundnut
+F1497,Ahana  B.,Gujarat,Potato,Zaid,4141,4104,19,2023-10-06,3,Maize
+F1498,Aaryahi E.,Rajasthan,Maize,Kharif,4798,4769,25,2024-01-10,7,Sugarcane
+F1499,Raghav R.,Bihar,Onion,Rabi,2838,2741,10,2022-12-09,10,Maize
+F1500,Nirvi S.,Madhya Pradesh,Rice,Kharif,1880,1703,25,2024-05-23,7,Sugarcane
+F1501,Mishti C.,Rajasthan,Maize,Rabi,3384,3192,23,2022-05-15,2,Sugarcane
+F1502,Priyansh D.,Bihar,Bajra,Rabi,2225,2140,24,2022-04-18,6,Soybean
+F1503,Vivaan A.,Karnataka,Tomato,Zaid,4221,4162,8,2022-01-22,1,Onion
+F1504,Mannat C.,Bihar,Onion,Kharif,3926,3907,12,2022-06-01,6,Maize
+F1505,Ojas R.,Madhya Pradesh,Wheat,Zaid,4746,4664,20,2024-07-04,2,Rice
+F1506,Arnav D.,Madhya Pradesh,Bajra,Rabi,4208,4054,18,2022-09-25,2,Groundnut
+F1507,Vardaniya R.,Karnataka,Onion,Rabi,1840,1824,15,2023-11-11,9,Mustard
+F1508,Renee K.,Rajasthan,Bajra,Kharif,4001,3876,24,2024-04-02,9,Mustard
+F1509,Zain S.,Bihar,Cotton,Rabi,4741,4584,57,2024-05-30,10,Soybean
+F1510,Ishaan R.,Madhya Pradesh,Rice,Rabi,3461,3269,32,2023-01-27,10,Cotton
+F1511,Raunak W.,Rajasthan,Groundnut,Zaid,2078,1919,53,2023-04-29,8,Rice
+F1512,Piya U.,Maharashtra,Onion,Kharif,1366,1353,19,2022-10-03,3,Cotton
+F1513,Reyansh K.,Bihar,Tomato,Rabi,4674,4558,13,2022-10-18,8,Maize
+F1514,Renee M.,Gujarat,Cotton,Zaid,4197,4190,71,2023-04-02,5,Mustard
+F1515,Aniruddh V.,Punjab,Onion,Rabi,4930,4742,19,2023-12-26,8,Wheat
+F1516,Samiha B.,Punjab,Cotton,Zaid,1361,1318,59,2024-03-06,10,Bajra
+F1517,Dishani K.,Maharashtra,Onion,Kharif,3452,3290,22,2023-02-25,2,Cotton
+F1518,Neelofar S.,Bihar,Sugarcane,Kharif,2618,2585,5,2023-02-01,4,Onion
+F1519,Vardaniya R.,Gujarat,Bajra,Kharif,2134,2073,22,2022-11-25,7,Bajra
+F1520,Mehul T.,Madhya Pradesh,Potato,Kharif,805,629,24,2024-05-30,4,Tomato
+F1521,Anika V.,Rajasthan,Cotton,Rabi,4681,4494,72,2022-02-09,3,Potato
+F1522,Anahita S.,Bihar,Cotton,Kharif,4313,4156,55,2022-09-10,1,Soybean
+F1523,Romil G.,Rajasthan,Maize,Rabi,3621,3473,18,2022-12-29,7,Rice
+F1524,Pranay B.,Karnataka,Potato,Rabi,3240,3101,20,2024-07-05,5,Tomato
+F1525,Hazel K.,Uttar Pradesh,Potato,Rabi,1242,1241,17,2024-03-26,5,Cotton
+F1526,Dhruv B.,Maharashtra,Soybean,Zaid,3610,3415,45,2023-09-07,6,Wheat
+F1527,Pihu U.,Madhya Pradesh,Bajra,Zaid,2375,2371,22,2023-01-17,7,Rice
+F1528,Samaira R.,Bihar,Mustard,Kharif,2577,2503,45,2024-05-04,4,Sugarcane
+F1529,Samiha B.,Rajasthan,Wheat,Kharif,2967,2874,29,2022-10-05,6,Tomato
+F1530,Tiya S.,Karnataka,Sugarcane,Kharif,3381,3360,3,2022-11-25,2,Wheat
+F1531,Saksham A.,Maharashtra,Tomato,Zaid,971,967,20,2024-05-10,1,Sugarcane
+F1532,Tarini S.,Punjab,Potato,Zaid,1867,1678,14,2022-10-11,6,Mustard
+F1533,Prerak S.,Maharashtra,Cotton,Rabi,4957,4829,72,2024-03-29,5,Rice
+F1534,Divit D.,Karnataka,Potato,Rabi,3325,3320,15,2024-03-24,1,Cotton
+F1535,Faiyaz R.,Rajasthan,Rice,Zaid,4383,4353,32,2023-08-16,6,Onion
+F1536,Pranay G.,Maharashtra,Wheat,Zaid,935,931,30,2023-11-29,5,Cotton
+F1537,Dhanush V.,Gujarat,Rice,Zaid,3340,3332,29,2022-11-01,5,Tomato
+F1538,Aniruddh K.,Karnataka,Cotton,Kharif,2175,2038,55,2023-05-10,5,Sugarcane
+F1539,Saira K.,Bihar,Wheat,Kharif,2053,1907,25,2022-09-12,10,Cotton
+F1540,Divij D.,Karnataka,Mustard,Rabi,1451,1329,53,2023-09-03,4,Maize
+F1541,Vivaan M.,Gujarat,Sugarcane,Kharif,2255,2145,5,2022-01-04,4,Maize
+F1542,Divij B.,Gujarat,Bajra,Kharif,2503,2378,22,2024-06-07,1,Tomato
+F1543,Ira D.,Madhya Pradesh,Groundnut,Rabi,1499,1453,46,2022-11-07,9,Tomato
+F1544,Shlok J.,Maharashtra,Rice,Rabi,2771,2652,26,2024-07-01,5,Mustard
+F1545,Vardaniya L.,Punjab,Onion,Zaid,3339,3165,27,2024-04-26,5,Bajra
+F1546,Purab B.,Karnataka,Cotton,Rabi,2087,2019,74,2024-03-21,10,Soybean
+F1547,Heer M.,Punjab,Potato,Rabi,4868,4721,14,2023-09-14,2,Soybean
+F1548,Alia K.,Punjab,Rice,Kharif,3142,2975,25,2022-08-09,5,Sugarcane
+F1549,Jiya D.,Karnataka,Mustard,Kharif,4062,3976,54,2022-03-31,3,Potato
+F1550,Charvi G.,Uttar Pradesh,Bajra,Rabi,3045,2939,26,2022-05-25,8,Bajra
+F1551,Tarini D.,Karnataka,Mustard,Rabi,4955,4826,51,2023-09-27,2,Sugarcane
+F1552,Indranil S.,Madhya Pradesh,Rice,Rabi,2963,2880,26,2023-04-20,6,Wheat
+F1553,Dhanuk B.,Rajasthan,Rice,Kharif,3560,3378,29,2023-12-17,7,Onion
+F1554,Shayak S.,Karnataka,Wheat,Kharif,3107,3103,28,2023-12-18,6,Wheat
+F1555,Nirvaan Y.,Karnataka,Groundnut,Kharif,3088,2956,52,2024-03-21,7,Tomato
+F1556,Divit S.,Karnataka,Sugarcane,Zaid,3140,2962,4,2022-10-14,10,Onion
+F1557,Seher T.,Uttar Pradesh,Soybean,Zaid,2796,2788,44,2022-06-11,4,Mustard
+F1558,Advik K.,Bihar,Potato,Kharif,2784,2635,14,2022-10-01,4,Soybean
+F1559,Faiyaz B.,Karnataka,Tomato,Zaid,833,778,19,2022-06-29,7,Bajra
+F1560,Prisha B.,Maharashtra,Onion,Rabi,1040,918,28,2024-01-25,10,Tomato
+F1561,Madhav D.,Uttar Pradesh,Tomato,Kharif,4501,4424,16,2023-08-29,6,Tomato
+F1562,Dishani B.,Rajasthan,Maize,Rabi,4117,3926,19,2024-07-23,4,Mustard
+F1563,Indrans A.,Bihar,Sugarcane,Zaid,2177,2105,4,2023-10-06,7,Onion
+F1564,Divit T.,Gujarat,Bajra,Zaid,4050,3890,20,2022-09-08,3,Groundnut
+F1565,Ojas A.,Rajasthan,Cotton,Rabi,4300,4250,73,2024-01-12,9,Maize
+F1566,Tushar T.,Uttar Pradesh,Onion,Kharif,3371,3179,13,2022-07-19,5,Tomato
+F1567,Uthkarsh S.,Madhya Pradesh,Rice,Zaid,3813,3792,33,2022-11-20,2,Sugarcane
+F1568,Zoya H.,Karnataka,Maize,Rabi,3789,3654,24,2023-04-16,6,Potato
+F1569,Shamik R.,Maharashtra,Groundnut,Zaid,4624,4463,49,2023-09-26,3,Groundnut
+F1570,Emir K.,Uttar Pradesh,Tomato,Kharif,3817,3773,14,2023-09-17,4,Groundnut
+F1571,Mohanlal M.,Maharashtra,Sugarcane,Zaid,1671,1635,5,2023-12-03,3,Sugarcane
+F1572,Krish T.,Karnataka,Cotton,Kharif,1425,1249,65,2022-02-13,10,Sugarcane
+F1573,Indranil B.,Gujarat,Bajra,Rabi,1224,1212,26,2023-05-21,6,Maize
+F1574,Baiju W.,Gujarat,Onion,Zaid,1983,1921,23,2022-10-08,9,Wheat
+F1575,Charvi I.,Karnataka,Wheat,Zaid,1804,1692,23,2023-05-28,4,Rice
+F1576,Ayesha B.,Karnataka,Cotton,Zaid,1670,1667,57,2023-11-02,1,Mustard
+F1577,Kaira J.,Rajasthan,Soybean,Rabi,1283,1226,55,2023-05-03,3,Cotton
+F1578,Purab D.,Madhya Pradesh,Wheat,Zaid,3450,3305,29,2024-04-23,7,Sugarcane
+F1579,Tarini K.,Maharashtra,Potato,Kharif,3416,3352,14,2022-09-07,9,Maize
+F1580,Prerak B.,Bihar,Sugarcane,Zaid,2511,2501,4,2024-07-27,4,Maize
+F1581,Oorja B.,Madhya Pradesh,Onion,Kharif,977,975,14,2023-11-30,10,Maize
+F1582,Veer W.,Punjab,Mustard,Kharif,4311,4165,60,2022-08-21,3,Tomato
+F1583,Myra S.,Rajasthan,Bajra,Rabi,2487,2462,26,2024-06-26,1,Cotton
+F1584,Bhamini C.,Karnataka,Maize,Rabi,4017,3911,25,2022-08-09,3,Mustard
+F1585,Vivaan L.,Punjab,Mustard,Zaid,3330,3311,49,2024-05-28,8,Maize
+F1586,Fateh G.,Bihar,Soybean,Zaid,1912,1773,51,2023-02-08,1,Maize
+F1587,Uthkarsh G.,Punjab,Bajra,Rabi,1699,1630,18,2024-02-19,7,Bajra
+F1588,Charvi A.,Bihar,Bajra,Zaid,4933,4746,20,2022-09-28,8,Potato
+F1589,Tara B.,Uttar Pradesh,Soybean,Kharif,1014,816,42,2022-09-11,8,Sugarcane
+F1590,Ayesha B.,Madhya Pradesh,Maize,Zaid,1539,1500,20,2022-08-06,7,Mustard
+F1591,Saksham K.,Rajasthan,Mustard,Zaid,3796,3658,51,2022-12-04,2,Rice
+F1592,Nitya B.,Maharashtra,Cotton,Kharif,2933,2778,72,2022-12-09,9,Groundnut
+F1593,Raghav K.,Punjab,Sugarcane,Zaid,4176,4137,3,2023-06-13,2,Groundnut
+F1594,Advika B.,Karnataka,Potato,Rabi,4911,4741,25,2023-02-16,3,Cotton
+F1595,Dhanush K.,Maharashtra,Rice,Zaid,2028,1925,26,2024-04-02,8,Soybean
+F1596,Yuvaan A.,Uttar Pradesh,Groundnut,Zaid,4283,4168,55,2023-10-10,7,Wheat
+F1597,Mehul G.,Maharashtra,Soybean,Zaid,4733,4701,54,2023-01-30,9,Soybean
+F1598,Divit V.,Punjab,Onion,Zaid,923,886,27,2023-02-24,3,Tomato
+F1599,Kiaan V.,Gujarat,Potato,Rabi,971,808,17,2023-11-24,2,Soybean
+F1600,Jivika C.,Madhya Pradesh,Sugarcane,Rabi,3197,3176,4,2023-07-16,2,Wheat
+F1601,Adira G.,Uttar Pradesh,Onion,Rabi,2214,2084,20,2023-08-19,2,Cotton
+F1602,Eva T.,Bihar,Soybean,Kharif,2360,2256,48,2022-02-18,9,Tomato
+F1603,Ehsaan A.,Madhya Pradesh,Bajra,Kharif,4664,4555,21,2024-02-21,2,Tomato
+F1604,Farhan B.,Rajasthan,Bajra,Zaid,4401,4322,22,2024-01-09,3,Bajra
+F1605,Jivika S.,Uttar Pradesh,Rice,Kharif,4645,4512,28,2022-03-10,3,Wheat
+F1606,Bhamini S.,Rajasthan,Soybean,Kharif,1809,1612,47,2023-04-23,6,Sugarcane
+F1607,Nehmat C.,Punjab,Cotton,Kharif,3572,3500,67,2022-11-22,2,Groundnut
+F1608,Vidur H.,Rajasthan,Potato,Rabi,2676,2554,13,2023-10-17,8,Onion
+F1609,Neysa C.,Maharashtra,Groundnut,Zaid,3226,3213,65,2023-02-06,9,Maize
+F1610,Anahi Y.,Karnataka,Groundnut,Kharif,3137,3130,65,2023-02-06,5,Rice
+F1611,Shray R.,Gujarat,Potato,Zaid,2991,2858,14,2022-04-03,7,Wheat
+F1612,Jayant B.,Madhya Pradesh,Bajra,Zaid,2059,1889,25,2023-01-29,10,Cotton
+F1613,Urvi S.,Madhya Pradesh,Sugarcane,Rabi,4111,3998,3,2022-03-01,3,Soybean
+F1614,Neysa T.,Gujarat,Mustard,Rabi,1720,1673,59,2024-01-20,3,Cotton
+F1615,Prerak S.,Bihar,Tomato,Rabi,1331,1255,12,2024-04-16,4,Tomato
+F1616,Tiya K.,Bihar,Maize,Kharif,2890,2843,22,2022-10-11,8,Tomato
+F1617,Advika S.,Madhya Pradesh,Wheat,Zaid,3530,3455,28,2023-07-03,1,Wheat
+F1618,Zeeshan A.,Uttar Pradesh,Groundnut,Kharif,1992,1793,58,2022-06-22,5,Cotton
+F1619,Jhanvi M.,Bihar,Wheat,Zaid,3878,3836,25,2022-09-05,2,Groundnut
+F1620,Manikya S.,Punjab,Tomato,Kharif,3424,3358,17,2022-08-08,2,Rice
+F1621,Anay W.,Uttar Pradesh,Maize,Zaid,4393,4363,23,2023-02-09,10,Potato
+F1622,Nayantara S.,Maharashtra,Rice,Kharif,4644,4448,33,2023-09-06,6,Tomato
+F1623,Hiran S.,Rajasthan,Onion,Zaid,1739,1650,12,2024-01-02,7,Groundnut
+F1624,Faiyaz K.,Karnataka,Rice,Zaid,4150,3981,32,2023-04-16,9,Cotton
+F1625,Ayesha J.,Maharashtra,Potato,Zaid,3440,3294,13,2022-05-16,9,Potato
+F1626,Jivin V.,Karnataka,Wheat,Zaid,1100,988,28,2024-02-05,9,Wheat
+F1627,Myra B.,Punjab,Sugarcane,Rabi,4346,4313,4,2024-05-11,2,Rice
+F1628,Aradhya S.,Bihar,Soybean,Rabi,4226,4212,41,2022-06-09,9,Cotton
+F1629,Aarna C.,Maharashtra,Tomato,Zaid,2762,2729,10,2023-08-14,1,Bajra
+F1630,Divit K.,Madhya Pradesh,Groundnut,Kharif,3393,3289,55,2023-09-19,2,Potato
+F1631,Kimaya D.,Uttar Pradesh,Cotton,Zaid,2055,1946,62,2022-01-14,6,Rice
+F1632,Aarav S.,Maharashtra,Rice,Rabi,2812,2808,27,2024-04-27,6,Rice
+F1633,Tejas S.,Gujarat,Cotton,Rabi,3824,3774,65,2022-11-29,6,Wheat
+F1634,Aniruddh B.,Gujarat,Sugarcane,Rabi,4836,4745,5,2023-06-01,5,Onion
+F1635,Keya G.,Bihar,Maize,Zaid,949,811,19,2022-01-22,10,Mustard
+F1636,Bhamini K.,Punjab,Sugarcane,Kharif,4566,4464,5,2023-08-22,4,Groundnut
+F1637,Advika D.,Punjab,Sugarcane,Rabi,2169,2093,3,2022-05-07,5,Onion
+F1638,Vardaniya D.,Uttar Pradesh,Wheat,Kharif,1950,1927,27,2024-02-23,4,Wheat
+F1639,Nishith K.,Karnataka,Cotton,Kharif,2228,2204,60,2024-07-07,7,Mustard
+F1640,Zoya S.,Maharashtra,Sugarcane,Zaid,3459,3323,4,2022-09-01,8,Rice
+F1641,Madhup S.,Rajasthan,Maize,Rabi,1630,1556,20,2022-02-10,5,Mustard
+F1642,Nirvaan H.,Rajasthan,Onion,Rabi,4565,4548,10,2023-11-05,4,Wheat
+F1643,Shayak C.,Rajasthan,Sugarcane,Kharif,4174,4158,4,2023-02-13,10,Wheat
+F1644,Samarth V.,Rajasthan,Wheat,Rabi,2600,2595,26,2023-02-25,8,Maize
+F1645,Damini A.,Gujarat,Wheat,Rabi,1992,1865,29,2024-04-30,1,Mustard
+F1646,Neelofar G.,Uttar Pradesh,Cotton,Rabi,4082,3885,75,2022-02-04,2,Mustard
+F1647,Miraya Z.,Uttar Pradesh,Maize,Zaid,2242,2230,23,2022-04-30,10,Onion
+F1648,Jayant S.,Rajasthan,Sugarcane,Zaid,2321,2270,3,2023-04-17,8,Sugarcane
+F1649,Bhavin T.,Gujarat,Tomato,Zaid,4892,4724,14,2023-04-09,5,Wheat
+F1650,Yakshit R.,Madhya Pradesh,Onion,Zaid,2588,2561,18,2023-10-01,6,Onion
+F1651,Emir R.,Karnataka,Sugarcane,Kharif,4884,4705,4,2023-12-05,5,Groundnut
+F1652,Anya M.,Punjab,Mustard,Rabi,1660,1485,47,2022-03-23,5,Bajra
+F1653,Alia D.,Madhya Pradesh,Onion,Kharif,4166,3977,18,2022-10-10,9,Maize
+F1654,Mohanlal S.,Karnataka,Mustard,Kharif,4731,4706,54,2022-05-10,2,Maize
+F1655,Farhan C.,Rajasthan,Maize,Kharif,4156,4047,27,2022-08-06,6,Bajra
+F1656,Zoya R.,Punjab,Soybean,Zaid,940,843,51,2023-04-06,4,Soybean
+F1657,Tarini V.,Uttar Pradesh,Maize,Rabi,3068,2893,20,2024-02-18,2,Potato
+F1658,Abram G.,Rajasthan,Sugarcane,Kharif,2633,2607,5,2023-11-26,7,Maize
+F1659,Parinaaz S.,Punjab,Soybean,Zaid,4015,3829,42,2023-08-05,8,Maize
+F1660,Zeeshan D.,Maharashtra,Cotton,Zaid,2057,2012,73,2022-08-29,5,Potato
+F1661,Tarini C.,Bihar,Bajra,Zaid,3455,3337,24,2022-12-29,10,Groundnut
+F1662,Dhanuk B.,Punjab,Soybean,Zaid,3720,3601,49,2024-07-20,3,Mustard
+F1663,Neysa K.,Madhya Pradesh,Bajra,Zaid,4012,3970,19,2024-03-08,6,Groundnut
+F1664,Hazel C.,Maharashtra,Onion,Zaid,4385,4186,19,2024-01-25,7,Tomato
+F1665,Siya K.,Rajasthan,Potato,Zaid,2900,2715,22,2024-03-27,8,Bajra
+F1666,Baiju C.,Bihar,Wheat,Zaid,3803,3627,23,2022-06-04,2,Tomato
+F1667,Pari B.,Bihar,Rice,Kharif,3954,3790,25,2022-02-14,5,Mustard
+F1668,Samiha B.,Gujarat,Maize,Kharif,4265,4246,28,2024-01-29,8,Soybean
+F1669,Advika T.,Uttar Pradesh,Onion,Zaid,4023,3852,17,2024-04-29,1,Groundnut
+F1670,Ahana  V.,Rajasthan,Potato,Rabi,2834,2708,21,2023-02-09,6,Sugarcane
+F1671,Kavya B.,Gujarat,Soybean,Zaid,2325,2235,49,2022-07-08,9,Onion
+F1672,Mannat K.,Uttar Pradesh,Soybean,Kharif,3254,3191,47,2022-10-28,8,Sugarcane
+F1673,Vardaniya V.,Madhya Pradesh,Mustard,Zaid,4347,4185,52,2022-03-20,8,Groundnut
+F1674,Krish D.,Gujarat,Mustard,Kharif,3696,3608,45,2022-12-05,9,Cotton
+F1675,Kiara D.,Gujarat,Bajra,Zaid,2600,2596,18,2023-03-06,8,Sugarcane
+F1676,Shaan M.,Karnataka,Tomato,Kharif,1822,1752,11,2023-09-03,4,Tomato
+F1677,Lakshay C.,Punjab,Cotton,Rabi,1709,1680,60,2022-09-17,2,Rice
+F1678,Zoya S.,Punjab,Bajra,Zaid,1045,989,18,2023-03-26,5,Tomato
+F1679,Saksham S.,Gujarat,Maize,Zaid,4928,4785,26,2022-05-28,10,Cotton
+F1680,Elakshi M.,Punjab,Wheat,Kharif,4154,3993,27,2023-08-19,10,Mustard
+F1681,Hrishita G.,Madhya Pradesh,Tomato,Zaid,2040,1946,18,2023-06-29,6,Mustard
+F1682,Tejas C.,Bihar,Potato,Kharif,4557,4439,12,2023-04-23,5,Onion
+F1683,Ritvik R.,Madhya Pradesh,Bajra,Kharif,4902,4749,26,2022-08-10,10,Soybean
+F1684,Vihaan M.,Uttar Pradesh,Maize,Rabi,1008,979,23,2023-02-05,4,Wheat
+F1685,Lagan M.,Madhya Pradesh,Rice,Rabi,1855,1718,31,2022-03-24,9,Cotton
+F1686,Pranay R.,Gujarat,Maize,Rabi,3375,3268,25,2023-05-23,7,Rice
+F1687,Badal L.,Madhya Pradesh,Cotton,Zaid,2959,2933,62,2024-06-01,2,Cotton
+F1688,Lakshit G.,Karnataka,Cotton,Zaid,2465,2395,71,2022-04-07,9,Potato
+F1689,Mehul M.,Madhya Pradesh,Onion,Kharif,1533,1346,20,2024-02-16,10,Soybean
+F1690,Drishya K.,Bihar,Wheat,Zaid,2281,2169,26,2023-04-27,9,Groundnut
+F1691,Manikya B.,Karnataka,Groundnut,Rabi,3574,3539,61,2022-02-05,9,Sugarcane
+F1692,Yashvi W.,Karnataka,Rice,Zaid,2981,2956,33,2022-08-28,10,Groundnut
+F1693,Onkar T.,Madhya Pradesh,Cotton,Zaid,1435,1308,58,2022-07-05,3,Sugarcane
+F1694,Sara D.,Bihar,Sugarcane,Rabi,3108,2921,5,2023-06-20,2,Onion
+F1695,Sumer S.,Madhya Pradesh,Wheat,Zaid,2148,2013,26,2024-03-08,6,Cotton
+F1696,Nakul T.,Rajasthan,Cotton,Kharif,2349,2227,64,2022-11-04,6,Mustard
+F1697,Ishita S.,Maharashtra,Groundnut,Rabi,1532,1453,52,2022-11-07,7,Maize
+F1698,Keya R.,Bihar,Bajra,Zaid,2285,2283,18,2024-06-18,3,Onion
+F1699,Diya K.,Gujarat,Potato,Kharif,1667,1495,18,2023-06-11,4,Maize
+F1700,Renee M.,Madhya Pradesh,Soybean,Zaid,2033,1923,52,2023-10-17,3,Groundnut
+F1701,Shamik D.,Bihar,Wheat,Zaid,1053,908,27,2022-05-24,9,Cotton
+F1702,Neelofar D.,Gujarat,Tomato,Kharif,2362,2331,17,2024-05-27,9,Wheat
+F1703,Jhanvi A.,Uttar Pradesh,Mustard,Rabi,2195,2173,60,2022-01-05,3,Sugarcane
+F1704,Abram M.,Madhya Pradesh,Tomato,Zaid,4034,3867,19,2023-06-22,9,Soybean
+F1705,Kartik T.,Punjab,Potato,Zaid,3276,3275,25,2022-06-30,6,Tomato
+F1706,Jivin M.,Madhya Pradesh,Wheat,Rabi,3253,3169,24,2024-01-30,8,Rice
+F1707,Ira B.,Karnataka,Sugarcane,Zaid,2932,2875,3,2022-07-18,3,Bajra
+F1708,Anahita G.,Uttar Pradesh,Rice,Kharif,3884,3840,35,2022-04-23,10,Soybean
+F1709,Aniruddh W.,Karnataka,Soybean,Rabi,4439,4242,54,2023-11-25,4,Maize
+F1710,Samaira R.,Bihar,Groundnut,Zaid,4220,4148,53,2023-02-27,5,Groundnut
+F1711,Veer S.,Uttar Pradesh,Soybean,Kharif,2316,2170,40,2023-01-27,5,Bajra
+F1712,Aayush S.,Punjab,Potato,Zaid,4220,4063,14,2023-10-10,6,Wheat
+F1713,Azad V.,Madhya Pradesh,Mustard,Zaid,2269,2191,60,2024-04-20,9,Bajra
+F1714,Mamooty K.,Gujarat,Maize,Rabi,4657,4477,24,2023-08-20,6,Maize
+F1715,Dharmajan D.,Maharashtra,Rice,Zaid,4250,4057,30,2024-01-24,2,Groundnut
+F1716,Shray K.,Rajasthan,Groundnut,Kharif,4919,4895,65,2022-05-18,8,Sugarcane
+F1717,Vanya S.,Karnataka,Onion,Zaid,2044,1944,25,2024-03-12,8,Maize
+F1718,Tushar H.,Bihar,Cotton,Rabi,3037,2989,57,2022-09-26,3,Cotton
+F1719,Alia K.,Punjab,Soybean,Kharif,2450,2419,51,2023-02-04,1,Rice
+F1720,Seher R.,Gujarat,Wheat,Kharif,1766,1623,20,2023-06-27,6,Tomato
+F1721,Gokul G.,Gujarat,Onion,Rabi,3737,3573,29,2022-03-21,8,Sugarcane
+F1722,Myra G.,Maharashtra,Tomato,Zaid,4488,4371,17,2022-02-20,5,Tomato
+F1723,Zain B.,Rajasthan,Groundnut,Zaid,4375,4242,52,2023-07-17,3,Rice
+F1724,Aaina S.,Uttar Pradesh,Maize,Kharif,2696,2509,28,2023-12-28,3,Soybean
+F1725,Aaina A.,Bihar,Wheat,Kharif,4222,4168,21,2022-09-10,9,Soybean
+F1726,Aradhya V.,Gujarat,Cotton,Zaid,2680,2542,74,2023-11-11,4,Mustard
+F1727,Ivana V.,Maharashtra,Onion,Zaid,3642,3642,19,2023-06-26,1,Maize
+F1728,Prerak B.,Rajasthan,Mustard,Zaid,1371,1183,56,2023-07-04,6,Potato
+F1729,Vanya L.,Madhya Pradesh,Onion,Kharif,4229,4065,21,2022-06-20,7,Groundnut
+F1730,Eshani S.,Karnataka,Rice,Kharif,2657,2601,31,2024-05-02,10,Soybean
+F1731,Divij R.,Madhya Pradesh,Soybean,Kharif,3106,2984,46,2022-05-10,3,Cotton
+F1732,Ivana B.,Karnataka,Sugarcane,Rabi,4138,3944,5,2023-11-07,5,Tomato
+F1733,Mannat G.,Madhya Pradesh,Wheat,Kharif,1148,1021,25,2024-05-10,4,Onion
+F1734,Kismat R.,Bihar,Bajra,Kharif,2311,2289,24,2023-03-05,5,Onion
+F1735,Divij B.,Maharashtra,Bajra,Kharif,2023,1988,19,2022-07-28,6,Rice
+F1736,Vivaan D.,Gujarat,Sugarcane,Zaid,1015,957,4,2024-04-04,4,Mustard
+F1737,Samiha B.,Gujarat,Mustard,Rabi,2254,2074,46,2022-10-03,6,Onion
+F1738,Lagan S.,Karnataka,Tomato,Kharif,3606,3469,10,2023-06-13,8,Sugarcane
+F1739,Hazel G.,Punjab,Bajra,Zaid,3162,3008,23,2022-09-30,9,Onion
+F1740,Nirvaan D.,Uttar Pradesh,Cotton,Rabi,2599,2486,61,2022-03-25,6,Mustard
+F1741,Divit B.,Rajasthan,Bajra,Rabi,1357,1238,26,2023-05-10,1,Wheat
+F1742,Shamik W.,Karnataka,Maize,Kharif,2082,1884,23,2023-06-27,4,Soybean
+F1743,Parinaaz G.,Madhya Pradesh,Potato,Kharif,4105,4057,18,2023-01-23,1,Onion
+F1744,Kimaya R.,Rajasthan,Cotton,Kharif,4240,4139,68,2022-09-27,1,Sugarcane
+F1745,Keya M.,Rajasthan,Sugarcane,Rabi,4479,4286,5,2022-01-10,9,Potato
+F1746,Ivan D.,Madhya Pradesh,Onion,Zaid,3986,3855,13,2022-01-30,2,Maize
+F1747,Kashvi S.,Karnataka,Mustard,Zaid,1572,1507,56,2023-04-07,1,Groundnut
+F1748,Kismat T.,Uttar Pradesh,Rice,Kharif,1288,1095,28,2023-07-15,10,Rice
+F1749,Vardaniya B.,Madhya Pradesh,Wheat,Zaid,2667,2491,23,2022-12-22,1,Cotton
+F1750,Azad I.,Bihar,Rice,Rabi,3843,3777,28,2022-12-21,7,Maize
+F1751,Miraan K.,Punjab,Maize,Rabi,3337,3191,28,2022-06-18,7,Maize
+F1752,Ivan G.,Uttar Pradesh,Potato,Rabi,3586,3417,16,2024-04-25,9,Maize
+F1753,Alia L.,Gujarat,Sugarcane,Zaid,4360,4351,5,2022-04-21,7,Sugarcane
+F1754,Shaan W.,Punjab,Rice,Kharif,1968,1898,25,2024-02-08,5,Tomato
+F1755,Hridaan S.,Maharashtra,Potato,Zaid,1593,1458,12,2023-09-19,2,Maize
+F1756,Indrans V.,Gujarat,Sugarcane,Kharif,1751,1694,3,2023-04-05,2,Tomato
+F1757,Kiaan R.,Uttar Pradesh,Potato,Rabi,3697,3530,14,2024-01-20,9,Bajra
+F1758,Emir K.,Rajasthan,Wheat,Rabi,4515,4352,22,2023-05-13,10,Mustard
+F1759,Shayak B.,Madhya Pradesh,Wheat,Zaid,3362,3197,24,2023-06-05,10,Bajra
+F1760,Eva D.,Gujarat,Bajra,Zaid,2281,2269,21,2023-01-13,10,Maize
+F1761,Tara K.,Madhya Pradesh,Soybean,Rabi,3775,3759,49,2024-07-23,10,Maize
+F1762,Elakshi C.,Maharashtra,Sugarcane,Zaid,4601,4493,3,2023-07-04,9,Groundnut
+F1763,Nakul R.,Gujarat,Wheat,Kharif,1417,1251,24,2023-05-04,6,Onion
+F1764,Shamik E.,Maharashtra,Cotton,Kharif,4596,4586,70,2024-01-13,2,Mustard
+F1765,Indranil D.,Karnataka,Bajra,Zaid,2706,2520,21,2022-07-14,6,Bajra
+F1766,Gokul K.,Maharashtra,Mustard,Zaid,1954,1808,56,2023-07-02,5,Tomato
+F1767,Amira K.,Maharashtra,Potato,Rabi,2633,2507,21,2023-06-05,10,Onion
+F1768,Tushar S.,Bihar,Rice,Kharif,2468,2390,33,2023-09-27,7,Rice
+F1769,Rati G.,Maharashtra,Maize,Kharif,4294,4150,23,2024-01-10,8,Bajra
+F1770,Kavya L.,Maharashtra,Sugarcane,Rabi,4624,4564,5,2023-03-20,1,Sugarcane
+F1771,Khushi R.,Gujarat,Groundnut,Kharif,3228,3199,49,2024-03-18,3,Soybean
+F1772,Tiya K.,Maharashtra,Groundnut,Kharif,3002,2962,53,2022-01-30,3,Wheat
+F1773,Alia B.,Rajasthan,Maize,Rabi,4008,3813,19,2022-09-28,4,Maize
+F1774,Jiya S.,Rajasthan,Cotton,Zaid,2251,2133,59,2023-01-25,1,Soybean
+F1775,Anvi B.,Rajasthan,Bajra,Kharif,1807,1678,23,2022-01-31,10,Onion
+F1776,Rania J.,Punjab,Cotton,Zaid,3784,3618,73,2023-11-04,5,Cotton
+F1777,Misha C.,Uttar Pradesh,Wheat,Rabi,2468,2286,28,2023-04-26,6,Potato
+F1778,Jiya L.,Karnataka,Potato,Zaid,4960,4860,24,2023-11-27,8,Cotton
+F1779,Adah J.,Karnataka,Tomato,Zaid,2960,2898,11,2023-01-20,10,Mustard
+F1780,Nirvi B.,Rajasthan,Mustard,Kharif,1722,1663,58,2022-03-05,6,Soybean
+F1781,Lakshit V.,Punjab,Potato,Kharif,2528,2459,20,2024-05-24,3,Mustard
+F1782,Nehmat B.,Madhya Pradesh,Onion,Rabi,1201,1122,16,2024-01-17,9,Wheat
+F1783,Saira D.,Madhya Pradesh,Mustard,Rabi,3585,3469,56,2023-02-09,8,Maize
+F1784,Taimur D.,Bihar,Soybean,Kharif,3011,2837,50,2022-04-30,5,Wheat
+F1785,Yakshit S.,Bihar,Bajra,Zaid,2082,1890,21,2024-07-02,7,Maize
+F1786,Mannat S.,Maharashtra,Bajra,Rabi,4784,4662,21,2023-02-16,6,Potato
+F1787,Rohan M.,Maharashtra,Soybean,Kharif,4681,4533,51,2023-07-02,8,Mustard
+F1788,Dhanuk L.,Uttar Pradesh,Mustard,Kharif,1954,1777,59,2023-06-08,8,Groundnut
+F1789,Ivan S.,Gujarat,Bajra,Rabi,2391,2245,21,2023-05-29,1,Potato
+F1790,Mohanlal H.,Gujarat,Cotton,Rabi,3232,3161,61,2024-06-19,3,Potato
+F1791,Anvi W.,Madhya Pradesh,Maize,Zaid,1719,1664,23,2022-08-11,8,Bajra
+F1792,Zoya S.,Uttar Pradesh,Soybean,Rabi,3093,2954,55,2023-10-19,9,Tomato
+F1793,Elakshi B.,Gujarat,Rice,Zaid,3030,3028,26,2022-08-25,5,Sugarcane
+F1794,Divit S.,Karnataka,Maize,Zaid,1721,1638,24,2022-11-18,4,Groundnut
+F1795,Baiju B.,Gujarat,Sugarcane,Rabi,3028,2930,3,2023-12-10,3,Groundnut
+F1796,Vidur L.,Punjab,Mustard,Kharif,4989,4941,59,2024-02-27,1,Groundnut
+F1797,Eshani S.,Karnataka,Sugarcane,Rabi,4358,4329,4,2024-04-08,2,Groundnut
+F1798,Tara B.,Madhya Pradesh,Rice,Zaid,3445,3247,32,2023-06-14,9,Tomato
+F1799,Vivaan S.,Bihar,Maize,Zaid,2638,2485,18,2022-05-11,4,Tomato
+F1800,Hunar K.,Uttar Pradesh,Wheat,Kharif,1861,1753,29,2023-11-10,8,Onion
+F1801,Tejas K.,Rajasthan,Potato,Rabi,2070,1916,14,2023-02-08,9,Rice
+F1802,Samiha K.,Uttar Pradesh,Onion,Zaid,4301,4252,26,2023-06-18,3,Rice
+F1803,Aaina S.,Uttar Pradesh,Maize,Kharif,1131,1034,24,2024-06-16,10,Soybean
+F1804,Gokul J.,Gujarat,Cotton,Zaid,825,706,68,2023-05-22,6,Wheat
+F1805,Hiran C.,Maharashtra,Maize,Kharif,4724,4593,22,2022-08-07,1,Potato
+F1806,Mishti C.,Bihar,Sugarcane,Kharif,4689,4553,3,2022-02-01,3,Onion
+F1807,Seher K.,Gujarat,Maize,Rabi,2195,2037,22,2024-02-18,6,Soybean
+F1808,Romil A.,Bihar,Soybean,Zaid,800,756,51,2023-04-05,9,Bajra
+F1809,Pari S.,Gujarat,Wheat,Rabi,3528,3439,22,2024-01-27,1,Maize
+F1810,Stuvan D.,Uttar Pradesh,Groundnut,Rabi,2711,2531,48,2022-01-16,8,Maize
+F1811,Rohan T.,Bihar,Maize,Kharif,2235,2202,28,2023-02-25,4,Maize
+F1812,Alia B.,Punjab,Potato,Zaid,4085,3972,23,2023-06-15,8,Maize
+F1813,Shanaya Y.,Punjab,Cotton,Zaid,3287,3154,63,2023-09-16,1,Onion
+F1814,Renee D.,Gujarat,Maize,Zaid,3818,3728,21,2024-05-28,8,Sugarcane
+F1815,Pari C.,Rajasthan,Bajra,Rabi,1234,1104,20,2022-03-30,4,Sugarcane
+F1816,Kashvi B.,Punjab,Cotton,Zaid,2062,2039,66,2023-03-21,4,Potato
+F1817,Alisha K.,Rajasthan,Onion,Kharif,1693,1547,30,2024-07-06,4,Maize
+F1818,Hunar K.,Rajasthan,Groundnut,Kharif,3351,3243,47,2022-06-11,4,Potato
+F1819,Tushar T.,Rajasthan,Maize,Zaid,923,786,27,2022-11-20,4,Tomato
+F1820,Darshit C.,Madhya Pradesh,Potato,Zaid,2244,2193,21,2023-01-12,2,Rice
+F1821,Kashvi V.,Maharashtra,Tomato,Rabi,2882,2833,17,2023-04-12,7,Wheat
+F1822,Prerak G.,Bihar,Groundnut,Zaid,997,963,47,2022-12-16,2,Wheat
+F1823,Arhaan S.,Rajasthan,Mustard,Rabi,2445,2283,48,2024-03-02,5,Cotton
+F1824,Diya S.,Maharashtra,Wheat,Kharif,3031,2927,29,2022-01-24,8,Onion
+F1825,Fateh K.,Punjab,Cotton,Kharif,1910,1863,72,2024-01-31,6,Bajra
+F1826,Nirvaan G.,Bihar,Sugarcane,Kharif,3432,3238,5,2022-11-02,1,Groundnut
+F1827,Vedika B.,Punjab,Maize,Zaid,4623,4528,20,2024-02-04,1,Groundnut
+F1828,Pihu K.,Bihar,Soybean,Kharif,2605,2487,50,2023-06-12,9,Wheat
+F1829,Faiyaz D.,Gujarat,Soybean,Zaid,3388,3311,49,2022-02-26,3,Soybean
+F1830,Vihaan C.,Karnataka,Mustard,Kharif,2259,2109,51,2022-01-28,8,Wheat
+F1831,Yuvaan S.,Madhya Pradesh,Potato,Zaid,3595,3516,24,2022-06-05,3,Potato
+F1832,Siya S.,Karnataka,Cotton,Rabi,1682,1571,63,2022-01-17,1,Wheat
+F1833,Adira S.,Rajasthan,Bajra,Zaid,4696,4596,20,2023-12-12,3,Sugarcane
+F1834,Manikya U.,Rajasthan,Wheat,Kharif,4492,4488,23,2022-01-13,2,Bajra
+F1835,Fateh Z.,Rajasthan,Onion,Zaid,2119,1970,13,2022-10-17,10,Wheat
+F1836,Abram S.,Bihar,Groundnut,Zaid,1190,1029,64,2022-11-21,9,Tomato
+F1837,Aradhya C.,Rajasthan,Rice,Zaid,1943,1839,33,2022-12-11,1,Rice
+F1838,Manikya T.,Maharashtra,Potato,Zaid,4153,4014,25,2022-01-27,4,Sugarcane
+F1839,Pranay S.,Karnataka,Sugarcane,Zaid,4233,4087,3,2022-05-05,4,Onion
+F1840,Dishani V.,Uttar Pradesh,Onion,Kharif,3008,2849,19,2022-03-11,1,Maize
+F1841,Kabir B.,Rajasthan,Tomato,Zaid,4238,4156,15,2022-12-21,8,Potato
+F1842,Tushar M.,Karnataka,Groundnut,Rabi,2276,2183,52,2023-07-12,1,Sugarcane
+F1843,Madhav B.,Punjab,Potato,Rabi,3098,3045,12,2022-08-17,6,Cotton
+F1844,Shanaya J.,Bihar,Sugarcane,Kharif,3917,3736,5,2024-05-01,7,Mustard
+F1845,Rohan H.,Madhya Pradesh,Tomato,Rabi,3810,3738,15,2022-06-24,4,Sugarcane
+F1846,Rohan B.,Madhya Pradesh,Bajra,Kharif,4834,4808,23,2024-03-20,9,Tomato
+F1847,Nirvi B.,Karnataka,Onion,Zaid,1263,1214,11,2023-10-02,2,Maize
+F1848,Shlok C.,Madhya Pradesh,Maize,Zaid,1348,1229,18,2022-03-13,4,Soybean
+F1849,Azad T.,Gujarat,Wheat,Zaid,4016,3827,21,2023-06-06,2,Bajra
+F1850,Dhanush K.,Uttar Pradesh,Sugarcane,Zaid,4703,4523,4,2023-10-16,4,Soybean
+F1851,Rohan S.,Gujarat,Soybean,Zaid,1998,1812,46,2023-03-08,6,Tomato
+F1852,Dhanuk C.,Rajasthan,Maize,Rabi,4929,4911,24,2024-03-31,9,Cotton
+F1853,Divij R.,Uttar Pradesh,Cotton,Zaid,2770,2571,62,2022-06-13,6,Soybean
+F1854,Indrans L.,Bihar,Wheat,Kharif,1392,1214,28,2023-09-22,2,Onion
+F1855,Indranil D.,Gujarat,Mustard,Rabi,3588,3432,51,2022-10-04,8,Groundnut
+F1856,Armaan A.,Maharashtra,Maize,Rabi,3099,3042,24,2024-06-18,1,Mustard
+F1857,Saira R.,Uttar Pradesh,Maize,Rabi,2459,2295,18,2022-03-07,3,Soybean
+F1858,Dhanuk S.,Madhya Pradesh,Sugarcane,Rabi,3334,3246,5,2024-07-31,5,Potato
+F1859,Ojas D.,Madhya Pradesh,Bajra,Zaid,4313,4186,26,2022-08-11,5,Soybean
+F1860,Dhruv V.,Punjab,Soybean,Kharif,3778,3748,49,2022-09-13,7,Potato
+F1861,Tushar B.,Maharashtra,Soybean,Rabi,4884,4792,42,2023-10-01,3,Mustard
+F1862,Shaan J.,Maharashtra,Mustard,Kharif,3442,3400,57,2024-01-13,8,Mustard
+F1863,Ivan B.,Uttar Pradesh,Soybean,Zaid,946,809,42,2023-11-23,3,Soybean
+F1864,Ishaan A.,Maharashtra,Tomato,Rabi,2040,2033,17,2023-02-08,7,Groundnut
+F1865,Dharmajan M.,Punjab,Sugarcane,Zaid,2867,2846,4,2022-07-01,6,Wheat
+F1866,Elakshi T.,Punjab,Bajra,Zaid,1868,1868,22,2022-03-20,6,Groundnut
+F1867,Biju D.,Rajasthan,Cotton,Rabi,2299,2184,74,2022-04-07,1,Bajra
+F1868,Shalv T.,Punjab,Groundnut,Zaid,2319,2195,45,2022-05-24,4,Sugarcane
+F1869,Anvi B.,Punjab,Wheat,Kharif,2532,2523,22,2023-09-25,2,Sugarcane
+F1870,Pranay C.,Uttar Pradesh,Soybean,Kharif,3486,3345,54,2023-10-10,4,Groundnut
+F1871,Nayantara A.,Bihar,Potato,Kharif,1683,1497,18,2023-09-24,5,Maize
+F1872,Jayan R.,Gujarat,Rice,Rabi,2960,2951,26,2022-04-18,2,Cotton
+F1873,Eshani A.,Gujarat,Rice,Kharif,3774,3700,31,2022-04-19,10,Groundnut
+F1874,Saira W.,Rajasthan,Mustard,Zaid,1345,1237,56,2023-07-24,10,Potato
+F1875,Ira C.,Uttar Pradesh,Soybean,Kharif,1149,1013,42,2022-01-25,8,Bajra
+F1876,Alia M.,Punjab,Groundnut,Zaid,4596,4593,55,2022-07-28,4,Bajra
+F1877,Sara V.,Gujarat,Onion,Kharif,1669,1516,13,2022-07-06,1,Groundnut
+F1878,Nishith C.,Uttar Pradesh,Sugarcane,Rabi,3879,3838,5,2024-02-09,2,Mustard
+F1879,Ojas B.,Karnataka,Soybean,Rabi,3453,3302,43,2023-06-03,4,Maize
+F1880,Miraya T.,Madhya Pradesh,Bajra,Zaid,4096,3950,24,2023-12-19,2,Tomato
+F1881,Madhup S.,Punjab,Sugarcane,Rabi,3219,3130,3,2022-05-09,10,Potato
+F1882,Shray B.,Uttar Pradesh,Rice,Rabi,3006,2982,27,2024-02-10,8,Rice
+F1883,Ivana B.,Gujarat,Sugarcane,Kharif,3717,3550,5,2024-01-24,5,Sugarcane
+F1884,Vanya R.,Maharashtra,Bajra,Zaid,2278,2185,22,2022-10-22,4,Soybean
+F1885,Samarth S.,Gujarat,Maize,Zaid,2489,2432,26,2022-04-02,10,Wheat
+F1886,Heer L.,Bihar,Maize,Kharif,2031,1882,27,2022-07-10,7,Cotton
+F1887,Jiya T.,Rajasthan,Wheat,Rabi,4248,4049,21,2022-12-18,7,Onion
+F1888,Onkar S.,Karnataka,Onion,Kharif,2138,2028,28,2024-01-25,8,Sugarcane
+F1889,Kiaan S.,Bihar,Potato,Zaid,3682,3656,21,2022-11-07,5,Bajra
+F1890,Devansh L.,Uttar Pradesh,Bajra,Kharif,2696,2638,18,2022-03-22,6,Maize
+F1891,Vidur D.,Gujarat,Onion,Rabi,4072,3942,18,2022-05-03,3,Soybean
+F1892,Ishita K.,Uttar Pradesh,Mustard,Rabi,4100,3993,50,2024-06-15,6,Mustard
+F1893,Arnav S.,Madhya Pradesh,Maize,Zaid,3409,3388,18,2022-03-10,4,Groundnut
+F1894,Dhruv W.,Gujarat,Soybean,Kharif,2534,2348,48,2022-04-30,2,Potato
+F1895,Ishita Z.,Rajasthan,Cotton,Zaid,3315,3186,73,2023-01-11,4,Cotton
+F1896,Rhea M.,Madhya Pradesh,Potato,Kharif,4895,4762,23,2024-02-06,7,Rice
+F1897,Indranil B.,Karnataka,Potato,Kharif,1195,1040,16,2022-07-11,3,Sugarcane
+F1898,Ayesha B.,Punjab,Wheat,Zaid,3964,3793,27,2024-05-17,6,Wheat
+F1899,Hiran R.,Uttar Pradesh,Potato,Kharif,2188,2188,18,2022-07-01,2,Soybean
+F1900,Shalv G.,Bihar,Rice,Zaid,1730,1725,27,2023-10-18,6,Tomato
+F1901,Prerak V.,Madhya Pradesh,Maize,Zaid,2999,2909,25,2022-02-20,10,Soybean
+F1902,Rasha B.,Punjab,Mustard,Kharif,1122,1102,55,2022-01-25,8,Potato
+F1903,Hridaan G.,Punjab,Onion,Zaid,1115,1025,28,2022-04-10,3,Sugarcane
+F1904,Prisha B.,Bihar,Soybean,Zaid,3529,3494,42,2022-04-04,5,Bajra
+F1905,Navya B.,Rajasthan,Soybean,Rabi,2738,2604,53,2022-07-08,2,Rice
+F1906,Tushar G.,Uttar Pradesh,Rice,Kharif,3420,3404,32,2022-03-22,1,Cotton
+F1907,Dishani C.,Punjab,Onion,Rabi,3378,3240,29,2024-02-29,10,Bajra
+F1908,Renee B.,Karnataka,Sugarcane,Kharif,3499,3398,3,2023-03-30,1,Maize
+F1909,Samiha B.,Karnataka,Onion,Rabi,2625,2425,17,2024-02-24,3,Mustard
+F1910,Amira M.,Gujarat,Potato,Rabi,1323,1295,22,2024-06-13,5,Soybean
+F1911,Lavanya D.,Maharashtra,Wheat,Zaid,2014,1957,28,2024-03-22,8,Tomato
+F1912,Damini C.,Uttar Pradesh,Onion,Zaid,4096,3963,15,2023-05-23,5,Groundnut
+F1913,Dhruv S.,Gujarat,Onion,Zaid,3856,3845,18,2024-02-10,9,Soybean
+F1914,Taran M.,Uttar Pradesh,Mustard,Kharif,1781,1707,51,2022-02-03,6,Potato
+F1915,Nirvaan I.,Karnataka,Potato,Rabi,2624,2567,16,2023-05-30,5,Wheat
+F1916,Hansh K.,Gujarat,Cotton,Rabi,1086,1026,69,2022-09-22,8,Onion
+F1917,Shayak S.,Rajasthan,Cotton,Rabi,4129,4093,55,2022-07-06,10,Onion
+F1918,Navya S.,Maharashtra,Groundnut,Zaid,1522,1392,62,2022-05-25,1,Soybean
+F1919,Nishith I.,Bihar,Tomato,Rabi,3285,3248,18,2022-02-26,6,Groundnut
+F1920,Purab K.,Maharashtra,Groundnut,Zaid,4093,4041,55,2022-06-16,7,Bajra
+F1921,Lakshay D.,Maharashtra,Bajra,Kharif,2520,2376,24,2022-12-27,6,Bajra
+F1922,Hansh D.,Maharashtra,Potato,Kharif,4348,4177,23,2023-04-01,2,Cotton
+F1923,Kiara C.,Gujarat,Wheat,Rabi,885,701,25,2022-02-13,7,Wheat
+F1924,Krish S.,Rajasthan,Onion,Rabi,3979,3946,13,2024-03-06,3,Bajra
+F1925,Ranbir W.,Gujarat,Bajra,Rabi,958,850,23,2022-06-07,9,Onion
+F1926,Jayan S.,Punjab,Cotton,Rabi,2663,2634,70,2023-03-12,5,Soybean
+F1927,Hrishita M.,Rajasthan,Bajra,Kharif,2591,2404,22,2022-04-26,3,Soybean
+F1928,Alia V.,Maharashtra,Cotton,Rabi,4654,4576,60,2023-04-09,4,Sugarcane
+F1929,Chirag C.,Gujarat,Soybean,Kharif,4824,4791,51,2024-04-18,9,Potato
+F1930,Vaibhav C.,Gujarat,Wheat,Rabi,1038,899,29,2023-05-06,5,Tomato
+F1931,Nakul D.,Madhya Pradesh,Tomato,Kharif,3777,3727,19,2024-05-29,4,Sugarcane
+F1932,Advika W.,Madhya Pradesh,Maize,Zaid,1866,1669,22,2023-11-11,8,Groundnut
+F1933,Jayesh B.,Madhya Pradesh,Cotton,Rabi,1314,1232,75,2024-06-29,9,Onion
+F1934,Lakshit C.,Karnataka,Groundnut,Zaid,2277,2146,58,2022-11-20,8,Groundnut
+F1935,Jiya C.,Gujarat,Sugarcane,Rabi,3881,3823,3,2023-04-21,10,Cotton
+F1936,Ranbir C.,Rajasthan,Sugarcane,Kharif,2556,2379,5,2023-05-11,2,Bajra
+F1937,Romil B.,Uttar Pradesh,Groundnut,Kharif,2843,2706,47,2023-07-10,10,Maize
+F1938,Kismat T.,Bihar,Sugarcane,Kharif,1472,1307,4,2023-06-14,6,Sugarcane
+F1939,Zoya D.,Bihar,Wheat,Kharif,2400,2267,25,2022-01-17,4,Rice
+F1940,Raunak V.,Gujarat,Bajra,Zaid,3174,3114,18,2023-04-12,10,Groundnut
+F1941,Indrajit K.,Uttar Pradesh,Tomato,Rabi,3530,3388,10,2023-10-11,3,Groundnut
+F1942,Dhruv A.,Maharashtra,Soybean,Rabi,4568,4556,51,2022-10-02,5,Cotton
+F1943,Rati K.,Gujarat,Soybean,Zaid,1250,1139,46,2022-12-07,2,Cotton
+F1944,Lakshay R.,Uttar Pradesh,Wheat,Kharif,1961,1859,20,2022-01-17,1,Cotton
+F1945,Kartik B.,Bihar,Groundnut,Zaid,1493,1486,50,2022-01-04,7,Onion
+F1946,Adah V.,Rajasthan,Wheat,Rabi,1455,1440,26,2022-05-26,5,Rice
+F1947,Ritvik T.,Gujarat,Onion,Rabi,4577,4471,17,2024-02-01,6,Maize
+F1948,Armaan B.,Punjab,Soybean,Kharif,4684,4561,45,2023-12-13,6,Soybean
+F1949,Nirvi B.,Bihar,Cotton,Zaid,4558,4422,63,2023-04-02,1,Sugarcane
+F1950,Bhavin D.,Punjab,Soybean,Zaid,3014,2899,40,2022-01-25,5,Wheat
+F1951,Shray A.,Madhya Pradesh,Sugarcane,Kharif,3001,2987,5,2022-11-25,10,Groundnut
+F1952,Lavanya Y.,Uttar Pradesh,Maize,Zaid,4624,4495,23,2022-01-19,2,Groundnut
+F1953,Trisha D.,Rajasthan,Bajra,Kharif,3281,3167,21,2024-05-06,2,Groundnut
+F1954,Saanvi S.,Karnataka,Cotton,Kharif,1266,1263,64,2022-04-20,2,Bajra
+F1955,Alisha B.,Gujarat,Wheat,Kharif,4943,4942,21,2024-02-19,6,Groundnut
+F1956,Tushar C.,Punjab,Tomato,Kharif,4133,4101,14,2022-07-08,8,Cotton
+F1957,Nayantara D.,Rajasthan,Potato,Zaid,4229,4213,25,2023-05-14,3,Onion
+F1958,Elakshi K.,Gujarat,Soybean,Kharif,3053,2990,45,2023-04-24,1,Maize
+F1959,Tiya S.,Maharashtra,Wheat,Zaid,1608,1464,27,2023-08-18,1,Tomato
+F1960,Dishani G.,Maharashtra,Onion,Zaid,2751,2674,22,2022-11-10,1,Rice
+F1961,Lagan B.,Gujarat,Soybean,Zaid,4110,3925,49,2024-04-22,6,Cotton
+F1962,Hazel G.,Punjab,Wheat,Kharif,976,835,23,2022-12-20,5,Groundnut
+F1963,Priyansh M.,Gujarat,Tomato,Zaid,3595,3514,13,2022-04-02,2,Wheat
+F1964,Shlok C.,Madhya Pradesh,Rice,Kharif,1116,1092,26,2022-07-24,8,Tomato
+F1965,Kismat R.,Bihar,Groundnut,Rabi,1067,1063,61,2022-10-26,6,Rice
+F1966,Nirvaan S.,Rajasthan,Rice,Zaid,4191,4092,30,2022-06-25,2,Cotton
+F1967,Fateh I.,Punjab,Soybean,Zaid,1266,1153,44,2024-05-26,7,Mustard
+F1968,Anika Z.,Karnataka,Onion,Kharif,884,878,25,2024-01-26,9,Bajra
+F1969,Advik K.,Karnataka,Groundnut,Zaid,1722,1702,49,2022-03-27,9,Sugarcane
+F1970,Chirag K.,Punjab,Maize,Zaid,2368,2281,22,2023-11-06,9,Soybean
+F1971,Taran M.,Rajasthan,Tomato,Rabi,2377,2277,13,2023-05-20,4,Soybean
+F1972,Onkar B.,Maharashtra,Rice,Kharif,2127,2011,32,2023-02-14,10,Tomato
+F1973,Dhruv S.,Punjab,Sugarcane,Zaid,1559,1486,3,2022-10-16,10,Cotton
+F1974,Mishti C.,Madhya Pradesh,Soybean,Rabi,3024,2983,53,2022-06-07,6,Mustard
+F1975,Drishya B.,Gujarat,Mustard,Rabi,3440,3433,58,2023-05-05,1,Cotton
+F1976,Khushi G.,Gujarat,Sugarcane,Kharif,2166,2081,5,2024-06-09,2,Potato
+F1977,Vritika M.,Gujarat,Mustard,Kharif,2486,2416,48,2024-01-01,3,Rice
+F1978,Umang H.,Maharashtra,Potato,Kharif,2653,2523,12,2023-05-02,2,Soybean
+F1979,Saira M.,Karnataka,Soybean,Zaid,1582,1577,41,2022-05-28,5,Mustard
+F1980,Samiha G.,Uttar Pradesh,Wheat,Rabi,1304,1239,24,2023-05-30,10,Groundnut
+F1981,Azad D.,Bihar,Tomato,Zaid,1276,1235,15,2022-03-22,3,Onion
+F1982,Taimur Y.,Uttar Pradesh,Maize,Zaid,3850,3698,19,2023-04-21,8,Maize
+F1983,Hridaan S.,Karnataka,Rice,Kharif,2031,2027,29,2023-01-14,3,Cotton
+F1984,Kiara D.,Bihar,Tomato,Zaid,3665,3581,14,2022-03-19,3,Maize
+F1985,Samiha K.,Punjab,Soybean,Zaid,4688,4662,51,2023-03-25,5,Maize
+F1986,Veer B.,Punjab,Sugarcane,Rabi,1579,1457,5,2023-07-10,8,Wheat
+F1987,Divij S.,Punjab,Cotton,Rabi,3517,3366,66,2023-08-22,4,Tomato
+F1988,Zaina B.,Bihar,Bajra,Rabi,3872,3792,22,2023-11-03,6,Potato
+F1989,Rania T.,Madhya Pradesh,Bajra,Kharif,3951,3891,25,2022-09-02,10,Potato
+F1990,Indrans D.,Maharashtra,Bajra,Rabi,3618,3530,25,2024-02-24,2,Maize
+F1991,Nirvi S.,Karnataka,Wheat,Rabi,1320,1220,21,2022-01-16,5,Cotton
+F1992,Rasha K.,Gujarat,Onion,Rabi,4542,4442,29,2024-02-25,2,Bajra
+F1993,Seher L.,Maharashtra,Rice,Rabi,2109,1935,25,2024-02-18,7,Potato
+F1994,Myra R.,Gujarat,Rice,Rabi,3872,3824,35,2022-10-27,10,Soybean
+F1995,Rohan T.,Karnataka,Soybean,Rabi,3898,3867,51,2022-04-20,8,Wheat
+F1996,Madhup V.,Maharashtra,Potato,Kharif,1546,1432,21,2022-02-17,1,Cotton
+F1997,Jayesh B.,Karnataka,Wheat,Kharif,2681,2653,30,2022-07-22,6,Cotton
+F1998,Sara S.,Punjab,Wheat,Rabi,1340,1318,25,2024-05-06,5,Sugarcane
+F1999,Hazel B.,Uttar Pradesh,Wheat,Zaid,3856,3676,26,2023-10-20,3,Mustard
+F2000,Vardaniya K.,Uttar Pradesh,Potato,Rabi,3184,3130,25,2022-07-06,8,Mustard
+F2001,Anahi B.,Uttar Pradesh,Bajra,Zaid,4626,4551,18,2023-12-09,8,Rice
+F2002,Nehmat L.,Punjab,Mustard,Rabi,2558,2432,46,2023-02-23,10,Rice
+F2003,Sahil H.,Gujarat,Mustard,Kharif,4055,3957,49,2022-02-13,3,Onion
+F2004,Ayesha L.,Bihar,Rice,Kharif,3985,3880,25,2023-03-28,6,Rice
+F2005,Miraan G.,Uttar Pradesh,Maize,Kharif,3160,3056,28,2022-06-05,7,Soybean
+F2006,Vardaniya C.,Maharashtra,Sugarcane,Zaid,4701,4569,3,2023-03-02,7,Wheat
+F2007,Neelofar R.,Uttar Pradesh,Bajra,Rabi,3665,3482,25,2023-10-23,5,Mustard
+F2008,Ojas R.,Madhya Pradesh,Mustard,Rabi,2218,2147,60,2023-11-28,9,Sugarcane
+F2009,Ritvik G.,Madhya Pradesh,Maize,Zaid,3310,3295,24,2023-08-22,3,Sugarcane
+F2010,Sahil S.,Rajasthan,Maize,Kharif,2667,2657,27,2023-12-10,6,Mustard
+F2011,Fateh G.,Maharashtra,Rice,Rabi,2200,2000,30,2024-01-18,3,Soybean
+F2012,Parinaaz S.,Karnataka,Cotton,Kharif,2214,2138,57,2022-07-07,6,Rice
+F2013,Misha S.,Karnataka,Onion,Rabi,4894,4873,13,2023-02-14,1,Bajra
+F2014,Saanvi R.,Karnataka,Mustard,Kharif,2018,1878,52,2023-04-07,6,Potato
+F2015,Purab R.,Madhya Pradesh,Soybean,Rabi,1949,1891,41,2022-01-12,3,Maize
+F2016,Rati T.,Madhya Pradesh,Groundnut,Kharif,4494,4313,59,2022-12-08,5,Sugarcane
+F2017,Abram M.,Madhya Pradesh,Maize,Zaid,2203,2153,28,2023-09-16,8,Mustard
+F2018,Kiara R.,Madhya Pradesh,Potato,Kharif,2379,2186,12,2024-04-27,2,Onion
+F2019,Hazel G.,Bihar,Wheat,Kharif,4584,4558,22,2022-08-02,5,Cotton
+F2020,Badal C.,Bihar,Cotton,Zaid,862,702,63,2023-12-21,5,Soybean
+F2021,Tiya K.,Rajasthan,Sugarcane,Zaid,1809,1760,4,2022-01-01,8,Mustard
+F2022,Zeeshan T.,Madhya Pradesh,Soybean,Zaid,2050,1949,55,2022-06-17,4,Mustard
+F2023,Anika S.,Madhya Pradesh,Groundnut,Kharif,4993,4990,60,2023-08-31,6,Onion
+F2024,Jhanvi M.,Punjab,Potato,Zaid,3593,3562,22,2024-05-12,6,Tomato
+F2025,Ranbir S.,Maharashtra,Mustard,Zaid,3524,3351,52,2022-03-29,7,Maize
+F2026,Chirag K.,Madhya Pradesh,Maize,Rabi,1693,1684,21,2024-05-29,7,Groundnut
+F2027,Oorja T.,Bihar,Onion,Rabi,2597,2443,29,2024-06-03,9,Potato
+F2028,Umang G.,Uttar Pradesh,Potato,Rabi,1887,1837,22,2024-04-21,2,Rice
+F2029,Lakshay S.,Karnataka,Groundnut,Zaid,3208,3117,51,2022-10-25,10,Bajra
+F2030,Vanya S.,Karnataka,Groundnut,Kharif,4061,3946,53,2022-04-20,9,Maize
+F2031,Madhav C.,Bihar,Tomato,Rabi,1501,1408,19,2022-03-12,4,Soybean
+F2032,Taimur T.,Madhya Pradesh,Wheat,Zaid,1190,1051,20,2023-10-09,5,Maize
+F2033,Reyansh K.,Karnataka,Rice,Kharif,2821,2817,29,2023-03-22,4,Groundnut
+F2034,Raunak C.,Karnataka,Mustard,Rabi,2309,2168,47,2023-04-13,9,Onion
+F2035,Nitya S.,Punjab,Mustard,Rabi,2511,2320,48,2024-02-09,6,Mustard
+F2036,Taran S.,Gujarat,Mustard,Kharif,3698,3504,55,2022-04-13,1,Soybean
+F2037,Dishani W.,Gujarat,Wheat,Zaid,4155,4124,30,2022-11-19,3,Cotton
+F2038,Renee B.,Madhya Pradesh,Groundnut,Zaid,1548,1520,57,2022-11-29,4,Cotton
+F2039,Hiran Y.,Uttar Pradesh,Onion,Zaid,4570,4373,19,2023-10-16,9,Groundnut
+F2040,Uthkarsh C.,Madhya Pradesh,Groundnut,Rabi,1798,1767,61,2024-02-28,3,Onion
+F2041,Ivan K.,Gujarat,Rice,Rabi,916,731,29,2023-12-24,3,Wheat
+F2042,Ishaan J.,Karnataka,Rice,Rabi,1648,1480,34,2023-03-13,7,Wheat
+F2043,Ishita W.,Gujarat,Mustard,Zaid,2254,2080,45,2022-05-28,10,Wheat
+F2044,Aniruddh R.,Uttar Pradesh,Cotton,Zaid,4496,4394,59,2023-01-25,10,Wheat
+F2045,Vidur R.,Rajasthan,Tomato,Rabi,4522,4389,17,2022-01-28,9,Bajra
+F2046,Suhana B.,Madhya Pradesh,Maize,Kharif,1360,1258,26,2023-06-27,4,Maize
+F2047,Nitara C.,Bihar,Cotton,Zaid,889,799,65,2022-05-09,5,Maize
+F2048,Mahika G.,Punjab,Tomato,Zaid,2344,2277,15,2024-02-26,6,Sugarcane
+F2049,Eshani S.,Uttar Pradesh,Wheat,Rabi,830,681,27,2022-07-02,2,Sugarcane
+F2050,Shray S.,Gujarat,Rice,Rabi,1401,1400,35,2022-08-05,7,Soybean
+F2051,Kiara B.,Uttar Pradesh,Groundnut,Rabi,1064,946,58,2023-12-09,1,Groundnut
+F2052,Kimaya M.,Punjab,Sugarcane,Kharif,2252,2230,5,2022-08-23,3,Mustard
+F2053,Vardaniya M.,Karnataka,Maize,Zaid,1471,1449,20,2024-07-29,7,Groundnut
+F2054,Armaan K.,Gujarat,Groundnut,Kharif,1622,1443,45,2022-03-06,6,Wheat
+F2055,Shanaya J.,Punjab,Groundnut,Kharif,3647,3478,57,2023-02-24,6,Soybean
+F2056,Samar T.,Punjab,Onion,Rabi,4135,3961,23,2022-11-17,8,Bajra
+F2057,Amira B.,Karnataka,Groundnut,Rabi,1438,1304,50,2024-06-12,3,Bajra
+F2058,Navya R.,Bihar,Maize,Kharif,4643,4565,27,2022-02-13,7,Soybean
+F2059,Sumer V.,Rajasthan,Potato,Rabi,2358,2304,15,2023-03-17,9,Soybean
+F2060,Shayak D.,Karnataka,Bajra,Rabi,2400,2313,26,2023-10-28,6,Tomato
+F2061,Sara G.,Bihar,Soybean,Kharif,1149,1091,42,2023-02-20,8,Onion
+F2062,Oorja S.,Uttar Pradesh,Cotton,Kharif,4399,4363,63,2023-06-15,5,Wheat
+F2063,Arhaan B.,Punjab,Groundnut,Rabi,2010,1868,51,2023-05-02,1,Soybean
+F2064,Abram S.,Karnataka,Soybean,Kharif,2978,2825,49,2024-03-28,1,Mustard
+F2065,Misha S.,Uttar Pradesh,Groundnut,Kharif,826,773,50,2024-03-10,8,Mustard
+F2066,Nehmat B.,Uttar Pradesh,Maize,Rabi,1579,1538,25,2024-03-01,10,Wheat
+F2067,Hunar C.,Punjab,Sugarcane,Rabi,4919,4892,4,2023-10-25,10,Groundnut
+F2068,Jayesh R.,Punjab,Wheat,Rabi,1757,1651,26,2022-09-02,1,Bajra
+F2069,Diya S.,Karnataka,Potato,Kharif,1915,1742,18,2023-06-13,4,Wheat
+F2070,Ira B.,Punjab,Wheat,Zaid,2394,2277,30,2022-04-01,2,Rice
+F2071,Taran V.,Bihar,Cotton,Rabi,4299,4165,74,2023-04-20,1,Potato
+F2072,Samarth S.,Bihar,Soybean,Kharif,1523,1520,45,2022-10-09,8,Onion
+F2073,Anika G.,Karnataka,Tomato,Kharif,4191,4059,18,2024-01-07,1,Bajra
+F2074,Hiran S.,Karnataka,Cotton,Rabi,4587,4444,58,2023-12-05,2,Bajra
+F2075,Sara R.,Madhya Pradesh,Soybean,Rabi,2306,2159,49,2022-10-07,1,Potato
+F2076,Emir A.,Rajasthan,Groundnut,Rabi,4307,4144,61,2023-01-28,10,Maize
+F2077,Ehsaan T.,Bihar,Tomato,Kharif,4323,4203,9,2024-01-27,5,Cotton
+F2078,Shayak G.,Madhya Pradesh,Soybean,Rabi,4283,4272,48,2022-12-09,5,Soybean
+F2079,Zain T.,Uttar Pradesh,Soybean,Kharif,947,911,55,2024-04-24,7,Cotton
+F2080,Aarna A.,Rajasthan,Groundnut,Rabi,2980,2859,55,2022-01-04,6,Potato
+F2081,Indrans T.,Punjab,Potato,Zaid,2604,2474,23,2022-10-30,1,Wheat
+F2082,Vardaniya S.,Madhya Pradesh,Sugarcane,Zaid,4215,4070,3,2024-06-10,8,Soybean
+F2083,Arhaan S.,Maharashtra,Rice,Kharif,1730,1590,26,2022-09-02,5,Groundnut
+F2084,Arnav E.,Punjab,Mustard,Kharif,2914,2736,57,2022-07-06,6,Cotton
+F2085,Saira R.,Punjab,Soybean,Kharif,1332,1292,45,2024-07-09,8,Cotton
+F2086,Nirvaan C.,Gujarat,Wheat,Zaid,3118,3026,23,2024-01-29,4,Cotton
+F2087,Samiha G.,Madhya Pradesh,Groundnut,Rabi,1050,908,46,2023-03-12,2,Maize
+F2088,Krish T.,Punjab,Cotton,Zaid,927,785,66,2024-01-11,7,Sugarcane
+F2089,Armaan K.,Punjab,Wheat,Zaid,4420,4352,26,2023-01-20,7,Wheat
+F2090,Ojas H.,Rajasthan,Mustard,Kharif,2304,2301,47,2022-12-16,1,Cotton
+F2091,Inaaya  C.,Karnataka,Mustard,Zaid,4777,4767,52,2024-05-22,9,Potato
+F2092,Neelofar G.,Uttar Pradesh,Maize,Rabi,1921,1865,25,2022-07-29,6,Potato
+F2093,Rhea R.,Maharashtra,Maize,Zaid,1548,1497,23,2022-06-06,6,Sugarcane
+F2094,Divij K.,Bihar,Mustard,Zaid,2707,2589,51,2023-05-10,9,Mustard
+F2095,Shamik C.,Gujarat,Rice,Rabi,1616,1467,26,2022-01-05,7,Maize
+F2096,Diya B.,Karnataka,Wheat,Rabi,4012,3892,30,2022-06-24,3,Onion
+F2097,Jhanvi K.,Madhya Pradesh,Mustard,Rabi,3391,3206,48,2022-11-25,3,Cotton
+F2098,Keya L.,Karnataka,Soybean,Kharif,4510,4486,45,2024-06-30,10,Wheat
+F2099,Samarth B.,Uttar Pradesh,Tomato,Zaid,2894,2889,12,2022-04-05,10,Onion
+F2100,Ishita E.,Karnataka,Maize,Rabi,1145,1085,21,2022-07-02,7,Soybean
+F2101,Vardaniya M.,Uttar Pradesh,Onion,Zaid,2360,2263,25,2023-10-11,8,Maize
+F2102,Nirvi K.,Uttar Pradesh,Bajra,Rabi,4848,4651,24,2024-01-13,7,Wheat
+F2103,Emir D.,Punjab,Groundnut,Zaid,1810,1627,55,2022-01-22,7,Potato
+F2104,Pranay B.,Bihar,Mustard,Rabi,2756,2696,47,2023-12-06,4,Maize
+F2105,Kanav D.,Gujarat,Sugarcane,Zaid,4776,4769,5,2023-01-31,2,Maize
+F2106,Sana L.,Karnataka,Soybean,Rabi,3569,3531,47,2023-10-18,10,Tomato
+F2107,Diya R.,Punjab,Wheat,Zaid,4369,4202,28,2023-10-24,6,Sugarcane
+F2108,Damini K.,Maharashtra,Soybean,Rabi,4334,4304,41,2023-11-05,1,Soybean
+F2109,Yasmin B.,Maharashtra,Rice,Zaid,2590,2448,35,2022-10-14,8,Maize
+F2110,Stuvan K.,Karnataka,Soybean,Rabi,1397,1233,47,2023-08-11,7,Tomato
+F2111,Kavya R.,Rajasthan,Maize,Kharif,1846,1684,20,2022-04-05,6,Potato
+F2112,Ishaan S.,Maharashtra,Soybean,Rabi,4892,4763,51,2023-07-25,3,Sugarcane
+F2113,Hazel C.,Uttar Pradesh,Tomato,Rabi,2696,2538,14,2023-09-19,7,Tomato
+F2114,Neelofar K.,Gujarat,Groundnut,Kharif,4161,3981,54,2023-01-14,4,Rice
+F2115,Suhana B.,Uttar Pradesh,Mustard,Rabi,2677,2665,49,2022-11-09,6,Cotton
+F2116,Jivin J.,Karnataka,Wheat,Rabi,4164,3990,25,2022-07-15,7,Mustard
+F2117,Manikya B.,Madhya Pradesh,Mustard,Kharif,2772,2712,60,2023-03-24,4,Onion
+F2118,Taran S.,Madhya Pradesh,Maize,Rabi,3109,2985,21,2023-05-02,9,Tomato
+F2119,Aarush G.,Rajasthan,Rice,Zaid,2973,2903,35,2024-01-30,3,Maize
+F2120,Jayan C.,Uttar Pradesh,Tomato,Kharif,2019,1898,20,2023-01-03,4,Potato
+F2121,Pranay B.,Uttar Pradesh,Onion,Zaid,2918,2723,26,2024-02-16,3,Groundnut
+F2122,Prerak S.,Punjab,Sugarcane,Rabi,2376,2186,3,2024-03-23,2,Cotton
+F2123,Anvi H.,Gujarat,Wheat,Kharif,4353,4171,27,2024-01-31,5,Mustard
+F2124,Nehmat K.,Madhya Pradesh,Groundnut,Zaid,959,835,50,2024-04-01,6,Mustard
+F2125,Vidur S.,Karnataka,Tomato,Zaid,3946,3813,9,2024-01-05,6,Cotton
+F2126,Uthkarsh R.,Madhya Pradesh,Cotton,Kharif,2996,2855,70,2022-11-26,9,Cotton
+F2127,Vihaan B.,Punjab,Onion,Rabi,3241,3127,29,2022-12-31,9,Soybean
+F2128,Fateh S.,Bihar,Groundnut,Zaid,1762,1720,49,2024-02-12,8,Rice
+F2129,Shray L.,Maharashtra,Mustard,Kharif,1056,966,57,2022-07-15,4,Rice
+F2130,Diya B.,Bihar,Wheat,Kharif,1546,1396,24,2024-06-23,8,Cotton
+F2131,Ehsaan A.,Madhya Pradesh,Cotton,Zaid,1334,1254,71,2022-12-29,1,Groundnut
+F2132,Yakshit L.,Madhya Pradesh,Onion,Rabi,1313,1166,24,2024-05-02,8,Sugarcane
+F2133,Trisha B.,Uttar Pradesh,Tomato,Zaid,2468,2318,18,2023-09-14,7,Sugarcane
+F2134,Raunak B.,Punjab,Mustard,Zaid,3200,3104,47,2022-03-16,9,Rice
+F2135,Devansh S.,Madhya Pradesh,Rice,Kharif,3070,3015,29,2022-04-10,10,Bajra
+F2136,Uthkarsh Z.,Madhya Pradesh,Soybean,Kharif,4287,4143,41,2022-05-25,10,Tomato
+F2137,Kiaan R.,Maharashtra,Sugarcane,Rabi,1856,1827,5,2023-06-30,10,Cotton
+F2138,Aayush D.,Madhya Pradesh,Rice,Zaid,4908,4904,28,2022-03-24,4,Rice
+F2139,Ritvik H.,Karnataka,Soybean,Zaid,1814,1733,51,2024-03-15,7,Tomato
+F2140,Hansh L.,Karnataka,Bajra,Rabi,1814,1751,26,2023-07-26,3,Rice
+F2141,Jivin R.,Karnataka,Bajra,Rabi,2169,2070,26,2022-05-26,10,Sugarcane
+F2142,Hansh D.,Rajasthan,Mustard,Kharif,916,837,54,2022-02-22,7,Potato
+F2143,Diya S.,Gujarat,Mustard,Zaid,2992,2817,53,2022-08-20,10,Maize
+F2144,Himmat C.,Uttar Pradesh,Rice,Zaid,3044,3034,33,2024-06-27,2,Soybean
+F2145,Ira G.,Rajasthan,Cotton,Rabi,2226,2069,70,2022-01-02,5,Mustard
+F2146,Ishaan R.,Uttar Pradesh,Groundnut,Kharif,2283,2138,53,2022-02-17,2,Tomato
+F2147,Vihaan B.,Rajasthan,Groundnut,Rabi,4940,4862,51,2023-07-21,7,Wheat
+F2148,Lagan D.,Rajasthan,Sugarcane,Kharif,2186,2037,3,2022-12-31,10,Sugarcane
+F2149,Rati R.,Punjab,Potato,Kharif,1179,1024,15,2022-07-08,7,Mustard
+F2150,Baiju M.,Bihar,Maize,Rabi,2072,1893,19,2023-05-14,1,Mustard
+F2151,Kiaan S.,Bihar,Wheat,Kharif,964,874,30,2024-01-01,8,Wheat
+F2152,Devansh K.,Maharashtra,Bajra,Rabi,4830,4769,20,2024-02-17,2,Soybean
+F2153,Madhav D.,Gujarat,Onion,Zaid,2110,1972,25,2023-05-02,10,Sugarcane
+F2154,Lakshit S.,Uttar Pradesh,Cotton,Kharif,3592,3402,65,2024-06-06,5,Soybean
+F2155,Vanya G.,Madhya Pradesh,Bajra,Zaid,2770,2698,26,2024-06-14,1,Wheat
+F2156,Piya Y.,Madhya Pradesh,Rice,Kharif,1666,1641,33,2022-04-20,9,Cotton
+F2157,Dishani V.,Punjab,Onion,Zaid,2000,1888,22,2023-12-28,4,Bajra
+F2158,Saksham D.,Rajasthan,Wheat,Zaid,4827,4756,22,2024-01-16,10,Potato
+F2159,Yashvi C.,Maharashtra,Cotton,Zaid,902,785,61,2023-10-08,7,Bajra
+F2160,Jayesh A.,Bihar,Wheat,Rabi,1408,1302,28,2022-01-29,4,Maize
+F2161,Bhavin B.,Maharashtra,Tomato,Zaid,2793,2704,14,2023-05-05,4,Cotton
+F2162,Saira S.,Maharashtra,Tomato,Rabi,3704,3506,16,2023-03-06,1,Wheat
+F2163,Siya R.,Rajasthan,Soybean,Zaid,2564,2515,43,2022-05-18,3,Potato
+F2164,Mamooty D.,Punjab,Sugarcane,Kharif,1864,1705,5,2023-12-12,1,Groundnut
+F2165,Vardaniya D.,Rajasthan,Tomato,Kharif,3909,3797,9,2024-04-01,9,Mustard
+F2166,Ojas B.,Rajasthan,Potato,Rabi,3493,3460,25,2022-02-03,8,Cotton
+F2167,Parinaaz B.,Bihar,Rice,Kharif,2497,2356,29,2023-07-23,8,Wheat
+F2168,Khushi B.,Gujarat,Mustard,Rabi,1741,1679,45,2023-08-20,1,Maize
+F2169,Alisha D.,Maharashtra,Maize,Zaid,4996,4892,22,2024-07-12,4,Maize
+F2170,Prerak R.,Rajasthan,Groundnut,Kharif,4756,4603,52,2022-05-15,3,Potato
+F2171,Zaina R.,Punjab,Onion,Kharif,4010,3893,16,2022-01-23,8,Onion
+F2172,Devansh G.,Karnataka,Bajra,Zaid,3093,2973,19,2024-01-22,5,Groundnut
+F2173,Hridaan V.,Punjab,Mustard,Rabi,4640,4529,55,2023-02-14,5,Soybean
+F2174,Rhea H.,Gujarat,Soybean,Zaid,4546,4403,55,2022-11-12,3,Onion
+F2175,Aarna B.,Punjab,Potato,Rabi,2103,2088,16,2023-08-30,5,Potato
+F2176,Anahita L.,Maharashtra,Cotton,Zaid,2227,2174,70,2023-12-13,2,Maize
+F2177,Anya R.,Madhya Pradesh,Mustard,Kharif,4660,4533,54,2023-09-11,9,Potato
+F2178,Bhamini R.,Gujarat,Cotton,Rabi,2830,2741,61,2022-01-27,4,Tomato
+F2179,Vidur M.,Rajasthan,Sugarcane,Kharif,4002,3937,4,2023-06-26,10,Onion
+F2180,Devansh Z.,Gujarat,Wheat,Rabi,2796,2718,23,2024-06-24,2,Groundnut
+F2181,Ivan K.,Uttar Pradesh,Cotton,Kharif,4430,4409,65,2023-01-19,1,Groundnut
+F2182,Umang T.,Bihar,Maize,Zaid,1912,1749,22,2023-05-07,4,Rice
+F2183,Adira S.,Rajasthan,Onion,Rabi,3019,2981,24,2024-06-05,10,Potato
+F2184,Dhanuk Z.,Maharashtra,Soybean,Rabi,990,987,48,2024-06-09,6,Potato
+F2185,Anahi R.,Rajasthan,Sugarcane,Zaid,3391,3215,5,2024-01-24,2,Sugarcane
+F2186,Tarini V.,Rajasthan,Wheat,Rabi,3914,3740,23,2022-01-15,10,Mustard
+F2187,Damini G.,Maharashtra,Maize,Rabi,2885,2801,19,2023-12-29,1,Potato
+F2188,Hiran S.,Gujarat,Wheat,Rabi,1404,1393,24,2023-09-14,4,Potato
+F2189,Nirvi S.,Madhya Pradesh,Maize,Kharif,958,904,21,2022-04-28,4,Wheat
+F2190,Onkar B.,Bihar,Tomato,Rabi,4210,4049,11,2022-07-21,5,Soybean
+F2191,Azad B.,Uttar Pradesh,Maize,Zaid,4185,4102,28,2024-07-10,6,Onion
+F2192,Faiyaz T.,Maharashtra,Tomato,Zaid,3561,3363,12,2023-11-12,5,Maize
+F2193,Advik G.,Punjab,Groundnut,Zaid,1201,1094,52,2024-07-26,2,Cotton
+F2194,Bhamini S.,Punjab,Tomato,Rabi,1666,1535,20,2023-04-15,5,Wheat
+F2195,Riaan R.,Maharashtra,Tomato,Rabi,3944,3925,17,2022-06-10,3,Soybean
+F2196,Advika B.,Punjab,Potato,Kharif,4827,4652,20,2024-02-26,10,Tomato
+F2197,Rasha D.,Gujarat,Potato,Kharif,1109,1034,23,2022-06-26,7,Rice
+F2198,Raunak S.,Gujarat,Potato,Zaid,2877,2846,19,2024-01-23,10,Sugarcane
+F2199,Divij S.,Uttar Pradesh,Rice,Zaid,4812,4739,30,2022-08-07,9,Onion
+F2200,Eva K.,Uttar Pradesh,Onion,Kharif,3529,3496,18,2022-05-12,10,Maize
+F2201,Kabir Y.,Rajasthan,Soybean,Rabi,824,807,46,2023-12-21,2,Wheat
+F2202,Miraya S.,Bihar,Rice,Kharif,2335,2203,26,2024-07-20,2,Bajra
+F2203,Amira S.,Madhya Pradesh,Cotton,Zaid,1800,1646,67,2022-11-07,1,Soybean
+F2204,Badal S.,Bihar,Wheat,Rabi,3892,3850,30,2023-05-14,3,Soybean
+F2205,Nishith Z.,Maharashtra,Potato,Kharif,2452,2366,15,2022-12-06,1,Mustard
+F2206,Akarsh L.,Punjab,Tomato,Kharif,1900,1738,11,2024-06-20,2,Rice
+F2207,Mamooty K.,Maharashtra,Groundnut,Kharif,2789,2706,54,2022-01-29,6,Mustard
+F2208,Mannat C.,Punjab,Mustard,Zaid,3919,3781,56,2023-01-14,1,Mustard
+F2209,Yuvaan M.,Punjab,Potato,Zaid,3693,3559,21,2023-07-15,10,Bajra
+F2210,Miraya B.,Madhya Pradesh,Onion,Zaid,1824,1637,18,2024-05-01,2,Potato
+F2211,Pranay D.,Madhya Pradesh,Tomato,Kharif,818,748,20,2023-08-18,2,Soybean
+F2212,Anaya R.,Gujarat,Mustard,Rabi,3552,3371,52,2023-08-07,8,Bajra
+F2213,Alia B.,Karnataka,Cotton,Kharif,4304,4294,57,2023-03-08,6,Maize
+F2214,Samar C.,Gujarat,Rice,Rabi,3664,3591,31,2023-01-20,1,Sugarcane
+F2215,Madhup M.,Punjab,Cotton,Kharif,3418,3311,58,2023-10-05,6,Cotton
+F2216,Himmat D.,Bihar,Rice,Kharif,4215,4132,34,2022-11-07,8,Sugarcane
+F2217,Hridaan K.,Maharashtra,Mustard,Kharif,3674,3513,58,2022-03-29,3,Wheat
+F2218,Faiyaz M.,Madhya Pradesh,Wheat,Kharif,2300,2232,22,2022-01-02,8,Wheat
+F2219,Charvi A.,Maharashtra,Sugarcane,Kharif,1789,1782,3,2023-05-13,4,Soybean
+F2220,Amani R.,Gujarat,Onion,Zaid,2377,2369,27,2022-09-30,5,Potato
+F2221,Rati D.,Karnataka,Sugarcane,Kharif,4586,4439,3,2022-08-30,9,Maize
+F2222,Aniruddh C.,Uttar Pradesh,Cotton,Rabi,3952,3922,61,2022-08-23,6,Wheat
+F2223,Zoya K.,Uttar Pradesh,Tomato,Kharif,3424,3312,15,2024-06-12,1,Mustard
+F2224,Aniruddh M.,Rajasthan,Potato,Zaid,3166,3161,24,2023-12-16,1,Rice
+F2225,Prisha M.,Maharashtra,Cotton,Zaid,3424,3397,71,2023-09-27,2,Tomato
+F2226,Kaira S.,Uttar Pradesh,Groundnut,Kharif,2666,2605,52,2024-05-01,1,Tomato
+F2227,Nayantara L.,Punjab,Wheat,Rabi,1709,1585,26,2022-03-24,5,Tomato
+F2228,Taran D.,Gujarat,Cotton,Kharif,4503,4413,56,2024-07-12,10,Soybean
+F2229,Eva G.,Maharashtra,Groundnut,Kharif,3427,3413,55,2022-03-01,5,Soybean
+F2230,Ranbir A.,Rajasthan,Bajra,Zaid,2576,2422,25,2022-01-26,8,Potato
+F2231,Jayant W.,Uttar Pradesh,Onion,Rabi,4699,4561,29,2024-04-17,4,Maize
+F2232,Aniruddh S.,Rajasthan,Mustard,Zaid,1049,899,53,2023-06-18,3,Cotton
+F2233,Ahana  K.,Madhya Pradesh,Tomato,Kharif,1169,1132,16,2023-03-14,7,Soybean
+F2234,Aarush K.,Uttar Pradesh,Potato,Zaid,1156,967,16,2022-04-03,7,Groundnut
+F2235,Anvi T.,Uttar Pradesh,Soybean,Rabi,3818,3643,48,2024-07-21,5,Maize
+F2236,Akarsh R.,Bihar,Groundnut,Kharif,3541,3358,50,2022-09-11,7,Onion
+F2237,Divit V.,Punjab,Mustard,Rabi,4689,4538,60,2023-09-09,7,Wheat
+F2238,Ishita A.,Karnataka,Mustard,Kharif,1760,1574,59,2023-10-26,2,Maize
+F2239,Yasmin B.,Madhya Pradesh,Tomato,Zaid,3293,3169,12,2024-04-01,10,Groundnut
+F2240,Kartik K.,Karnataka,Groundnut,Zaid,2619,2485,62,2022-11-12,7,Maize
+F2241,Emir D.,Gujarat,Onion,Rabi,1924,1862,15,2024-07-25,8,Tomato
+F2242,Kavya K.,Madhya Pradesh,Tomato,Zaid,3291,3147,12,2024-06-29,2,Mustard
+F2243,Manikya W.,Uttar Pradesh,Mustard,Kharif,4003,3988,47,2024-07-30,9,Sugarcane
+F2244,Veer K.,Gujarat,Bajra,Zaid,3463,3405,20,2023-02-18,6,Bajra
+F2245,Akarsh D.,Madhya Pradesh,Onion,Zaid,2418,2254,26,2022-04-25,8,Rice
+F2246,Parinaaz K.,Gujarat,Cotton,Kharif,1064,995,59,2024-03-12,9,Mustard
+F2247,Uthkarsh K.,Gujarat,Sugarcane,Zaid,4248,4183,3,2023-11-27,7,Tomato
+F2248,Zain S.,Gujarat,Bajra,Rabi,2052,2026,19,2023-06-29,2,Sugarcane
+F2249,Jhanvi H.,Gujarat,Wheat,Kharif,2397,2209,27,2023-10-06,7,Bajra
+F2250,Rania B.,Karnataka,Cotton,Kharif,1429,1374,65,2023-08-09,8,Groundnut
+F2251,Nishith D.,Gujarat,Sugarcane,Kharif,1712,1601,4,2022-10-05,7,Soybean
+F2252,Damini M.,Karnataka,Groundnut,Zaid,4529,4453,61,2023-03-24,3,Wheat
+F2253,Urvi L.,Gujarat,Sugarcane,Rabi,2875,2769,4,2022-06-01,3,Maize
+F2254,Mohanlal R.,Karnataka,Potato,Zaid,3714,3551,23,2023-10-21,5,Rice
+F2255,Seher K.,Punjab,Tomato,Rabi,1622,1562,8,2024-06-03,9,Soybean
+F2256,Shaan C.,Karnataka,Groundnut,Rabi,4603,4403,63,2024-02-02,9,Wheat
+F2257,Mamooty S.,Bihar,Soybean,Zaid,2989,2890,54,2023-03-23,2,Groundnut
+F2258,Devansh V.,Punjab,Mustard,Kharif,3580,3408,48,2022-07-23,4,Maize
+F2259,Riaan S.,Karnataka,Wheat,Zaid,3399,3388,26,2022-11-24,9,Tomato
+F2260,Vaibhav D.,Gujarat,Maize,Rabi,1829,1744,20,2024-02-01,1,Rice
+F2261,Kiara B.,Gujarat,Groundnut,Rabi,2229,2112,55,2022-07-08,9,Rice
+F2262,Kiara K.,Uttar Pradesh,Rice,Kharif,1378,1277,25,2022-06-25,8,Rice
+F2263,Tanya K.,Madhya Pradesh,Soybean,Zaid,947,908,49,2022-03-12,4,Rice
+F2264,Gokul D.,Karnataka,Potato,Kharif,2207,2032,12,2023-01-02,4,Rice
+F2265,Samiha D.,Bihar,Maize,Kharif,4500,4447,19,2022-10-08,4,Groundnut
+F2266,Anahita B.,Gujarat,Groundnut,Rabi,1948,1790,50,2022-11-11,7,Potato
+F2267,Anaya A.,Gujarat,Wheat,Kharif,4606,4530,25,2023-05-24,3,Cotton
+F2268,Jiya D.,Uttar Pradesh,Tomato,Rabi,1035,852,20,2022-07-13,6,Soybean
+F2269,Hiran G.,Maharashtra,Wheat,Zaid,2835,2700,23,2022-12-01,5,Rice
+F2270,Neelofar T.,Bihar,Rice,Rabi,4264,4066,25,2023-03-21,2,Maize
+F2271,Vanya I.,Rajasthan,Cotton,Kharif,4036,3844,75,2023-11-04,6,Groundnut
+F2272,Lavanya H.,Madhya Pradesh,Rice,Rabi,3813,3759,34,2022-11-29,10,Rice
+F2273,Kismat M.,Gujarat,Maize,Zaid,3494,3307,28,2023-07-26,8,Sugarcane
+F2274,Manjari B.,Rajasthan,Onion,Kharif,1991,1847,28,2024-05-17,3,Soybean
+F2275,Damini D.,Bihar,Maize,Rabi,1044,945,22,2022-12-13,6,Soybean
+F2276,Arnav M.,Karnataka,Onion,Zaid,900,747,10,2022-08-09,4,Rice
+F2277,Jhanvi S.,Bihar,Cotton,Kharif,3932,3875,69,2024-02-20,2,Potato
+F2278,Rohan K.,Madhya Pradesh,Soybean,Zaid,3287,3219,54,2023-03-21,6,Tomato
+F2279,Reyansh K.,Maharashtra,Soybean,Zaid,3058,2992,48,2022-06-19,2,Wheat
+F2280,Romil K.,Gujarat,Wheat,Kharif,2483,2319,20,2022-12-28,4,Groundnut
+F2281,Sahil G.,Bihar,Cotton,Kharif,1073,1013,55,2022-05-01,10,Mustard
+F2282,Lakshay L.,Karnataka,Maize,Kharif,2384,2377,21,2022-03-18,4,Rice
+F2283,Khushi S.,Maharashtra,Groundnut,Zaid,1423,1351,55,2023-01-20,7,Wheat
+F2284,Parinaaz C.,Bihar,Groundnut,Kharif,4285,4127,62,2022-08-11,9,Groundnut
+F2285,Rohan S.,Rajasthan,Rice,Rabi,4262,4151,32,2022-03-26,3,Groundnut
+F2286,Nirvaan D.,Madhya Pradesh,Sugarcane,Kharif,1378,1183,5,2022-04-25,7,Bajra
+F2287,Hridaan T.,Gujarat,Bajra,Zaid,2907,2818,21,2022-12-10,1,Tomato
+F2288,Aayush S.,Bihar,Cotton,Kharif,4430,4246,56,2022-10-26,5,Tomato
+F2289,Dharmajan S.,Madhya Pradesh,Sugarcane,Zaid,1931,1920,5,2023-03-11,7,Mustard
+F2290,Aarna S.,Madhya Pradesh,Groundnut,Rabi,1642,1602,63,2022-11-23,10,Soybean
+F2291,Dishani S.,Maharashtra,Bajra,Kharif,2486,2440,25,2024-04-04,5,Mustard
+F2292,Darshit K.,Bihar,Groundnut,Rabi,3547,3463,62,2024-04-12,5,Maize
+F2293,Arnav R.,Madhya Pradesh,Cotton,Zaid,4970,4924,67,2023-06-21,2,Bajra
+F2294,Kashvi L.,Maharashtra,Soybean,Kharif,1706,1642,40,2022-03-17,2,Tomato
+F2295,Charvi V.,Bihar,Onion,Zaid,1886,1863,27,2023-05-16,9,Onion
+F2296,Oorja K.,Madhya Pradesh,Soybean,Zaid,2301,2297,49,2023-09-24,3,Mustard
+F2297,Oorja B.,Bihar,Wheat,Rabi,3711,3644,29,2024-01-14,5,Potato
+F2298,Kimaya L.,Uttar Pradesh,Wheat,Kharif,930,763,28,2022-01-24,7,Mustard
+F2299,Zoya M.,Madhya Pradesh,Cotton,Zaid,3854,3780,61,2022-03-14,3,Soybean
+F2300,Vaibhav S.,Madhya Pradesh,Rice,Kharif,2668,2493,25,2022-01-31,6,Rice
+F2301,Lagan K.,Rajasthan,Rice,Zaid,1282,1270,28,2023-10-14,5,Potato
+F2302,Zara B.,Punjab,Cotton,Zaid,2083,2010,73,2024-03-13,6,Mustard
+F2303,Veer D.,Gujarat,Maize,Rabi,3075,2982,25,2023-08-06,2,Mustard
+F2304,Kiaan M.,Bihar,Maize,Kharif,4959,4924,28,2024-05-29,2,Potato
+F2305,Kanav D.,Rajasthan,Onion,Zaid,1629,1431,14,2024-04-09,5,Groundnut
+F2306,Onkar H.,Rajasthan,Potato,Kharif,3328,3141,14,2024-01-25,2,Bajra
+F2307,Misha H.,Maharashtra,Cotton,Zaid,1577,1508,57,2023-12-18,10,Wheat
+F2308,Samiha R.,Madhya Pradesh,Mustard,Rabi,2857,2797,52,2023-07-16,2,Groundnut
+F2309,Sumer L.,Bihar,Wheat,Rabi,1649,1585,24,2024-07-04,10,Mustard
+F2310,Nitara A.,Maharashtra,Cotton,Zaid,1466,1444,65,2024-07-28,5,Rice
+F2311,Hazel K.,Gujarat,Potato,Rabi,1349,1223,17,2022-07-20,5,Bajra
+F2312,Jhanvi B.,Bihar,Groundnut,Rabi,2767,2652,51,2022-01-28,9,Maize
+F2313,Damini D.,Gujarat,Mustard,Zaid,3570,3420,46,2022-04-21,1,Potato
+F2314,Zoya D.,Uttar Pradesh,Maize,Kharif,4867,4821,27,2022-06-06,6,Soybean
+F2315,Dishani J.,Bihar,Bajra,Zaid,1946,1840,23,2023-06-28,8,Cotton
+F2316,Tarini A.,Gujarat,Potato,Rabi,3314,3253,24,2024-01-31,6,Wheat
+F2317,Yuvraj  B.,Madhya Pradesh,Mustard,Rabi,1405,1352,51,2022-09-18,4,Sugarcane
+F2318,Khushi B.,Karnataka,Maize,Rabi,2931,2775,19,2023-06-14,2,Tomato
+F2319,Dharmajan D.,Punjab,Maize,Kharif,3420,3383,28,2023-01-08,8,Cotton
+F2320,Shray D.,Rajasthan,Rice,Zaid,819,624,26,2022-08-17,2,Maize
+F2321,Ryan B.,Bihar,Wheat,Zaid,4417,4239,21,2023-03-15,5,Mustard
+F2322,Himmat K.,Bihar,Soybean,Rabi,1001,960,50,2023-12-08,10,Bajra
+F2323,Vihaan B.,Gujarat,Mustard,Rabi,2159,1971,60,2023-11-19,10,Soybean
+F2324,Ryan M.,Bihar,Sugarcane,Rabi,3594,3505,5,2023-11-30,6,Sugarcane
+F2325,Aarna G.,Uttar Pradesh,Tomato,Zaid,2375,2323,20,2022-07-18,5,Maize
+F2326,Riya T.,Madhya Pradesh,Mustard,Rabi,3326,3187,46,2023-06-07,6,Sugarcane
+F2327,Hansh C.,Maharashtra,Groundnut,Rabi,1214,1141,46,2023-08-25,3,Groundnut
+F2328,Sumer M.,Rajasthan,Wheat,Zaid,3435,3293,23,2022-11-21,8,Onion
+F2329,Akarsh S.,Karnataka,Mustard,Rabi,4629,4587,54,2023-02-07,5,Tomato
+F2330,Fateh D.,Rajasthan,Rice,Kharif,3635,3568,29,2024-02-03,9,Soybean
+F2331,Prerak L.,Bihar,Mustard,Rabi,4361,4207,57,2022-09-07,3,Sugarcane
+F2332,Bhavin D.,Uttar Pradesh,Bajra,Zaid,1623,1572,22,2022-06-22,2,Groundnut
+F2333,Nayantara T.,Gujarat,Cotton,Zaid,4893,4842,55,2023-12-10,9,Soybean
+F2334,Indrajit B.,Punjab,Maize,Zaid,4522,4473,20,2023-12-13,10,Maize
+F2335,Kavya M.,Bihar,Wheat,Zaid,1517,1413,20,2022-06-29,9,Wheat
+F2336,Taimur R.,Uttar Pradesh,Bajra,Kharif,4345,4171,24,2023-11-23,9,Groundnut
+F2337,Adah V.,Madhya Pradesh,Sugarcane,Rabi,4744,4613,3,2024-06-21,6,Soybean
+F2338,Chirag R.,Maharashtra,Groundnut,Zaid,2408,2345,51,2022-06-13,1,Sugarcane
+F2339,Mehul S.,Karnataka,Tomato,Zaid,3497,3335,15,2023-09-06,10,Groundnut
+F2340,Neelofar S.,Karnataka,Sugarcane,Kharif,2113,2092,5,2024-07-07,2,Cotton
+F2341,Indrans D.,Uttar Pradesh,Soybean,Kharif,3592,3443,47,2023-04-03,2,Soybean
+F2342,Himmat D.,Rajasthan,Tomato,Zaid,2860,2772,14,2022-10-18,3,Rice
+F2343,Siya H.,Maharashtra,Rice,Kharif,1323,1321,31,2024-07-15,10,Maize
+F2344,Jivin D.,Maharashtra,Potato,Zaid,4970,4929,13,2024-03-31,9,Onion
+F2345,Kashvi K.,Karnataka,Maize,Zaid,4328,4173,25,2022-06-13,4,Potato
+F2346,Vardaniya A.,Karnataka,Mustard,Zaid,2518,2488,57,2023-12-17,2,Onion
+F2347,Sahil D.,Bihar,Groundnut,Kharif,3007,2980,52,2024-01-06,9,Groundnut
+F2348,Badal B.,Bihar,Mustard,Zaid,2662,2490,56,2022-05-15,9,Wheat
+F2349,Baiju B.,Bihar,Onion,Rabi,4272,4239,16,2022-01-20,1,Onion
+F2350,Uthkarsh S.,Punjab,Tomato,Rabi,1826,1683,17,2024-07-15,2,Bajra
+F2351,Sara G.,Maharashtra,Tomato,Zaid,2459,2328,12,2022-09-04,10,Groundnut
+F2352,Raghav T.,Rajasthan,Sugarcane,Kharif,4168,4086,4,2023-05-19,4,Tomato
+F2353,Elakshi H.,Maharashtra,Soybean,Rabi,3833,3780,44,2023-04-01,10,Tomato
+F2354,Stuvan B.,Gujarat,Groundnut,Kharif,4213,4064,51,2023-11-02,4,Wheat
+F2355,Vardaniya B.,Karnataka,Cotton,Kharif,3957,3861,57,2022-09-24,3,Bajra
+F2356,Advik S.,Rajasthan,Wheat,Rabi,4023,3895,21,2023-12-07,9,Wheat
+F2357,Shamik D.,Maharashtra,Rice,Kharif,2454,2270,28,2022-09-05,7,Tomato
+F2358,Damini C.,Rajasthan,Bajra,Kharif,3596,3397,25,2022-01-10,5,Cotton
+F2359,Ehsaan D.,Punjab,Wheat,Kharif,3574,3572,22,2023-02-15,2,Wheat
+F2360,Shayak C.,Punjab,Sugarcane,Zaid,3388,3320,3,2023-10-13,6,Cotton
+F2361,Romil S.,Gujarat,Cotton,Zaid,4713,4620,64,2022-01-19,3,Rice
+F2362,Inaaya  B.,Maharashtra,Rice,Kharif,3057,2985,27,2024-02-02,4,Mustard
+F2363,Pranay K.,Bihar,Cotton,Rabi,2731,2632,58,2024-06-10,6,Wheat
+F2364,Samiha R.,Punjab,Cotton,Zaid,2268,2083,69,2022-04-15,7,Potato
+F2365,Advik D.,Uttar Pradesh,Potato,Zaid,1110,985,18,2022-11-24,6,Sugarcane
+F2366,Rhea S.,Uttar Pradesh,Maize,Zaid,4808,4759,28,2022-02-05,2,Wheat
+F2367,Nirvaan D.,Rajasthan,Wheat,Zaid,4788,4639,30,2022-11-18,4,Cotton
+F2368,Parinaaz S.,Uttar Pradesh,Tomato,Rabi,4703,4598,20,2023-09-01,10,Wheat
+F2369,Darshit D.,Madhya Pradesh,Mustard,Zaid,4464,4264,57,2022-04-20,10,Rice
+F2370,Dhanush B.,Punjab,Maize,Zaid,2527,2342,28,2022-06-28,5,Groundnut
+F2371,Shray R.,Karnataka,Mustard,Kharif,2584,2493,46,2023-12-21,6,Cotton
+F2372,Priyansh J.,Uttar Pradesh,Wheat,Zaid,2736,2730,29,2022-04-08,5,Mustard
+F2373,Samiha T.,Rajasthan,Cotton,Rabi,3339,3234,68,2023-02-07,8,Rice
+F2374,Devansh D.,Uttar Pradesh,Groundnut,Kharif,3049,2998,48,2024-02-26,7,Maize
+F2375,Aayush C.,Bihar,Maize,Kharif,1155,993,18,2023-02-10,7,Bajra
+F2376,Ritvik B.,Punjab,Wheat,Kharif,4317,4188,20,2022-01-17,7,Tomato
+F2377,Neelofar C.,Punjab,Sugarcane,Zaid,1815,1774,3,2022-08-13,7,Potato
+F2378,Indranil B.,Uttar Pradesh,Mustard,Rabi,4864,4752,48,2022-01-15,6,Soybean
+F2379,Zara H.,Rajasthan,Maize,Rabi,4488,4358,26,2024-02-28,9,Cotton
+F2380,Raghav H.,Maharashtra,Maize,Kharif,3144,3112,21,2023-05-02,5,Wheat
+F2381,Yashvi V.,Uttar Pradesh,Sugarcane,Kharif,3924,3912,5,2022-04-30,5,Rice
+F2382,Shanaya G.,Bihar,Sugarcane,Zaid,1591,1514,4,2022-08-03,3,Onion
+F2383,Manjari S.,Gujarat,Mustard,Zaid,2507,2382,52,2022-06-09,7,Soybean
+F2384,Ishita S.,Uttar Pradesh,Groundnut,Rabi,2733,2670,47,2022-08-22,8,Sugarcane
+F2385,Samaira K.,Maharashtra,Wheat,Zaid,4771,4769,23,2022-10-17,9,Wheat
+F2386,Alia J.,Maharashtra,Cotton,Kharif,1991,1974,59,2024-05-17,10,Bajra
+F2387,Nayantara K.,Uttar Pradesh,Bajra,Rabi,2047,1950,22,2022-08-02,4,Tomato
+F2388,Priyansh S.,Bihar,Potato,Kharif,1512,1444,12,2024-03-09,7,Onion
+F2389,Diya B.,Karnataka,Rice,Kharif,1899,1814,35,2022-08-24,1,Groundnut
+F2390,Vaibhav C.,Uttar Pradesh,Rice,Kharif,3602,3518,34,2022-07-24,8,Sugarcane
+F2391,Dhanush A.,Maharashtra,Maize,Rabi,2046,1877,22,2023-06-07,7,Tomato
+F2392,Faiyaz T.,Maharashtra,Onion,Rabi,3152,3034,23,2023-06-09,7,Cotton
+F2393,Taimur C.,Madhya Pradesh,Groundnut,Zaid,1333,1309,55,2023-11-11,7,Rice
+F2394,Faiyaz B.,Gujarat,Wheat,Zaid,2374,2280,26,2023-05-25,3,Rice
+F2395,Tanya M.,Karnataka,Maize,Kharif,3659,3497,24,2024-06-06,7,Bajra
+F2396,Pihu W.,Rajasthan,Sugarcane,Zaid,1739,1561,3,2024-01-19,10,Rice
+F2397,Saanvi G.,Punjab,Maize,Zaid,1375,1177,25,2024-07-24,3,Groundnut
+F2398,Reyansh T.,Rajasthan,Bajra,Rabi,4163,4082,25,2023-01-05,3,Cotton
+F2399,Yashvi R.,Karnataka,Mustard,Kharif,3826,3763,56,2022-05-28,4,Tomato
+F2400,Yashvi D.,Madhya Pradesh,Potato,Kharif,4715,4640,14,2023-07-21,10,Tomato
+F2401,Ishita V.,Punjab,Sugarcane,Zaid,1704,1558,5,2022-01-13,4,Rice
+F2402,Manjari S.,Bihar,Maize,Kharif,1574,1549,26,2022-12-02,7,Groundnut
+F2403,Vihaan K.,Uttar Pradesh,Onion,Kharif,1619,1507,28,2022-05-15,5,Wheat
+F2404,Armaan S.,Rajasthan,Sugarcane,Kharif,2202,2007,3,2023-05-15,1,Maize
+F2405,Fateh C.,Uttar Pradesh,Onion,Kharif,2651,2575,25,2023-04-12,7,Potato
+F2406,Biju S.,Madhya Pradesh,Wheat,Kharif,1597,1577,27,2022-06-16,5,Bajra
+F2407,Ivan D.,Rajasthan,Mustard,Kharif,4100,3944,46,2022-04-13,5,Sugarcane
+F2408,Nirvaan B.,Uttar Pradesh,Soybean,Kharif,2889,2871,47,2024-02-15,2,Potato
+F2409,Drishya D.,Gujarat,Potato,Zaid,3334,3184,24,2024-02-15,7,Soybean
+F2410,Dhanuk C.,Rajasthan,Onion,Kharif,4951,4859,10,2023-09-05,4,Rice
+F2411,Aniruddh S.,Gujarat,Groundnut,Rabi,3988,3840,57,2023-03-28,7,Tomato
+F2412,Drishya K.,Madhya Pradesh,Bajra,Rabi,1208,1058,24,2024-07-09,7,Tomato
+F2413,Alia R.,Punjab,Wheat,Rabi,2733,2600,25,2023-06-06,9,Soybean
+F2414,Kiaan W.,Gujarat,Onion,Kharif,1582,1555,12,2023-07-08,10,Cotton
+F2415,Pihu K.,Gujarat,Groundnut,Zaid,1464,1372,55,2023-05-19,4,Soybean
+F2416,Advik V.,Bihar,Tomato,Kharif,4705,4685,16,2023-10-27,1,Mustard
+F2417,Ira M.,Maharashtra,Groundnut,Kharif,1026,925,45,2022-01-05,7,Wheat
+F2418,Ahana  T.,Uttar Pradesh,Bajra,Zaid,1086,951,24,2024-05-02,5,Maize
+F2419,Indrajit B.,Bihar,Maize,Rabi,2376,2231,19,2023-09-09,7,Mustard
+F2420,Saanvi M.,Uttar Pradesh,Maize,Rabi,3366,3216,27,2023-08-17,10,Cotton
+F2421,Hansh G.,Rajasthan,Mustard,Zaid,1702,1533,54,2023-04-17,2,Bajra
+F2422,Darshit K.,Gujarat,Groundnut,Rabi,4444,4419,47,2023-06-30,3,Mustard
+F2423,Akarsh D.,Maharashtra,Potato,Kharif,2778,2641,19,2022-04-25,2,Maize
+F2424,Yuvraj  K.,Karnataka,Bajra,Kharif,1733,1560,23,2023-07-25,4,Groundnut
+F2425,Riaan B.,Madhya Pradesh,Rice,Kharif,3990,3797,33,2022-01-08,3,Soybean
+F2426,Mahika V.,Bihar,Rice,Zaid,3460,3348,26,2022-02-19,4,Onion
+F2427,Romil S.,Bihar,Onion,Kharif,1871,1687,22,2023-01-10,5,Groundnut
+F2428,Keya K.,Karnataka,Groundnut,Zaid,1236,1083,47,2023-02-02,2,Potato
+F2429,Jiya K.,Rajasthan,Maize,Kharif,4331,4219,21,2022-03-23,6,Maize
+F2430,Aarna I.,Gujarat,Soybean,Rabi,1064,927,50,2024-02-04,2,Onion
+F2431,Miraya S.,Maharashtra,Rice,Zaid,4985,4795,28,2023-09-05,3,Tomato
+F2432,Baiju G.,Bihar,Soybean,Kharif,3926,3903,47,2024-06-03,6,Cotton
+F2433,Gokul B.,Karnataka,Groundnut,Rabi,963,785,51,2023-12-28,8,Mustard
+F2434,Indranil S.,Bihar,Bajra,Rabi,1481,1419,23,2023-12-05,3,Onion
+F2435,Yakshit E.,Rajasthan,Groundnut,Rabi,1423,1225,47,2022-12-12,1,Groundnut
+F2436,Gokul R.,Bihar,Tomato,Kharif,966,939,17,2022-09-20,8,Mustard
+F2437,Drishya B.,Gujarat,Rice,Zaid,2528,2382,26,2023-03-01,9,Onion
+F2438,Aaina A.,Maharashtra,Soybean,Rabi,3088,3043,46,2022-01-18,7,Rice
+F2439,Jayesh W.,Bihar,Mustard,Kharif,3580,3385,59,2022-08-27,3,Wheat
+F2440,Ayesha S.,Madhya Pradesh,Mustard,Zaid,4090,4051,47,2024-05-31,8,Sugarcane
+F2441,Elakshi B.,Punjab,Cotton,Kharif,1861,1846,73,2023-06-30,10,Mustard
+F2442,Yakshit K.,Rajasthan,Potato,Zaid,4527,4473,24,2022-06-13,3,Groundnut
+F2443,Zeeshan M.,Maharashtra,Mustard,Zaid,3247,3105,52,2022-11-02,2,Mustard
+F2444,Drishya C.,Gujarat,Mustard,Kharif,1059,1046,59,2023-04-09,3,Groundnut
+F2445,Raunak M.,Rajasthan,Groundnut,Zaid,3682,3651,57,2023-08-14,4,Cotton
+F2446,Tarini S.,Maharashtra,Potato,Rabi,1126,1081,24,2024-03-19,4,Rice
+F2447,Ira S.,Punjab,Mustard,Kharif,3910,3759,60,2022-06-09,2,Bajra
+F2448,Zeeshan T.,Madhya Pradesh,Wheat,Kharif,1463,1397,22,2024-03-23,9,Onion
+F2449,Ojas K.,Maharashtra,Potato,Zaid,4735,4598,19,2024-06-30,2,Onion
+F2450,Ritvik S.,Uttar Pradesh,Wheat,Zaid,1271,1160,20,2022-06-23,7,Potato
+F2451,Miraan K.,Maharashtra,Tomato,Kharif,2558,2545,8,2023-07-21,10,Soybean
+F2452,Suhana D.,Maharashtra,Bajra,Rabi,4086,4019,22,2024-01-11,9,Rice
+F2453,Faiyaz K.,Madhya Pradesh,Mustard,Zaid,4787,4750,46,2022-01-07,7,Potato
+F2454,Miraan K.,Punjab,Soybean,Rabi,1396,1219,40,2022-01-24,3,Mustard
+F2455,Arnav B.,Gujarat,Tomato,Zaid,2938,2767,8,2023-06-18,10,Groundnut
+F2456,Zara R.,Madhya Pradesh,Potato,Rabi,3623,3550,22,2024-05-22,7,Groundnut
+F2457,Zain S.,Uttar Pradesh,Potato,Rabi,1012,923,13,2022-07-28,3,Mustard
+F2458,Rasha R.,Rajasthan,Groundnut,Rabi,3073,2932,61,2022-05-25,3,Wheat
+F2459,Kiaan R.,Maharashtra,Bajra,Kharif,4432,4322,18,2023-07-15,8,Soybean
+F2460,Devansh J.,Uttar Pradesh,Mustard,Kharif,3977,3860,50,2022-06-10,6,Rice
+F2461,Mannat S.,Gujarat,Bajra,Zaid,1566,1393,26,2022-08-09,5,Wheat
+F2462,Sara D.,Bihar,Cotton,Rabi,1954,1777,62,2023-09-24,5,Bajra
+F2463,Anahita B.,Gujarat,Groundnut,Kharif,3840,3696,55,2023-04-29,5,Groundnut
+F2464,Chirag S.,Punjab,Onion,Zaid,1177,1091,26,2023-08-17,6,Potato
+F2465,Bhamini C.,Rajasthan,Soybean,Kharif,3303,3118,41,2022-08-04,4,Bajra
+F2466,Hansh S.,Gujarat,Mustard,Rabi,1198,1041,49,2022-05-30,8,Tomato
+F2467,Khushi B.,Punjab,Sugarcane,Kharif,2287,2184,3,2022-11-17,4,Onion
+F2468,Tarini S.,Maharashtra,Onion,Rabi,1215,1073,30,2022-12-06,2,Groundnut
+F2469,Jhanvi K.,Karnataka,Cotton,Kharif,1881,1689,67,2024-01-30,2,Tomato
+F2470,Nehmat V.,Uttar Pradesh,Rice,Kharif,4343,4241,33,2024-01-26,1,Mustard
+F2471,Adah D.,Bihar,Rice,Rabi,2980,2804,31,2024-05-30,5,Groundnut
+F2472,Alia T.,Maharashtra,Maize,Rabi,4278,4184,23,2022-03-23,4,Wheat
+F2473,Emir D.,Uttar Pradesh,Bajra,Rabi,873,753,18,2022-08-12,8,Tomato
+F2474,Damini S.,Madhya Pradesh,Mustard,Rabi,4235,4132,54,2022-03-31,6,Soybean
+F2475,Ivan D.,Rajasthan,Sugarcane,Rabi,2807,2747,4,2023-07-21,8,Rice
+F2476,Vihaan R.,Karnataka,Tomato,Zaid,2510,2315,8,2023-04-22,6,Maize
+F2477,Misha D.,Karnataka,Maize,Kharif,4425,4380,28,2024-02-15,2,Groundnut
+F2478,Pranay A.,Maharashtra,Sugarcane,Rabi,3829,3745,4,2023-10-23,8,Soybean
+F2479,Keya D.,Bihar,Wheat,Kharif,3228,3058,24,2024-02-10,10,Onion
+F2480,Kismat C.,Madhya Pradesh,Tomato,Zaid,1548,1525,19,2024-01-28,1,Wheat
+F2481,Mahika B.,Karnataka,Sugarcane,Rabi,4713,4601,3,2022-09-19,1,Sugarcane
+F2482,Dhanush M.,Gujarat,Potato,Kharif,4601,4524,21,2022-05-07,7,Rice
+F2483,Kabir C.,Karnataka,Soybean,Rabi,2740,2542,42,2024-03-18,8,Tomato
+F2484,Shlok Z.,Rajasthan,Groundnut,Kharif,3243,3202,47,2024-01-21,8,Maize
+F2485,Chirag D.,Uttar Pradesh,Potato,Kharif,2371,2360,16,2022-10-12,3,Sugarcane
+F2486,Chirag B.,Madhya Pradesh,Maize,Zaid,3906,3856,21,2022-06-08,2,Sugarcane
+F2487,Navya M.,Gujarat,Wheat,Rabi,1891,1889,26,2024-06-28,8,Wheat
+F2488,Arhaan B.,Gujarat,Groundnut,Kharif,3634,3477,46,2023-01-01,5,Bajra
+F2489,Manjari H.,Gujarat,Onion,Rabi,2130,1983,18,2022-09-17,2,Soybean
+F2490,Kiaan K.,Maharashtra,Wheat,Kharif,3670,3584,24,2022-12-17,5,Groundnut
+F2491,Anvi B.,Rajasthan,Bajra,Rabi,4992,4920,24,2024-02-03,9,Mustard
+F2492,Kismat B.,Maharashtra,Potato,Zaid,1780,1586,15,2023-03-16,8,Wheat
+F2493,Heer B.,Madhya Pradesh,Potato,Zaid,3659,3612,25,2024-01-12,6,Rice
+F2494,Uthkarsh S.,Rajasthan,Potato,Zaid,4035,3901,23,2023-05-13,9,Sugarcane
+F2495,Lakshay L.,Punjab,Sugarcane,Kharif,3027,2881,3,2023-11-24,4,Potato
+F2496,Kimaya D.,Punjab,Mustard,Kharif,2661,2494,58,2022-06-09,10,Maize
+F2497,Chirag B.,Bihar,Soybean,Kharif,1825,1765,52,2023-07-16,3,Rice
+F2498,Vardaniya K.,Punjab,Mustard,Rabi,3983,3915,53,2024-06-06,6,Bajra
+F2499,Priyansh W.,Gujarat,Groundnut,Kharif,4445,4336,51,2022-04-03,10,Wheat
+F2500,Pihu R.,Uttar Pradesh,Bajra,Zaid,886,698,25,2024-07-07,10,Maize
