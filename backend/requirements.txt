@@ -6,4 +6,4 @@ joblib
 prophet
 xgboost
 scikit-learn
-tensorflow
+tensorflowf

@@ -6,6 +6,7 @@ import numpy as np
 from prophet import Prophet
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
+from datetime import timedelta
 
 class PricePredictor:
     def __init__(self, model_dir='models', data_path='data/historical_prices_large.csv'):
@@ -22,7 +23,29 @@ class PricePredictor:
         if model_type.lower()=='prophet':
             model_file=os.path.join(self.model_dir,f'prophet_{crop}_{market}.pkl')
             if not os.path.exists(model_file):
-                return {"error":f"No Prophet model for {crop}-{market}"}
+                # Fallback: build a simple linear extrapolation forecast from historical data
+                try:
+                    series = self.df[(self.df.crop_name==crop)&(self.df.market==market)].sort_values('date')[["date","price_per_qtl"]]
+                    if series.empty:
+                        return {"error":f"No Prophet model for {crop}-{market} and no historical data available"}
+
+                    # Use last N records to fit a linear trend on ordinal dates
+                    N = min(120, len(series))
+                    s = series.tail(N).copy()
+                    s['ds_ord'] = s['date'].map(pd.Timestamp.toordinal)
+                    coeffs = np.polyfit(s['ds_ord'], s['price_per_qtl'], 1)
+                    slope, intercept = float(coeffs[0]), float(coeffs[1])
+                    last_date = s['date'].max()
+
+                    out = []
+                    for i in range(1, periods+1):
+                        future_date = last_date + timedelta(days=i)
+                        yhat = float(intercept + slope * future_date.toordinal())
+                        out.append({"ds": future_date.strftime('%Y-%m-%d'), "yhat": round(yhat, 2)})
+
+                    return {"model": "prophet_fallback_linear", "forecast": out}
+                except Exception as e:
+                    return {"error": f"No Prophet model for {crop}-{market}", "detail": str(e)}
             m=joblib.load(model_file)
             future=m.make_future_dataframe(periods=periods)
             forecast=m.predict(future)
