@@ -9,14 +9,15 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCpvcnbGOqMv13OfOsaXIt48uf9akPlejo",
-    authDomain: "krushiconnect12.firebaseapp.com",
-    projectId: "krushiconnect12",
-    storageBucket: "krushiconnect12.firebasestorage.app",
-    messagingSenderId: "701793260800",
-    appId: "1:701793260800:web:2d4ebcac9ed2745ad04fe5",
-    measurementId: "G-KRXX3E1DGS"
+  apiKey: "AIzaSyDtqCbrVHucVvrAMUftiOki7txGoAcv1tU",
+  authDomain: "krushiconnect-ec76d.firebaseapp.com",
+  projectId: "krushiconnect-ec76d",
+  storageBucket: "krushiconnect-ec76d.firebasestorage.app",
+  messagingSenderId: "853461776295",
+  appId: "1:853461776295:web:c74847e5ccc038e6ae2882",
+  measurementId: "G-V68BLZX3RS"
 };
+
 
 // 🔹 Initialize Firebase
 const app = initializeApp(firebaseConfig);
