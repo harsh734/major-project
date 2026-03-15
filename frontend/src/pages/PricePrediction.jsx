@@ -17,7 +17,7 @@ const PricePrediction = () => {
                 model_type: modelType,
                 periods: periods
             };
-            const res = await axios.post('http://localhost:5000/api/predict_price', payload);
+            const res = await axios.post(`${import.meta.env.VITE_API_BASE || 'http://localhost:5000/api'}/predict_price`, payload);
             // Prophet returns {forecast:[{ds:'2025-...','yhat':123}]}
             if (res.data.forecast) {
                 if (modelType === 'prophet') {

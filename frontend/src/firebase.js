@@ -9,13 +9,13 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDtqCbrVHucVvrAMUftiOki7txGoAcv1tU",
-  authDomain: "krushiconnect-ec76d.firebaseapp.com",
-  projectId: "krushiconnect-ec76d",
-  storageBucket: "krushiconnect-ec76d.firebasestorage.app",
-  messagingSenderId: "853461776295",
-  appId: "1:853461776295:web:c74847e5ccc038e6ae2882",
-  measurementId: "G-V68BLZX3RS"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 

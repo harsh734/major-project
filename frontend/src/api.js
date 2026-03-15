@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api";  // adjust if backend deployed elsewhere
+const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:5000/api";
 
 export async function predictPrice(payload) {
     const res = await fetch(`${API_BASE}/predict_price`, {

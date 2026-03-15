@@ -383,7 +383,7 @@ function exportToPDF(title, data, pageType) {
   const c=[`KrushiConnect – ${title}`,`Generated: ${new Date().toLocaleString()}`,'─'.repeat(50)];
   if(pageType==='yield'&&data.result){c.push(`Crop: ${data.form.crop_name}`,`State: ${data.form.state}`,`Area: ${data.form.area_hectare} ha`,`Rainfall: ${data.form.rainfall_mm} mm`,`Soil: ${data.form.soil_type}`,'─'.repeat(50),`Total Yield: ${data.result.totalYield.toFixed(2)} kg`,`Per Hectare: ${(data.result.yieldPerHectare||data.result.yield).toFixed(2)} kg/ha`);if(data.result.confidence)c.push(`Confidence: ${(data.result.confidence*100).toFixed(1)}%`);}
   if(pageType==='recommendation'&&data.result){c.push(`State: ${data.form.state}`,`Season: ${data.form.season}`,`Soil: ${data.form.soil_type}`,'─'.repeat(50),`Recommended Crop: ${data.result.recommended_crop}`);if(data.result.confidence)c.push(`Confidence: ${(data.result.confidence*100).toFixed(1)}%`);}
-  if(pageType==='price'&&data.result){c.push(`Crop: ${data.form.crop_name}`,`Market: ${data.form.market}`,'─'.repeat(50));data.result.forecast.slice(0,15).forEach((item,i)=>c.push(`  ${item.ds||item.date||`Day ${i+1}`}: ₹${(item.yhat||item.price||0).toFixed(2)}/qtl`));}
+  if(pageType==='price'&&data.result){c.push(`Crop: ${data.form.crop_name}`,`Market: ${data.form.market}`,'─'.repeat(50));data.result.forecast.slice(0,15).forEach((item,i)=>c.push(`  ${item.ds||item.date||`Day ${i+1}`}: ₹${(item.yhat||item.predicted_price||item.price||0).toFixed(2)}/qtl`));}
   const blob=new Blob([c.join('\n')],{type:'text/plain'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`KrushiConnect_${pageType}_${Date.now()}.txt`;a.click();URL.revokeObjectURL(url);
 }
 
@@ -402,12 +402,12 @@ function LangSwitcher({ lang, setLang }) {
 }
 
 /* ─── Firebase ───────────────────────────────────────────────────────────────── */
-const firebaseConfig={apiKey:"AIzaSyDtqCbrVHucVvrAMUftiOki7txGoAcv1tU",authDomain:"krushiconnect-ec76d.firebaseapp.com",projectId:"krushiconnect-ec76d",storageBucket:"krushiconnect-ec76d.firebasestorage.app",messagingSenderId:"853461776295",appId:"1:853461776295:web:c74847e5ccc038e6ae2882",measurementId:"G-V68BLZX3RS"};
+const firebaseConfig={apiKey:import.meta.env.VITE_FIREBASE_API_KEY,authDomain:import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,projectId:import.meta.env.VITE_FIREBASE_PROJECT_ID,storageBucket:import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,messagingSenderId:import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,appId:import.meta.env.VITE_FIREBASE_APP_ID,measurementId:import.meta.env.VITE_FIREBASE_MEASUREMENT_ID};
 let auth=null,googleProvider=null,firebaseInitialized=false;
 const initializeFirebase=async()=>{if(firebaseInitialized)return;try{const fb=await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');const fa=await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js');const app=fb.initializeApp(firebaseConfig);auth=fa.getAuth(app);googleProvider=new fa.GoogleAuthProvider();firebaseInitialized=true;}catch(err){console.error('Firebase:',err);}};
 
 /* ─── API ────────────────────────────────────────────────────────────────────── */
-const API_BASE='http://localhost:5000/api';
+const API_BASE=import.meta.env.VITE_API_BASE||'http://localhost:5000/api';
 const predictPrice  = async d=>(await fetch(`${API_BASE}/predict_price`, {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})).json();
 const estimateYield = async d=>(await fetch(`${API_BASE}/estimate_yield`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})).json();
 const recommendCrop = async d=>(await fetch(`${API_BASE}/recommend_crop`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})).json();
@@ -596,10 +596,25 @@ function PricePredictionPage({ onBack, lang }) {
       if (data?.forecast || data?.predictions || data?.results) {
         const forecast = data.forecast||data.predictions||data.results;
         setResult({forecast});
+        if (data.warning || data.model === 'lstm_fallback_prophet') {
+          setError(data.warning || '⚠️ LSTM model not trained yet. Showing Prophet forecast instead.');
+        }
         const first=forecast[0],last=forecast[forecast.length-1];
-        const firstP=(first?.yhat||first?.price||0).toFixed(0),lastP=(last?.yhat||last?.price||0).toFixed(0);
+        const firstP=(first?.yhat||first?.predicted_price||first?.price||0).toFixed(0),lastP=(last?.yhat||last?.predicted_price||last?.price||0).toFixed(0);
         const spokenText=`Price forecast for ${formData.crop_name} in ${formData.market}: starting at rupees ${firstP} per quintal, reaching rupees ${lastP} after ${forecast.length} days.`;
         speak(spokenText,LANGS[lang]?.code); setLoading(false); return {spokenText};
+      } else if (data?.error) {
+        if ((data.error.includes('No LSTM') || data.error.includes('LSTM')) && (formData||form).model_type === 'lstm') {
+          setError('⚠️ LSTM model not trained yet — run model.py first. Retrying with Prophet...');
+          setTimeout(async () => {
+            try {
+              const fb = await predictPrice({ ...(formData||form), model_type: 'prophet' });
+              if (fb?.forecast) { setError('⚠️ LSTM unavailable — showing Prophet forecast instead.'); setResult({ forecast: fb.forecast }); }
+            } catch(e) { /* ignore */ }
+            setLoading(false);
+          }, 1000);
+        } else { setError(data.error); setLoading(false); }
+        return;
       } else { setError(`Unexpected API response. Keys: ${Object.keys(data).join(', ')}`); }
     } catch { setError('Failed to connect. Make sure Flask server is on port 5000.'); }
     setLoading(false);
@@ -634,7 +649,7 @@ function PricePredictionPage({ onBack, lang }) {
               {result.forecast.slice(0,10).map((item,idx)=>(
                 <div key={idx} style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'10px 14px',background:'rgba(10,22,14,0.7)',borderRadius:9,border:'1px solid var(--glass-border)'}}>
                   <span style={{fontSize:12.5,color:'var(--text-secondary)',fontWeight:500}}>{item.ds||item.date||`Day ${idx+1}`}</span>
-                  <span style={{fontSize:14.5,fontWeight:700,color:'var(--neon-sage)'}}>₹{(item.yhat||item.price||0).toFixed(2)}<span style={{fontSize:10,opacity:0.6}}>/qtl</span></span>
+                  <span style={{fontSize:14.5,fontWeight:700,color:'var(--neon-sage)'}}>₹{(item.yhat||item.predicted_price||item.price||0).toFixed(2)}<span style={{fontSize:10,opacity:0.6}}>/qtl</span></span>
                 </div>
               ))}
             </div>
