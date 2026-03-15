@@ -71,7 +71,12 @@ class PricePredictor:
         scaler_file = os.path.join(self.model_dir, f'lstm_scaler_{crop}_{market}.pkl')
 
         if not os.path.exists(lstm_file):
-            return {"error": f"No LSTM model found for crop='{crop}', market='{market}'."}
+            # LSTM not trained yet — fall back to Prophet gracefully
+            print(f"⚠️ No LSTM model for {crop}-{market}, falling back to Prophet")
+            result = self._predict_prophet(crop, market, periods)
+            result['model'] = 'lstm_fallback_prophet'
+            result['warning'] = f"LSTM model not yet trained for {crop}/{market}. Run model.py to train it. Showing Prophet forecast instead."
+            return result
 
         if not os.path.exists(scaler_file):
             print(f"⚠️ LSTM scaler not found for {crop}-{market}, refitting on historical data (less accurate)")
@@ -104,13 +109,18 @@ class PricePredictor:
                 # Roll window forward
                 current_seq = np.vstack([current_seq[1:], p])
 
-            last_date  = self.df[
+            last_date = self.df[
                 (self.df['crop_name'] == crop) & (self.df['market'] == market)
             ]['date'].max()
 
+            # If historical data is stale (older than 60 days), use today as base
+            from datetime import date as dt_date
+            today = pd.Timestamp(dt_date.today())
+            base_date = today if (today - last_date).days > 60 else last_date
+
             forecast = [
                 {
-                    "date": (last_date + timedelta(days=i + 1)).strftime('%Y-%m-%d'),
+                    "date": (base_date + timedelta(days=i + 1)).strftime('%Y-%m-%d'),
                     "predicted_price": price
                 }
                 for i, price in enumerate(preds)
@@ -142,12 +152,17 @@ class PricePredictor:
             df_s['ds_ord'] = df_s['date'].map(pd.Timestamp.toordinal)
             coeffs          = np.polyfit(df_s['ds_ord'], df_s['price_per_qtl'], 1)
             slope, intercept = float(coeffs[0]), float(coeffs[1])
-            last_date        = df_s['date'].max()
+            last_date = df_s['date'].max()
+
+            # If historical data is stale (older than 60 days), shift forecast to start from today
+            from datetime import date as dt_date
+            today = pd.Timestamp(dt_date.today())
+            base_date = today if (today - last_date).days > 60 else last_date
 
             forecast = [
                 {
-                    "date": (last_date + timedelta(days=i)).strftime('%Y-%m-%d'),
-                    "predicted_price": round(intercept + slope * (last_date + timedelta(days=i)).toordinal(), 2)
+                    "date": (base_date + timedelta(days=i)).strftime('%Y-%m-%d'),
+                    "predicted_price": round(intercept + slope * (base_date + timedelta(days=i)).toordinal(), 2)
                 }
                 for i in range(1, periods + 1)
             ]
