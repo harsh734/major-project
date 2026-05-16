@@ -48,6 +48,7 @@ class PricePredictor:
             return self._linear_fallback(crop, market, periods)
 
         try:
+            from datetime import date as dt_date
             m = joblib.load(model_file)
             future   = m.make_future_dataframe(periods=periods)
             forecast = m.predict(future)
@@ -56,8 +57,17 @@ class PricePredictor:
                 .tail(periods)
                 .rename(columns={'ds': 'date', 'yhat': 'predicted_price',
                                  'yhat_lower': 'lower_bound', 'yhat_upper': 'upper_bound'})
-            )
-            out['date'] = out['date'].dt.strftime('%Y-%m-%d')
+            ).copy()
+
+            # If forecast dates are in the past (stale training data),
+            # shift them forward so they start from today
+            today = pd.Timestamp(dt_date.today())
+            forecast_start = pd.to_datetime(out['date'].iloc[0])
+            if forecast_start < today:
+                day_shift = (today - forecast_start).days + 1
+                out['date'] = pd.to_datetime(out['date']) + pd.Timedelta(days=day_shift)
+
+            out['date'] = pd.to_datetime(out['date']).dt.strftime('%Y-%m-%d')
             return {"model": "prophet", "crop": crop, "market": market,
                     "forecast": out.to_dict(orient='records')}
         except Exception as e:
@@ -71,11 +81,10 @@ class PricePredictor:
         scaler_file = os.path.join(self.model_dir, f'lstm_scaler_{crop}_{market}.pkl')
 
         if not os.path.exists(lstm_file):
-            # LSTM not trained yet — fall back to Prophet gracefully
             print(f"⚠️ No LSTM model for {crop}-{market}, falling back to Prophet")
             result = self._predict_prophet(crop, market, periods)
             result['model'] = 'lstm_fallback_prophet'
-            result['warning'] = f"LSTM model not yet trained for {crop}/{market}. Run model.py to train it. Showing Prophet forecast instead."
+            result['warning'] = f"LSTM not yet trained for {crop}/{market}. Showing Prophet forecast."
             return result
 
         if not os.path.exists(scaler_file):
@@ -113,7 +122,7 @@ class PricePredictor:
                 (self.df['crop_name'] == crop) & (self.df['market'] == market)
             ]['date'].max()
 
-            # If historical data is stale (older than 60 days), use today as base
+            # Use today as base if historical data is older than 60 days
             from datetime import date as dt_date
             today = pd.Timestamp(dt_date.today())
             base_date = today if (today - last_date).days > 60 else last_date
@@ -154,7 +163,7 @@ class PricePredictor:
             slope, intercept = float(coeffs[0]), float(coeffs[1])
             last_date = df_s['date'].max()
 
-            # If historical data is stale (older than 60 days), shift forecast to start from today
+            # Use today as base if historical data is older than 60 days
             from datetime import date as dt_date
             today = pd.Timestamp(dt_date.today())
             base_date = today if (today - last_date).days > 60 else last_date

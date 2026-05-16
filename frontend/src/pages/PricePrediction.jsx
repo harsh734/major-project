@@ -20,11 +20,12 @@ const PricePrediction = () => {
             const res = await axios.post(`${import.meta.env.VITE_API_BASE || 'http://localhost:5000/api'}/predict_price`, payload);
             // Prophet returns {forecast:[{ds:'2025-...','yhat':123}]}
             if (res.data.forecast) {
-                if (modelType === 'prophet') {
-                    setForecast(res.data.forecast.map(f => ({ date: f.ds, price: f.yhat })));
-                } else {
-                    setForecast(res.data.forecast.map(f => ({ date: `Step ${f.step}`, price: f.predicted_price })));
-                }
+                // Both prophet and lstm now return unified {date, predicted_price} format
+                setForecast(res.data.forecast.map((f, idx) => ({
+                    date:  f.date  || f.ds  || `Day ${idx + 1}`,
+                    price: f.predicted_price || f.yhat || f.price || 0
+                })));
+                if (res.data.warning) console.warn(res.data.warning);
             }
         } catch (err) {
             console.error(err);

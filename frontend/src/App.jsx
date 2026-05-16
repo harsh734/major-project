@@ -5,6 +5,7 @@ import { Sprout, TrendingUp, Target, LogIn, LogOut, User, AlertCircle, Mic, Volu
 import Marketplace from "./pages/Marketplace";
 import CoopGroupBuying from "./pages/CoopGroupBuying";
 import GovtNewsHub, { GovtNewsWidget } from "./pages/GovtNewsHub";
+import WeatherWidget from "./pages/Weatherwidget ";
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Legend } from 'recharts';
 
 /* ─── Inject fonts + global design system ───────────────────────────────────── */
@@ -157,12 +158,95 @@ const LANGS = {
   gu: { label: 'ગુજ.',    code: 'gu-IN', flag: '🌾' },
 };
 
+const getSpeechVoice = (langCode) => {
+  const voices = window.speechSynthesis?.getVoices?.() || [];
+  const base = langCode.split('-')[0].toLowerCase();
+  return (
+    voices.find(v => v.lang.toLowerCase() === langCode.toLowerCase()) ||
+    voices.find(v => v.lang.toLowerCase().startsWith(`${base}-`)) ||
+    voices.find(v => v.lang.toLowerCase().startsWith(base)) ||
+    null
+  );
+};
+
 function speak(text, langCode = 'en-IN') {
   if (!window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = langCode; u.rate = 0.95; u.pitch = 1.05;
-  window.speechSynthesis.speak(u);
+  const synth = window.speechSynthesis;
+  let hasSpoken = false;
+  const say = () => {
+    if (hasSpoken) return;
+    hasSpoken = true;
+    synth.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = langCode;
+    u.voice = getSpeechVoice(langCode);
+    u.rate = langCode === 'en-IN' ? 0.95 : 0.88;
+    u.pitch = 1.05;
+    synth.speak(u);
+  };
+
+  if (synth.getVoices().length) {
+    say();
+  } else {
+    synth.onvoiceschanged = say;
+    setTimeout(say, 250);
+  }
+}
+
+function voiceConfidenceText(lang, confidence) {
+  if (!confidence) return '';
+  const percent = (confidence * 100).toFixed(0);
+  if (lang === 'hi') return `, ${percent}% भरोसे के साथ`;
+  if (lang === 'gu') return `, ${percent}% વિશ્વાસ સાથે`;
+  return ` with ${percent}% confidence`;
+}
+
+function localVoiceTerm(lang, value) {
+  if (!value || lang === 'en') return value;
+  const terms = {
+    hi: {
+      Wheat:'गेहूं', Rice:'चावल', Maize:'मक्का', Pulses:'दाल', Sugarcane:'गन्ना', Millet:'बाजरा', Groundnut:'मूंगफली', Cotton:'कपास', Soybean:'सोयाबीन',
+      Kharif:'खरीफ', Rabi:'रबी', Zaid:'जायद',
+      Delhi:'दिल्ली', Mumbai:'मुंबई', Rajkot:'राजकोट', Ahmedabad:'अहमदाबाद', Gujarat:'गुजरात', Maharashtra:'महाराष्ट्र', Punjab:'पंजाब', UP:'उत्तर प्रदेश', Bihar:'बिहार',
+    },
+    gu: {
+      Wheat:'ઘઉં', Rice:'ચોખા', Maize:'મકાઈ', Pulses:'કઠોળ', Sugarcane:'શેરડી', Millet:'બાજરી', Groundnut:'મગફળી', Cotton:'કપાસ', Soybean:'સોયાબીન',
+      Kharif:'ખરીફ', Rabi:'રવિ', Zaid:'ઝૈદ',
+      Delhi:'દિલ્હી', Mumbai:'મુંબઈ', Rajkot:'રાજકોટ', Ahmedabad:'અમદાવાદ', Gujarat:'ગુજરાત', Maharashtra:'મહારાષ્ટ્ર', Punjab:'પંજાબ', UP:'ઉત્તર પ્રદેશ', Bihar:'બિહાર',
+    },
+  };
+  return terms[lang]?.[value] || value;
+}
+
+function voiceText(lang, pageType, values = {}) {
+  const key = LANGS[lang] ? lang : 'en';
+  const crop = localVoiceTerm(key, values.crop);
+  const market = localVoiceTerm(key, values.market);
+  const state = localVoiceTerm(key, values.state);
+  const season = localVoiceTerm(key, values.season);
+  const text = {
+    price: {
+      en: `Price forecast for ${crop} in ${market}: starting at rupees ${values.firstP} per quintal, reaching rupees ${values.lastP} after ${values.days} days.`,
+      hi: `${crop} की ${market} मंडी में कीमत का अनुमान: शुरुआत ${values.firstP} रुपये प्रति क्विंटल से होगी, और ${values.days} दिन बाद लगभग ${values.lastP} रुपये तक पहुंचेगी।`,
+      gu: `${market} બજારમાં ${crop} ના ભાવનો અંદાજ: શરૂઆત ${values.firstP} રૂપિયા પ્રતિ ક્વિન્ટલથી થશે, અને ${values.days} દિવસ પછી લગભગ ${values.lastP} રૂપિયા સુધી પહોંચશે.`,
+    },
+    yield: {
+      en: `Yield estimation for ${crop} in ${state}: your ${values.area} hectare field is estimated to produce ${values.totalKg} kilograms, that is ${values.quintals} quintals${values.confText}.`,
+      hi: `${state} में ${crop} के लिए उपज का अनुमान: आपके ${values.area} हेक्टेयर खेत से लगभग ${values.totalKg} किलोग्राम, यानी ${values.quintals} क्विंटल उत्पादन हो सकता है${values.confText}.`,
+      gu: `${state} માં ${crop} માટે ઉપજનો અંદાજ: તમારા ${values.area} હેક્ટર ખેતરમાંથી લગભગ ${values.totalKg} કિલોગ્રામ, એટલે કે ${values.quintals} ક્વિન્ટલ ઉત્પાદન થઈ શકે છે${values.confText}.`,
+    },
+    recommendation: {
+      en: `Based on conditions in ${state} during ${season} season, the recommended crop is ${crop}${values.confText}.`,
+      hi: `${state} में ${season} मौसम की स्थिति के आधार पर, सुझाई गई फसल ${crop} है${values.confText}.`,
+      gu: `${state} માં ${season} સિઝનની પરિસ્થિતિ મુજબ, ભલામણ કરેલો પાક ${crop} છે${values.confText}.`,
+    },
+    error: {
+      en: 'Sorry, could not process that.',
+      hi: 'माफ कीजिए, मैं इसे समझ नहीं पाया। कृपया फिर से कोशिश करें।',
+      gu: 'માફ કરશો, હું આ સમજી શક્યો નહીં. કૃપા કરીને ફરી પ્રયાસ કરો.',
+    },
+  };
+  return text[pageType]?.[key] || text[pageType]?.en || text.error[key];
 }
 
 /* ─── useVoiceRecognition ───────────────────────────────────────────────────── */
@@ -287,7 +371,7 @@ function VoiceAssistantButton({ pageType, onFormFilled, onSubmit, color = '#4ade
         }
       } catch {
         setErrorMsg('Could not process. Please try again.');
-        speak('Sorry, could not process that.', langCode);
+        speak(voiceText(lang, 'error'), langCode);
       } finally { setTimeout(() => setPhase('idle'), 3000); }
     }, langCode);
   };
@@ -402,12 +486,12 @@ function LangSwitcher({ lang, setLang }) {
 }
 
 /* ─── Firebase ───────────────────────────────────────────────────────────────── */
-const firebaseConfig={apiKey:import.meta.env.VITE_FIREBASE_API_KEY,authDomain:import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,projectId:import.meta.env.VITE_FIREBASE_PROJECT_ID,storageBucket:import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,messagingSenderId:import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,appId:import.meta.env.VITE_FIREBASE_APP_ID,measurementId:import.meta.env.VITE_FIREBASE_MEASUREMENT_ID};
+const firebaseConfig={apiKey:"AIzaSyDtqCbrVHucVvrAMUftiOki7txGoAcv1tU",authDomain:"krushiconnect-ec76d.firebaseapp.com",projectId:"krushiconnect-ec76d",storageBucket:"krushiconnect-ec76d.firebasestorage.app",messagingSenderId:"853461776295",appId:"1:853461776295:web:c74847e5ccc038e6ae2882",measurementId:"G-V68BLZX3RS"};
 let auth=null,googleProvider=null,firebaseInitialized=false;
 const initializeFirebase=async()=>{if(firebaseInitialized)return;try{const fb=await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');const fa=await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js');const app=fb.initializeApp(firebaseConfig);auth=fa.getAuth(app);googleProvider=new fa.GoogleAuthProvider();firebaseInitialized=true;}catch(err){console.error('Firebase:',err);}};
 
 /* ─── API ────────────────────────────────────────────────────────────────────── */
-const API_BASE=import.meta.env.VITE_API_BASE||'http://localhost:5000/api';
+const API_BASE='http://localhost:5000/api';
 const predictPrice  = async d=>(await fetch(`${API_BASE}/predict_price`, {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})).json();
 const estimateYield = async d=>(await fetch(`${API_BASE}/estimate_yield`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})).json();
 const recommendCrop = async d=>(await fetch(`${API_BASE}/recommend_crop`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})).json();
@@ -573,6 +657,9 @@ function LandingPage({ onNavigate, user, onLogin, onLogout, lang, setLang }) {
             ))}
           </div>
 
+          {/* Weather Widget */}
+          <WeatherWidget onNavigate={onNavigate}/>
+
           {/* Govt & MSP Widget */}
           <GovtNewsWidget onNavigate={onNavigate}/>
 
@@ -589,7 +676,7 @@ function PricePredictionPage({ onBack, lang }) {
   const [result, setResult] = useState(null);
   const [error, setError]   = useState(null);
 
-  const runSubmit = async (formData) => {
+  const runSubmit = async (formData, shouldSpeak = true) => {
     setLoading(true); setError(null); setResult(null);
     try {
       const data = await predictPrice(formData || form);
@@ -597,20 +684,20 @@ function PricePredictionPage({ onBack, lang }) {
         const forecast = data.forecast||data.predictions||data.results;
         setResult({forecast});
         if (data.warning || data.model === 'lstm_fallback_prophet') {
-          setError(data.warning || '⚠️ LSTM model not trained yet. Showing Prophet forecast instead.');
+          setError(data.warning || '⚠️ LSTM not trained yet. Showing Prophet forecast instead.');
         }
         const first=forecast[0],last=forecast[forecast.length-1];
         const firstP=(first?.yhat||first?.predicted_price||first?.price||0).toFixed(0),lastP=(last?.yhat||last?.predicted_price||last?.price||0).toFixed(0);
-        const spokenText=`Price forecast for ${formData.crop_name} in ${formData.market}: starting at rupees ${firstP} per quintal, reaching rupees ${lastP} after ${forecast.length} days.`;
-        speak(spokenText,LANGS[lang]?.code); setLoading(false); return {spokenText};
+        const spokenText=voiceText(lang,'price',{crop:formData.crop_name,market:formData.market,firstP,lastP,days:forecast.length});
+        if (shouldSpeak) speak(spokenText,LANGS[lang]?.code); setLoading(false); return {spokenText};
       } else if (data?.error) {
         if ((data.error.includes('No LSTM') || data.error.includes('LSTM')) && (formData||form).model_type === 'lstm') {
-          setError('⚠️ LSTM model not trained yet — run model.py first. Retrying with Prophet...');
+          setError('⚠️ LSTM not trained yet — retrying with Prophet...');
           setTimeout(async () => {
             try {
               const fb = await predictPrice({ ...(formData||form), model_type: 'prophet' });
-              if (fb?.forecast) { setError('⚠️ LSTM unavailable — showing Prophet forecast instead.'); setResult({ forecast: fb.forecast }); }
-            } catch(e) { /* ignore */ }
+              if (fb?.forecast) { setError('⚠️ LSTM unavailable — showing Prophet forecast.'); setResult({ forecast: fb.forecast }); }
+            } catch(e) {}
             setLoading(false);
           }, 1000);
         } else { setError(data.error); setLoading(false); }
@@ -625,7 +712,7 @@ function PricePredictionPage({ onBack, lang }) {
       <VoiceAssistantButton pageType="price" color="#4ade80" lang={lang}
         hint="What will be rice price in Mumbai for next 45 days?"
         onFormFilled={p=>setForm(prev=>({...prev,...p}))}
-        onSubmit={async p=>{const m={...form,...p};setForm(m);return await runSubmit(m);}}/>
+        onSubmit={async p=>{const m={...form,...p};setForm(m);return await runSubmit(m,false);}}/>
       <div className="gd"/>
       <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(210px,1fr))',gap:14,marginBottom:22}}>
         <div><label className="gl">Crop Name</label><select value={form.crop_name} onChange={e=>setForm({...form,crop_name:e.target.value})} className="gci" style={{backgroundImage:CHEV,backgroundRepeat:'no-repeat',backgroundPosition:'right 12px center',paddingRight:32}}>{['Wheat','Rice','Groundnut','Millet'].map(c=><option key={c}>{c}</option>)}</select></div>
@@ -667,7 +754,7 @@ function YieldEstimationPage({ onBack, lang }) {
   const [result, setResult]   = useState(null);
   const [error, setError]     = useState(null);
 
-  const runSubmit = async (formData) => {
+  const runSubmit = async (formData, shouldSpeak = true) => {
     setLoading(true); setError(null); setResult(null);
     try {
       const data = await estimateYield(formData||form);
@@ -678,9 +765,9 @@ function YieldEstimationPage({ onBack, lang }) {
         const area=formData?.area_hectare||form.area_hectare;
         const r={yield:parseFloat(yieldValue),yieldPerHectare:yieldPerHa?parseFloat(yieldPerHa):null,confidence,totalYield:parseFloat(yieldValue)*area};
         setResult(r);
-        const confPct=confidence?` with ${(confidence*100).toFixed(0)}% confidence`:'';
-        const spokenText=`Yield estimation for ${formData.crop_name} in ${formData.state}: your ${area} hectare field is estimated to produce ${r.totalYield.toFixed(0)} kilograms, that is ${(r.totalYield/100).toFixed(1)} quintals${confPct}.`;
-        speak(spokenText,LANGS[lang]?.code); setLoading(false); return {spokenText};
+        const confPct=voiceConfidenceText(lang, confidence);
+        const spokenText=voiceText(lang,'yield',{crop:formData.crop_name,state:formData.state,area,totalKg:r.totalYield.toFixed(0),quintals:(r.totalYield/100).toFixed(1),confText:confPct});
+        if (shouldSpeak) speak(spokenText,LANGS[lang]?.code); setLoading(false); return {spokenText};
       } else { setError(`Could not extract yield. Response: ${JSON.stringify(data,null,2)}`); }
     } catch { setError('Failed to connect. Make sure Flask server is on port 5000.'); }
     setLoading(false);
@@ -693,7 +780,7 @@ function YieldEstimationPage({ onBack, lang }) {
       <VoiceAssistantButton pageType="yield" color="#fbbf24" lang={lang}
         hint="What is my rice yield with loamy soil in Punjab, 200 acres?"
         onFormFilled={p=>setForm(prev=>({...prev,...p}))}
-        onSubmit={async p=>{const m={...form,...p};setForm(m);return await runSubmit(m);}}/>
+        onSubmit={async p=>{const m={...form,...p};setForm(m);return await runSubmit(m,false);}}/>
       <div className="gd"/>
       <FieldGrid fields={fields} form={form} setForm={setForm}/>
       <div style={{display:'flex',gap:12,marginTop:22}}>
@@ -739,7 +826,7 @@ function CropRecommendationPage({ onBack, lang }) {
   const [result, setResult]   = useState(null);
   const [error, setError]     = useState(null);
 
-  const runSubmit = async (formData) => {
+  const runSubmit = async (formData, shouldSpeak = true) => {
     setLoading(true); setError(null); setResult(null);
     try {
       const data = await recommendCrop(formData||form);
@@ -747,9 +834,9 @@ function CropRecommendationPage({ onBack, lang }) {
       const conf=data.confidence||data.probability;
       if(rec){
         setResult({recommended_crop:rec,confidence:conf});
-        const confPct=conf?` with ${(conf*100).toFixed(0)}% confidence`:'';
-        const spokenText=`Based on conditions in ${formData.state} during ${formData.season} season, the recommended crop is ${rec}${confPct}.`;
-        speak(spokenText,LANGS[lang]?.code); setLoading(false); return {spokenText};
+        const confPct=voiceConfidenceText(lang, conf);
+        const spokenText=voiceText(lang,'recommendation',{state:formData.state,season:formData.season,crop:rec,confText:confPct});
+        if (shouldSpeak) speak(spokenText,LANGS[lang]?.code); setLoading(false); return {spokenText};
       } else { setError(`Could not find crop. Keys: ${Object.keys(data).join(', ')}`); }
     } catch { setError('Failed to connect. Make sure Flask server is on port 5000.'); }
     setLoading(false);
@@ -762,7 +849,7 @@ function CropRecommendationPage({ onBack, lang }) {
       <VoiceAssistantButton pageType="recommendation" color="#10b981" lang={lang}
         hint="Which crop for sandy soil in Gujarat, Kharif season, 500 acres?"
         onFormFilled={p=>setForm(prev=>({...prev,...p}))}
-        onSubmit={async p=>{const m={...form,...p};setForm(m);return await runSubmit(m);}}/>
+        onSubmit={async p=>{const m={...form,...p};setForm(m);return await runSubmit(m,false);}}/>
       <div className="gd"/>
       <FieldGrid fields={fields} form={form} setForm={setForm}/>
       <div style={{display:'flex',gap:12,marginTop:22}}>
@@ -845,5 +932,3 @@ export default function App() {
     default: return <LandingPage onNavigate={setCurrentPage} user={user} onLogin={handleLogin} onLogout={handleLogout} lang={lang} setLang={setLang}/>;
   }
 }
-
-

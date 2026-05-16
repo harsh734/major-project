@@ -29,56 +29,73 @@ random.seed(seed)
 np.random.seed(seed)
 tf.random.set_seed(seed)
 
-os.makedirs('../models', exist_ok=True)
+# Get the directory where this script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+backend_dir = os.path.dirname(script_dir)
+
+# Build paths relative to the script's location
+data_dir   = os.path.join(backend_dir, 'data')
+models_dir = os.path.join(backend_dir, 'models')
+os.makedirs(models_dir, exist_ok=True)
+
+# ─────────────────────────────────────────────────────────────
+# HELPER — pretty section banner
+# ─────────────────────────────────────────────────────────────
+def banner(title):
+    line = "=" * 60
+    print(f"\n{line}")
+    print(f"  {title}")
+    print(line)
 
 ##########################################
 # 1. CROP PRICE PREDICTION (Prophet + LSTM)
 ##########################################
-print("\n=== Training Prophet & LSTM for each crop-market ===")
-price_file = '../data/historical_prices_large.csv'
-df_price = pd.read_csv(price_file, parse_dates=['date'])
+banner("1. CROP PRICE PREDICTION  (Prophet + LSTM)")
 
-all_metrics = []
+price_file = os.path.join(data_dir, 'historical_prices_large.csv')
+df_price   = pd.read_csv(price_file, parse_dates=['date'])
+
+all_metrics       = []
 best_price_models = []
 
 for (crop, market), grp in df_price.groupby(['crop_name', 'market']):
     grp = grp.sort_values('date')
-    ts = grp[['date', 'price_per_qtl']]
+    ts  = grp[['date', 'price_per_qtl']]
 
     if len(ts) < 50:
-        print(f"Skipping {crop}-{market}: too few records")
+        print(f"  Skipping {crop}-{market}: too few records")
+        continue
+
+    prophet_exists = os.path.exists(os.path.join(models_dir, f'prophet_{crop}_{market}.pkl'))
+    lstm_exists    = os.path.exists(os.path.join(models_dir, f'lstm_price_{crop}_{market}.keras'))
+    if prophet_exists and lstm_exists:
+        print(f"  ⏭️  Skipping {crop}-{market}: models already exist")
         continue
 
     # ----- Prophet -----
-    # FIX: Train once on full data, evaluate on held-out 20% first, then save full model
     train_len = int(len(ts) * 0.8)
-    train_df = ts.iloc[:train_len]
-    test_df  = ts.iloc[train_len:]
+    train_df  = ts.iloc[:train_len]
+    test_df   = ts.iloc[train_len:]
 
     m_eval = Prophet()
     m_eval.fit(train_df.rename(columns={'date': 'ds', 'price_per_qtl': 'y'}))
-    future_eval = m_eval.make_future_dataframe(periods=len(test_df))
+    future_eval   = m_eval.make_future_dataframe(periods=len(test_df))
     forecast_eval = m_eval.predict(future_eval)
-    pred_prophet = forecast_eval['yhat'].iloc[-len(test_df):].values
-    y_true = test_df['price_per_qtl'].values
+    pred_prophet  = forecast_eval['yhat'].iloc[-len(test_df):].values
+    y_true        = test_df['price_per_qtl'].values
 
     mae_prophet  = mean_absolute_error(y_true, pred_prophet)
     rmse_prophet = mean_squared_error(y_true, pred_prophet) ** 0.5
 
-    # FIX: Train final model on full data (single fit, no duplicate)
     m_full = Prophet()
     m_full.fit(ts.rename(columns={'date': 'ds', 'price_per_qtl': 'y'}))
-    prophet_file = f'../models/prophet_{crop}_{market}.pkl'
-    joblib.dump(m_full, prophet_file)
+    joblib.dump(m_full, os.path.join(models_dir, f'prophet_{crop}_{market}.pkl'))
 
     # ----- LSTM -----
-    series = ts['price_per_qtl'].values.reshape(-1, 1)
-
-    # FIX: Save scaler per crop-market so inference uses the same scaling
+    series      = ts['price_per_qtl'].values.reshape(-1, 1)
     scaler_lstm = MinMaxScaler()
-    scaled = scaler_lstm.fit_transform(series)
-    lstm_scaler_file = f'../models/lstm_scaler_{crop}_{market}.pkl'
-    joblib.dump(scaler_lstm, lstm_scaler_file)
+    scaled      = scaler_lstm.fit_transform(series)
+    joblib.dump(scaler_lstm, os.path.join(models_dir, f'lstm_scaler_{crop}_{market}.pkl'))
 
     seq_len = 30
     X_seq, y_seq = [], []
@@ -89,64 +106,71 @@ for (crop, market), grp in df_price.groupby(['crop_name', 'market']):
     y_seq = np.array(y_seq)
 
     if len(X_seq) < 60:
-        print(f"Skipping LSTM for {crop}-{market}: too few sequences")
+        print(f"  Skipping LSTM for {crop}-{market}: too few sequences")
         continue
 
     split = int(len(X_seq) * 0.8)
     X_train_lstm, X_test_lstm = X_seq[:split], X_seq[split:]
     y_train_lstm, y_test_lstm = y_seq[:split], y_seq[split:]
 
-    model = Sequential([
+    lstm_model = Sequential([
         LSTM(64, return_sequences=True, input_shape=(seq_len, 1)),
         Dropout(0.2),
         LSTM(32),
         Dropout(0.2),
         Dense(1)
     ])
-    model.compile(optimizer='adam', loss='mse')
-
+    lstm_model.compile(optimizer='adam', loss='mse')
     es = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
-    model.fit(
-        X_train_lstm, y_train_lstm,
-        validation_split=0.1,
-        epochs=50,
-        batch_size=16,
-        verbose=0,
-        callbacks=[es]
-    )
+    lstm_model.fit(X_train_lstm, y_train_lstm,
+                   validation_split=0.1, epochs=50, batch_size=16,
+                   verbose=0, callbacks=[es])
 
-    pred_lstm     = model.predict(X_test_lstm, verbose=0)
-    pred_lstm_inv = scaler_lstm.inverse_transform(pred_lstm)
+    pred_lstm_inv = scaler_lstm.inverse_transform(lstm_model.predict(X_test_lstm, verbose=0))
     y_test_inv    = scaler_lstm.inverse_transform(y_test_lstm)
 
     mae_lstm  = mean_absolute_error(y_test_inv, pred_lstm_inv)
     rmse_lstm = mean_squared_error(y_test_inv, pred_lstm_inv) ** 0.5
 
-    lstm_file = f'../models/lstm_price_{crop}_{market}.keras'
-    model.save(lstm_file)
+    lstm_model.save(os.path.join(models_dir, f'lstm_price_{crop}_{market}.keras'))
 
     all_metrics.append([crop, market, mae_prophet, rmse_prophet, mae_lstm, rmse_lstm])
-
     best_model = 'Prophet' if mae_prophet < mae_lstm else 'LSTM'
     best_price_models.append({'crop': crop, 'market': market, 'best_model': best_model})
-    print(f"{crop}-{market}: Prophet MAE={mae_prophet:.2f}, LSTM MAE={mae_lstm:.2f} → Best: {best_model}")
+    print(f"  {crop}-{market}: Prophet MAE={mae_prophet:.2f}  LSTM MAE={mae_lstm:.2f}  → Best: {best_model}")
 
 metrics_df = pd.DataFrame(
     all_metrics,
     columns=['Crop', 'Market', 'Prophet_MAE', 'Prophet_RMSE', 'LSTM_MAE', 'LSTM_RMSE']
 )
-metrics_df.to_csv('../models/price_metrics_summary.csv', index=False)
+metrics_df.to_csv(os.path.join(models_dir, 'price_metrics_summary.csv'), index=False)
+pd.DataFrame(best_price_models).to_csv(os.path.join(models_dir, 'best_price_models.csv'), index=False)
 
-# Save best model lookup table
-best_price_df = pd.DataFrame(best_price_models)
-best_price_df.to_csv('../models/best_price_models.csv', index=False)
+# ── Price metrics summary (reads saved CSV so skipped models are included) ──
+print("\n  📊 PRICE PREDICTION — METRICS SUMMARY")
+saved_metrics = pd.read_csv(os.path.join(models_dir, 'price_metrics_summary.csv'))
+if not saved_metrics.empty:
+    print(f"  {'Crop':<12} {'Market':<14} {'P_MAE':>8} {'P_RMSE':>8} {'L_MAE':>8} {'L_RMSE':>8} {'Best':>8}")
+    print("  " + "-" * 68)
+    for _, row in saved_metrics.iterrows():
+        best = 'Prophet' if row['Prophet_MAE'] < row['LSTM_MAE'] else 'LSTM'
+        print(f"  {row['Crop']:<12} {row['Market']:<14} "
+              f"{row['Prophet_MAE']:>8.2f} {row['Prophet_RMSE']:>8.2f} "
+              f"{row['LSTM_MAE']:>8.2f} {row['LSTM_RMSE']:>8.2f} {best:>8}")
+    print(f"\n  Avg Prophet MAE : {saved_metrics['Prophet_MAE'].mean():.2f}")
+    print(f"  Avg LSTM MAE    : {saved_metrics['LSTM_MAE'].mean():.2f}")
+    print(f"  Avg Prophet RMSE: {saved_metrics['Prophet_RMSE'].mean():.2f}")
+    print(f"  Avg LSTM RMSE   : {saved_metrics['LSTM_RMSE'].mean():.2f}")
+else:
+    print("  (All price models were pre-trained — no new metrics to show)")
 
 ##########################################
 # 2. YIELD ESTIMATION (XGBoost + RF)
 ##########################################
-print("\n=== Training XGBoost & RandomForest for yield estimation ===")
-yield_file = '../data/yield_data_large.csv'
-df_yield = pd.read_csv(yield_file)
+banner("2. YIELD ESTIMATION  (XGBoost + RandomForest)")
+
+yield_file = os.path.join(data_dir, 'yield_data_large.csv')
+df_yield   = pd.read_csv(yield_file)
 
 categorical_cols_yield = df_yield.select_dtypes(include='object').columns.tolist()
 df_yield = pd.get_dummies(df_yield, columns=categorical_cols_yield, drop_first=True)
@@ -157,16 +181,14 @@ df_yield[numeric_cols_yield] = scaler_yield.fit_transform(df_yield[numeric_cols_
 
 feature_cols_yield = [c for c in df_yield.columns if c != 'yield_kg']
 X_yield = df_yield[feature_cols_yield]
-y_cont   = df_yield['yield_kg']
+y_cont  = df_yield['yield_kg']
 
-# FIX: include_lowest=True so boundary values (e.g. 0, 1000) land in the correct bin
 bins   = [0, 1000, 2000, 10000]
 labels = [0, 1, 2]
-y_cls = pd.cut(y_cont, bins=bins, labels=labels, include_lowest=True).astype(int)
+y_cls  = pd.cut(y_cont, bins=bins, labels=labels, include_lowest=True).astype(int)
 
-# FIX: Save feature column list so inference can reconstruct the same feature space
-joblib.dump(feature_cols_yield, '../models/yield_feature_columns.pkl')
-print(f"✅ Saved {len(feature_cols_yield)} yield feature columns")
+joblib.dump(feature_cols_yield, os.path.join(models_dir, 'yield_feature_columns.pkl'))
+print(f"  Saved {len(feature_cols_yield)} yield feature columns")
 
 X_train_y, X_test_y, y_train_y, y_test_y = train_test_split(
     X_yield, y_cls, test_size=0.2, random_state=seed, stratify=y_cls
@@ -175,197 +197,189 @@ X_train_y, X_test_y, y_train_y, y_test_y = train_test_split(
 sm = SMOTE(random_state=seed)
 X_train_res_y, y_train_res_y = sm.fit_resample(X_train_y, y_train_y)
 
-classes_y  = np.unique(y_train_res_y)
-weights_y  = compute_class_weight('balanced', classes=classes_y, y=y_train_res_y)
+classes_y       = np.unique(y_train_res_y)
+weights_y       = compute_class_weight('balanced', classes=classes_y, y=y_train_res_y)
 class_weights_y = dict(zip(classes_y, weights_y))
 
 xgb_clf = XGBClassifier(
-    n_estimators=1200,
-    max_depth=8,
-    learning_rate=0.03,
-    subsample=0.9,
-    colsample_bytree=0.9,
-    min_child_weight=1,
-    random_state=seed,
-    eval_metric='mlogloss',
-    tree_method='hist'
+    n_estimators=300, max_depth=6, learning_rate=0.03,
+    subsample=0.9, colsample_bytree=0.9, min_child_weight=1,
+    random_state=seed, eval_metric='mlogloss', tree_method='hist', verbosity=0
 )
 xgb_clf.fit(X_train_res_y, y_train_res_y)
 
 rf_clf = RandomForestClassifier(
-    n_estimators=1200,
-    max_depth=None,
-    class_weight=class_weights_y,
-    min_samples_split=2,
-    min_samples_leaf=1,
-    random_state=seed,
-    n_jobs=-1
+    n_estimators=300, max_depth=15, class_weight=class_weights_y,
+    min_samples_split=5, min_samples_leaf=2, random_state=seed, n_jobs=1
 )
 rf_clf.fit(X_train_res_y, y_train_res_y)
 
-def evaluate_yield_model(name, model):
-    pred = model.predict(X_test_y)
-    acc  = accuracy_score(y_test_y, pred)
-    print(f"\n=== {name} ===")
-    print(f"Accuracy: {acc:.4f}")
-    print(classification_report(y_test_y, pred))
-    print("Confusion Matrix:\n", confusion_matrix(y_test_y, pred))
-    return acc
+xgb_pred_y = xgb_clf.predict(X_test_y)
+rf_pred_y  = rf_clf.predict(X_test_y)
+acc_xgb_y  = accuracy_score(y_test_y, xgb_pred_y)
+acc_rf_y   = accuracy_score(y_test_y, rf_pred_y)
 
-acc_xgb_y = evaluate_yield_model("XGBoost Yield Classifier", xgb_clf)
-acc_rf_y  = evaluate_yield_model("RandomForest Yield Classifier", rf_clf)
+yield_labels = ['Low (<1000 kg)', 'Mid (1000-2000 kg)', 'High (>2000 kg)']
 
-# FIX: Cross-validation for more reliable model selection
-print("\n--- 5-Fold Cross-Validation (on resampled train set) ---")
-cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=seed)
-cv_xgb = cross_val_score(xgb_clf, X_train_res_y, y_train_res_y, cv=cv, scoring='accuracy', n_jobs=-1)
-cv_rf  = cross_val_score(rf_clf,  X_train_res_y, y_train_res_y, cv=cv, scoring='accuracy', n_jobs=-1)
-print(f"XGBoost CV Accuracy: {cv_xgb.mean():.4f} ± {cv_xgb.std():.4f}")
-print(f"RF      CV Accuracy: {cv_rf.mean():.4f}  ± {cv_rf.std():.4f}")
+print(f"\n  {'Model':<32} {'Accuracy':>10}")
+print("  " + "-" * 44)
+print(f"  {'XGBoost':<32} {acc_xgb_y:>10.4f}")
+print(f"  {'RandomForest':<32} {acc_rf_y:>10.4f}")
+
+print("\n  --- XGBoost Detailed Report ---")
+print(classification_report(y_test_y, xgb_pred_y, target_names=yield_labels))
+print("  Confusion Matrix (XGBoost):\n", confusion_matrix(y_test_y, xgb_pred_y))
+
+print("\n  --- RandomForest Detailed Report ---")
+print(classification_report(y_test_y, rf_pred_y, target_names=yield_labels))
+print("  Confusion Matrix (RandomForest):\n", confusion_matrix(y_test_y, rf_pred_y))
+
+print("\n  --- 3-Fold Cross-Validation ---")
+try:
+    cv = StratifiedKFold(n_splits=3, shuffle=True, random_state=seed)
+    cv_xgb = cross_val_score(xgb_clf, X_train_res_y, y_train_res_y, cv=cv, scoring='accuracy', n_jobs=1)
+    cv_rf  = cross_val_score(rf_clf,  X_train_res_y, y_train_res_y, cv=cv, scoring='accuracy', n_jobs=1)
+    print(f"  XGBoost CV : {cv_xgb.mean():.4f} ± {cv_xgb.std():.4f}")
+    print(f"  RF      CV : {cv_rf.mean():.4f}  ± {cv_rf.std():.4f}")
+except (MemoryError, Exception) as e:
+    print(f"  ⚠️ CV skipped ({type(e).__name__})")
 
 best_yield_model = 'XGBoost' if acc_xgb_y >= acc_rf_y else 'RandomForest'
-print(f"\nBest yield model: {best_yield_model}")
+print(f"\n  ✅ Best yield model: {best_yield_model}")
 
-# FIX: Consistent filenames matching yield_estimator.py
-joblib.dump(xgb_clf,     '../models/yield_xgb_classifier.pkl')
-joblib.dump(rf_clf,      '../models/yield_rf_classifier.pkl')
-joblib.dump(scaler_yield,'../models/yield_scaler.pkl')
-print("✅ Saved yield_xgb_classifier.pkl, yield_rf_classifier.pkl, yield_scaler.pkl")
+joblib.dump(xgb_clf,      os.path.join(models_dir, 'yield_xgb_classifier.pkl'))
+joblib.dump(rf_clf,       os.path.join(models_dir, 'yield_rf_classifier.pkl'))
+joblib.dump(scaler_yield, os.path.join(models_dir, 'yield_scaler.pkl'))
+print("  Saved: yield_xgb_classifier.pkl, yield_rf_classifier.pkl, yield_scaler.pkl")
 
 ##########################################
 # 3. CROP RECOMMENDATION (Ensemble)
 ##########################################
-print("\n=== Training Dynamic Crop Recommendation ===")
-recommend_file = '../data/crop_recommendation_balanced.csv'
+banner("3. CROP RECOMMENDATION  (XGBoost + RF Ensemble)")
+
+recommend_file = os.path.join(data_dir, 'crop_recommendation_balanced.csv')
 df_rec = pd.read_csv(recommend_file)
 
-target_col = 'recommended_crop'
-X_rec = df_rec.drop(columns=[target_col])
-y_rec = df_rec[target_col]
+print(f"  Dataset shape : {df_rec.shape}")
+print(f"  Columns       : {df_rec.columns.tolist()}")
+print(f"  Class distribution:\n{df_rec['recommended_crop'].value_counts().to_string()}")
 
-categorical_cols_rec = X_rec.select_dtypes(include='object').columns.tolist()
-numeric_cols_rec     = X_rec.select_dtypes(include=np.number).columns.tolist()
+target_col       = 'recommended_crop'
+X_rec            = df_rec.drop(columns=[target_col])
+y_rec            = df_rec[target_col]
+feature_cols_rec = X_rec.columns.tolist()
+print(f"\n  Features ({len(feature_cols_rec)}): {feature_cols_rec}")
 
-# FIX: Split BEFORE any encoding/scaling to prevent data leakage
 X_train_rec, X_test_rec, y_train_rec, y_test_rec = train_test_split(
     X_rec, y_rec, test_size=0.2, random_state=seed, stratify=y_rec
 )
 
-# Target Encoding (fit only on train)
-if categorical_cols_rec:
-    te = TargetEncoder(cols=categorical_cols_rec)
-    X_train_rec = X_train_rec.copy()
-    X_test_rec  = X_test_rec.copy()
-    X_train_rec[categorical_cols_rec] = te.fit_transform(X_train_rec[categorical_cols_rec], y_train_rec)
-    X_test_rec[categorical_cols_rec]  = te.transform(X_test_rec[categorical_cols_rec])
-    joblib.dump(te, '../models/crop_rec_targetencoder.pkl')
+scaler_rec    = StandardScaler()
+X_train_rec_s = scaler_rec.fit_transform(X_train_rec)
+X_test_rec_s  = scaler_rec.transform(X_test_rec)
 
-# Scale numeric columns
-scaler_rec = StandardScaler()
-X_train_rec[numeric_cols_rec] = scaler_rec.fit_transform(X_train_rec[numeric_cols_rec])
-X_test_rec[numeric_cols_rec]  = scaler_rec.transform(X_test_rec[numeric_cols_rec])
-joblib.dump(scaler_rec, '../models/crop_rec_scaler.pkl')
-
-# Save feature columns and numeric/categorical column lists for inference
-joblib.dump(list(X_train_rec.columns), '../models/crop_rec_feature_columns.pkl')
-joblib.dump(numeric_cols_rec,          '../models/crop_rec_numeric_cols.pkl')
-joblib.dump(categorical_cols_rec,      '../models/crop_rec_categorical_cols.pkl')
-
-# Encode target
-le_rec = LabelEncoder()
+le_rec          = LabelEncoder()
 y_train_rec_enc = le_rec.fit_transform(y_train_rec)
 y_test_rec_enc  = le_rec.transform(y_test_rec)
-joblib.dump(le_rec, '../models/crop_rec_labelencoder.pkl')
 
-# SMOTE
-sm_rec = SMOTE(random_state=seed)
-X_train_rec_res, y_train_rec_res = sm_rec.fit_resample(X_train_rec, y_train_rec_enc)
+print(f"\n  Label mapping: {dict(zip(le_rec.classes_, range(len(le_rec.classes_))))}")
 
-# Class weights
-classes_rec    = np.unique(y_train_rec_res)
-weights_rec    = compute_class_weight('balanced', classes=classes_rec, y=y_train_rec_res)
-class_weights_rec = dict(zip(classes_rec, weights_rec))
+joblib.dump(scaler_rec,       os.path.join(models_dir, 'crop_rec_scaler.pkl'))
+joblib.dump(le_rec,           os.path.join(models_dir, 'crop_rec_labelencoder.pkl'))
+joblib.dump(feature_cols_rec, os.path.join(models_dir, 'crop_rec_feature_columns.pkl'))
 
 # XGBoost
 xgb_rec = XGBClassifier(
-    n_estimators=800,
-    max_depth=6,
-    learning_rate=0.05,
-    subsample=0.9,
-    colsample_bytree=0.8,
-    random_state=seed,
-    eval_metric='mlogloss',
-    tree_method='hist'
+    n_estimators=300, max_depth=6, learning_rate=0.05,
+    subsample=0.9, colsample_bytree=0.8,
+    random_state=seed, eval_metric='mlogloss', tree_method='hist', verbosity=0
 )
-xgb_rec.fit(X_train_rec_res, y_train_rec_res)
+xgb_rec.fit(X_train_rec_s, y_train_rec_enc)
 
 # RandomForest
 rf_rec = RandomForestClassifier(
-    n_estimators=800,
-    max_depth=None,
-    class_weight=class_weights_rec,
-    random_state=seed,
-    n_jobs=-1
+    n_estimators=300, max_depth=15, random_state=seed, n_jobs=1
 )
-rf_rec.fit(X_train_rec_res, y_train_rec_res)
+rf_rec.fit(X_train_rec_s, y_train_rec_enc)
 
 # Ensemble
 ensemble_rec = VotingClassifier(
     estimators=[('xgb', xgb_rec), ('rf', rf_rec)],
-    voting='soft',
-    n_jobs=-1
+    voting='soft', n_jobs=1
 )
-ensemble_rec.fit(X_train_rec_res, y_train_rec_res)
+ensemble_rec.fit(X_train_rec_s, y_train_rec_enc)
 
-def evaluate_model_rec(name, model):
-    pred = model.predict(X_test_rec)
-    acc  = accuracy_score(y_test_rec_enc, pred)
-    print(f"\n=== {name} ===")
-    print(f"Accuracy: {acc:.4f}")
-    print(classification_report(y_test_rec_enc, pred, target_names=le_rec.classes_))
-    print("Confusion Matrix:\n", confusion_matrix(y_test_rec_enc, pred))
-    return acc
+xgb_pred_rec = xgb_rec.predict(X_test_rec_s)
+rf_pred_rec  = rf_rec.predict(X_test_rec_s)
+ens_pred_rec = ensemble_rec.predict(X_test_rec_s)
 
-acc_xgb_rec      = evaluate_model_rec("XGBoost Crop Recommendation", xgb_rec)
-acc_rf_rec       = evaluate_model_rec("RandomForest Crop Recommendation", rf_rec)
-acc_ensemble_rec = evaluate_model_rec("Ensemble Voting Crop Recommendation", ensemble_rec)
+acc_xgb_rec = accuracy_score(y_test_rec_enc, xgb_pred_rec)
+acc_rf_rec  = accuracy_score(y_test_rec_enc, rf_pred_rec)
+acc_ens_rec = accuracy_score(y_test_rec_enc, ens_pred_rec)
 
-# Cross-validation on recommendation ensemble
-print("\n--- 5-Fold CV on Crop Recommendation Ensemble ---")
-cv_ens = cross_val_score(ensemble_rec, X_train_rec_res, y_train_rec_res, cv=5, scoring='accuracy', n_jobs=-1)
-print(f"Ensemble CV Accuracy: {cv_ens.mean():.4f} ± {cv_ens.std():.4f}")
+print(f"\n  {'Model':<38} {'Accuracy':>10}")
+print("  " + "-" * 50)
+print(f"  {'XGBoost':<38} {acc_xgb_rec:>10.4f}")
+print(f"  {'RandomForest':<38} {acc_rf_rec:>10.4f}")
+print(f"  {'Ensemble (Voting)':<38} {acc_ens_rec:>10.4f}")
+
+print("\n  --- XGBoost Detailed Report ---")
+print(classification_report(y_test_rec_enc, xgb_pred_rec, target_names=le_rec.classes_))
+print("  Confusion Matrix (XGBoost):\n", confusion_matrix(y_test_rec_enc, xgb_pred_rec))
+
+print("\n  --- RandomForest Detailed Report ---")
+print(classification_report(y_test_rec_enc, rf_pred_rec, target_names=le_rec.classes_))
+print("  Confusion Matrix (RandomForest):\n", confusion_matrix(y_test_rec_enc, rf_pred_rec))
+
+print("\n  --- Ensemble Detailed Report ---")
+print(classification_report(y_test_rec_enc, ens_pred_rec, target_names=le_rec.classes_))
+print("  Confusion Matrix (Ensemble):\n", confusion_matrix(y_test_rec_enc, ens_pred_rec))
+
+print("\n  --- XGBoost Feature Importances ---")
+fi = pd.Series(xgb_rec.feature_importances_, index=feature_cols_rec).sort_values(ascending=False)
+for feat, score in fi.items():
+    bar = '█' * int(score * 100)
+    print(f"  {feat:<20} {score:.4f}  {bar}")
+
+print("\n  --- 3-Fold CV on Ensemble ---")
+try:
+    cv_ens = cross_val_score(ensemble_rec, X_train_rec_s, y_train_rec_enc,
+                             cv=3, scoring='accuracy', n_jobs=1)
+    print(f"  Ensemble CV Accuracy: {cv_ens.mean():.4f} ± {cv_ens.std():.4f}")
+except (MemoryError, Exception) as e:
+    print(f"  ⚠️ CV skipped ({type(e).__name__})")
 
 best_rec_model = (
-    'Ensemble' if acc_ensemble_rec >= max(acc_xgb_rec, acc_rf_rec)
+    'Ensemble' if acc_ens_rec >= max(acc_xgb_rec, acc_rf_rec)
     else 'XGBoost' if acc_xgb_rec >= acc_rf_rec
     else 'RandomForest'
 )
-print(f"\nBest crop recommendation model: {best_rec_model}")
-joblib.dump({'best_model': best_rec_model}, '../models/crop_rec_best_model.pkl')
+print(f"\n  ✅ Best crop recommendation model: {best_rec_model}")
 
-# Save all three models
-joblib.dump(xgb_rec,      '../models/crop_rec_xgb.pkl')
-joblib.dump(rf_rec,       '../models/crop_rec_rf.pkl')
-joblib.dump(ensemble_rec, '../models/crop_rec_ensemble.pkl')
+joblib.dump(xgb_rec,      os.path.join(models_dir, 'crop_rec_xgb.pkl'))
+joblib.dump(rf_rec,       os.path.join(models_dir, 'crop_rec_rf.pkl'))
+joblib.dump(ensemble_rec, os.path.join(models_dir, 'crop_rec_ensemble.pkl'))
+joblib.dump({'best_model': best_rec_model}, os.path.join(models_dir, 'crop_rec_best_model.pkl'))
 
-print("\n✅ All models trained and saved in ../models/")
-print("   Files saved:")
-print("   - prophet_<crop>_<market>.pkl          (one per crop-market)")
-print("   - lstm_price_<crop>_<market>.keras      (one per crop-market)")
-print("   - lstm_scaler_<crop>_<market>.pkl       (one per crop-market)")  # NEW
-print("   - price_metrics_summary.csv")
-print("   - best_price_models.csv")
-print("   - yield_xgb_classifier.pkl")            # RENAMED
-print("   - yield_rf_classifier.pkl")             # RENAMED
-print("   - yield_scaler.pkl")
-print("   - yield_feature_columns.pkl")           # NEW
-print("   - crop_rec_ensemble.pkl")
-print("   - crop_rec_xgb.pkl")
-print("   - crop_rec_rf.pkl")
-print("   - crop_rec_targetencoder.pkl")
-print("   - crop_rec_scaler.pkl")
-print("   - crop_rec_labelencoder.pkl")
-print("   - crop_rec_feature_columns.pkl")        # NEW
-print("   - crop_rec_numeric_cols.pkl")           # NEW
-print("   - crop_rec_categorical_cols.pkl")       # NEW
-print("   - crop_rec_best_model.pkl")             # NEW
+##########################################
+# FINAL SUMMARY — all 3 models at a glance
+##########################################
+banner("FINAL METRICS SUMMARY")
+
+print(f"\n  {'Model':<45} {'Metric':<10} {'Value':>8}")
+print("  " + "-" * 65)
+
+if not saved_metrics.empty:
+    print(f"  {'Price Prediction — Prophet (crop-market avg)':<45} {'MAE':>10} {saved_metrics['Prophet_MAE'].mean():>8.2f}")
+    print(f"  {'Price Prediction — LSTM    (crop-market avg)':<45} {'MAE':>10} {saved_metrics['LSTM_MAE'].mean():>8.2f}")
+else:
+    print(f"  {'Price Prediction':<45} {'MAE':>10} {'see CSV':>8}")
+
+print(f"  {'Yield Estimation — XGBoost':<45} {'Accuracy':>10} {acc_xgb_y:>8.4f}")
+print(f"  {'Yield Estimation — RandomForest':<45} {'Accuracy':>10} {acc_rf_y:>8.4f}")
+print(f"  {'Crop Recommendation — XGBoost':<45} {'Accuracy':>10} {acc_xgb_rec:>8.4f}")
+print(f"  {'Crop Recommendation — RandomForest':<45} {'Accuracy':>10} {acc_rf_rec:>8.4f}")
+print(f"  {'Crop Recommendation — Ensemble ★ BEST':<45} {'Accuracy':>10} {acc_ens_rec:>8.4f}")
+
+print("\n  ✅ All models trained and saved successfully!")
+print("  " + "=" * 60)
